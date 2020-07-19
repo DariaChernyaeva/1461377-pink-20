@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <!--link href="css/style.css" rel="stylesheet">-->
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img src="https://via.placeholder.com/150x150" width="50" height="50" alt="логотип сайта Pink.">
+    </a>
+    <nav class="main-navigation">
+      <button class="main-navigation__toggle" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
+      </button>
+      <div class="main-navigation__wrapper">
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
+          <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+          <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+          <li class="site-list__item"><a href="#">HTML ACADEMY</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Pink - Взгляните на жизнь иначе!</h1>
+    <div class="main-block-photo">
+      <h2 class="main-block-photo__heading">Конкурс на самое безбашенное путешествие с Пинк</h2>
+    </div>
+
+    <section class="main-block-photo-description">
+      <p class="main-block-photo-description__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+    </section>
+    
+    <div class="form-block">
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <div class="form-block-text">
+      <label for="surname">Фамилия:</label>
+      <input type="text" name="surname" id="surname" required placeholder="Укажите фамилию *">
+      <label for="name">Имя:</label>
+      <input type="text" name="name" id="name" required placeholder="Введите ваше имя *">
+      <label for="patronymic">Отчество:</label>
+      <input type="text" name="patronymic" id="patronymic" required placeholder="Ну и отчество тоже *">
+    </div>
+
+    <div class="form-block-checkbox">
+      <h3 class="form-block-checkbox__description" aria-label="выбор подходящих вариантов, верный вариант отметьте галочкой.">Ваши безбашеннные достижения в путешествии</h3>
+      <ul class="form-block-checkbox__checkboxes">
+        <li class="form-block-checkbox__filter">
+          <input class="form-block-checkbox__items" type="checkbox" name="selfie" id="selfie" checked>
+          <label for="selfie" class="form-block-checkbox__answer">Сделал селфи с акулой</label>
+        </li>
+        <li class="form-block-checkbox__filter">
+          <input class="form-block-checkbox__items" type="checkbox" name="sunburn"  id="sunburn" checked>
+          <label for="sunburn" class="form-block-checkbox__answer">Обгорел на пляже</label>
+        </li>
+        <li class="form-block-checkbox__filter">
+          <input class="form-block-checkbox__items" type="checkbox" name="norris"  id="norris">
+          <label for="norris" class="form-block-checkbox__answer">Видел Чака Норриса</label>
+        </li>
+        <li class="form-block-checkbox__filter">
+          <input class="form-block-checkbox__items" type="checkbox" name="souvenirs" id="souvenirs">
+          <label for="souvenirs" class="form-block-checkbox__answer">Накупил сувениров</label>
+        </li>
+        <li class="form-block-checkbox__filter">
+          <input class="form-block-checkbox__items" type="checkbox" name="tower"  id="tower" checked>
+          <label for="tower" class="form-block-checkbox__answer">Удержал башню</label>
+        </li>
+        <li class="form-block-checkbox__filter">
+          <input class="form-block-checkbox__items" type="checkbox" name="hotel"  id="hotel">
+          <label for="hotel" class="form-block-checkbox__answer">Разгромил отель</label>
+        </li>
+      </ul>
+    </div>
+
+    <div  class="form-block-contacts">
+    <label for="tel" class="form-block-contacts__answer">Номер телефона</label>
+    <input class="form-block-contacts__items" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+    <label for="email" class="form-block-contacts__answer">Адрес почты</label>
+    <input class="form-block-contacts__items" type="email" name="email" id="email" placeholder="Введите почту *" required>
+  </div>
+
+  <div class="form-block-radio">
+    <h3 class="form-block-radio__title">С каким приложением путешествовали?</h3>
+    <label>
+      <input class="form-block-radio__items" type="radio" name="question" value="Pink для ios" checked>Pink для ios
+    </label>
+    <label>
+      <input class="form-block-radio__items" type="radio" name="question" value="Pink на Android">Pink на Android
+    </label>
+    <label>
+      <input class="form-block-radio__items" type="radio" name="question" value="Windows Phone">Windows Phone
+    </label>
+  </div>
+
+  <div class="form-block-textarea">
+    <h3 class="form-block-textarea__title">Опишите свои эмоции</h3>
+    <textarea class="form-block-textarea__text" name="comment" id="comment-field" rows="6">Можно прямо в красках, не стесняясь в выражениях</textarea>
+  </div>
+
+  <div class="form-block-buttons">
+    <button class="form-block-buttons__send form-block-buttons__send--active" type="submit">Отправить форму</button>
+  </div>
+
+    </form>
+  </div>
+  </main>
+
+  <footer class="footer-page">
+    <section class="footer-items">
+      <div class="footer-items__footer-logo">
+        <img class="footer-items__footer-logo footer-items__footer-logo--footer-logo-active1" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Логотип розовые очки.">
+        <img class="footer-items__footer-logo footer-items__footer-logo--footer-logo-active2" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Логотип PINK.">
+      </div>
+      <div class="social-icons-block">
+        <a class="social-icons-block__link" href="#"><img src="https://via.placeholder.com/150x150" width="20" height="20" alt="ссылка на твиттер."></a>
+        <a class="social-icons-block__link" href="#"><img src="https://via.placeholder.com/150x150" width="20" height="20" alt="ссылка на фейсбук."></a>
+        <a class="social-icons-block__link" href="#"><img src="https://via.placeholder.com/150x150" width="20" height="20" alt="ссылка на ютуб."></a>
+      </div>
+      <div class="footer-items__developed-by">
+        <a class="footer-items__developed-by-text" href="https://htmlacademy.ru/intensive/adaptive" aria-label="разработано html academy">Разработано</a>
+        <a class="footer-items__developed-by-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="ссылка на html academy"></a>
+      </div>
+    </section>
+  </footer>
+</body>
+
+</html>

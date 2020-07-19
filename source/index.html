@@ -1,12 +1,142 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <!--link href="css/style.css" rel="stylesheet">-->
+</head>
 
-  </body>
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img src="https://via.placeholder.com/150x150" width="50" height="50" alt="логотип сайта Pink.">
+    </a>
+    <nav class="main-navigation">
+      <button class="main-navigation__toggle" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
+      </button>
+      <div class="main-navigation__wrapper">
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
+          <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+          <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+          <li class="site-list__item"><a href="#">HTML ACADEMY</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Pink - Взгляните на жизнь иначе!</h1>
+    <div class="main-block-information">
+      <h2 class="main-block-information-description">Взгляните на жизнь иначе!</h2>
+      <a class="main-block-information__download-button main-block-information__download-button--download-button-active" href="#" download>Скачать приложение</a>
+      <div class="main-block-information__application-systems main-block-information__application-systems--application-systems-active">
+        <a class="application-systems" href="#"><img src="https://via.placeholder.com/150x150" width="50" height="50" alt="доступно на Iphone."></a>
+        <a class="application-systems" href="#"><img src="https://via.placeholder.com/150x150" width="50" height="50" alt="доступно на Android."></a>
+        <a class="application-systems" href="#"><img src="https://via.placeholder.com/150x150" width="50" height="50" alt="доступно на Windows 8."></a>
+        <p class="main-block-information__examples">Доступно для Iphone, Ipad, Android,<br> Windows Phone, OS X, Windows 8</p>
+      </div>
+    </div>
+
+    <section class="main-block-descripton">
+      <h1 class="visually-hidden">Pink - Взгляните на жизнь иначе!</h1>
+      <p class="main-block-descripton__description-text">Устали от серости мегаполиса? Нам есть, что Вам предложить!</p>
+    </section>
+
+    <section class="block-advantages">
+      <h1 class="visually-hidden">Pink - Взгляните на жизнь иначе!</h1>
+      <div class="block-advantages__line">
+        <h3 class="block-advantages__title">Поднимает настроение</h3>
+        <p class="block-advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+      </div>
+      <div class="block-advantages__line">
+        <h3 class="block-advantages__title">Меняет мир вокруг</h3>
+        <p class="block-advantages__text">Сделайте снимок и украсьте его смайликом или тектовой подписью, чтобы усилить эффект</p>
+      </div>
+      <div class="block-advantages__line">
+        <h3 class="block-advantages__title">Заводит новых друзей</h3>
+        <p class="block-advantages__text">Ставьте лайки, комментируйте делитесь фотографиями с друзьями и заводите новых</p>
+      </div>
+      <div class="block-advantages__picture block-advantages__picture--picture-active">
+        <img src="https://via.placeholder.com/150x150" width="50" height="50" alt="Всем привет">
+      </div>
+    </section>
+
+    <section class="feedback"> 
+    <h1 class="visually-hidden">Pink - Взгляните на жизнь иначе!</h1>
+    <div class="feedback-block">
+      <h3 class="feedback-block__title">Николай Петров</h3>
+      <p class="feedback-block__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+        А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+        <p class="feedback-block__toggles">
+          <button class="feedback-block__toggles feedback-block__toggles--current" type="button">1</button>
+          <button class="feedback-block__toggles" type="button">2</button>
+          <button class="feedback-block__toggles" type="button">3</button>
+        </p>
+      </div>
+   </section> 
+
+   <section class="price">
+    <h1 class="visually-hidden">Pink - Взгляните на жизнь иначе!</h1>
+    <div class="price-block">
+      <div class="price-block__title"><span>Хит</span>Стандарт 3,99 usd</div> 
+      <div class="price-block__filter">Розовый фильтр</div>
+      <div class="price-block__filter">Смайлики</div>
+      <div class="price-block__filter">Комментарии</div>
+      <p class="price-block__toggles">
+        <button class="price-block__toggles" type="button">1</button>
+        <button class="price-block__toggles price-block__toggles--current" type="button">2</button>
+        <button class="price-block__toggles" type="button">3</button>
+      </p>
+    </div>
+   </section>
+
+   <section class="contact-information">
+    <h1 class="visually-hidden">Pink - Взгляните на жизнь иначе!</h1>
+    <div class="contact-information-block">
+    <p class="contact-information-block__question">Остались вопросы? Свяжитесь с нами!</p>
+  </div>
+  <div class="communication-block">
+    <p class="communication-block__action">Звоните:</p>
+    <p class="communication-block__details">+7 (812) 555-66-66</p>
+  </div>
+  <div class="communication-block">
+    <p class="communication-block__action">Пишите:</p>
+    <p class="communication-block__details">mail@htmlacademy.ru</p>
+  </div>
+  <div class="communication-block">
+    <p class="communication-block__action">Приезжайте в гости:</p>
+    <p class="communication-block__details">ул. Большая Конюшенная, 19/8</p>
+  </div>
+   </section>
+
+   <section>
+     <h2 class="visually-hidden">Карта</h2>
+   <!--iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002806!2d30.320858715677204!3d59.93871916905467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595165161419!5m2!1sru!2sru" width="320" height="200" tabindex="0"></iframe-->
+  </section>
+
+  </main>
+
+  <footer class="footer-page">
+    <section class="footer-items">
+      <div class="footer-items__footer-logo">
+        <img class="footer-items__footer-logo footer-items__footer-logo--footer-logo-active1" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Логотип розовые очки.">
+        <img class="footer-items__footer-logo footer-items__footer-logo--footer-logo-active2" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Логотип PINK.">
+      </div>
+      <div class="social-icons-block">
+        <a class="social-icons-block__link" href="#"><img src="https://via.placeholder.com/150x150" width="20" height="20" alt="ссылка на твиттер."></a>
+        <a class="social-icons-block__link" href="#"><img src="https://via.placeholder.com/150x150" width="20" height="20" alt="ссылка на фейсбук."></a>
+        <a class="social-icons-block__link" href="#"><img src="https://via.placeholder.com/150x150" width="20" height="20" alt="ссылка на ютуб."></a>
+      </div>
+      <div class="footer-items__developed-by">
+        <a class="footer-items__developed-by-text" href="https://htmlacademy.ru/intensive/adaptive" aria-label="разработано html academy">Разработано</a>
+        <a class="footer-items__developed-by-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="ссылка на html academy"></a>
+      </div>
+    </section>
+
+  </footer>
+</body>
+
 </html>
