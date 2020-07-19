@@ -1,134 +1,124 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
   <link href="css/normalize.css" rel="stylesheet">
   <!--link href="css/style.css" rel="stylesheet">-->
-  </head>
-  <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="https://via.placeholder.com/150x150" width="50" height="50" alt="логотип сайта Pink.">
-      </a>
-      <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button">
-          <span class="visually-hidden">Закрыть меню</span>
-        </button>
-        <div class="main-navigation__wrapper">
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img src="https://via.placeholder.com/150x150" width="50" height="50" alt="логотип сайта Pink.">
+    </a>
+    <nav class="main-navigation">
+      <button class="main-navigation__toggle" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
+      </button>
+      <div class="main-navigation__wrapper">
         <ul class="main-navigation__list site-list">
           <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
           <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
           <li class="site-list__item"><a href="form.html">Конкурс</a></li>
           <li class="site-list__item"><a href="#">HTML ACADEMY</a></li>
         </ul>
-        </div>
-      </nav>
-    </header>
-      <main class="page-main">
-        
-        <div class="main-block-photo">
-          <h2 class="main-block-photo__intro2">Фотографии пользователей</h2>
-          <img class="main-block-photo__intro" src="https://via.placeholder.com/150x150" width="50" height="50" alt="основной фон сайта Pink.">
-        </div>
-        <section class="main-block-photo-description">
-          <h1 class="visually-hidden">Фотографии пользователей</h1>
-          <p class="main-block-photo-description__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        </section>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
 
-        <h1 class="visually-hidden">галерея фотографий</h1>
-        <div class="photo-block">
-          <span class="photo-block__panorama">Панорама дня</span>
-          <img class="photo-block__picture" src="https://via.placeholder.com/150x150" width="50" height="50" alt="прыжок с высоты.">
-          <div class="photo-block__description">
-            <h3 class="photo-block__title">Анна (5 минут назад)</h3>
-            <p class="photo-block__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямуб трансляцию в перископе, задавайте свои вопросы!</p>
-            <img class="photo-block__like--like-active" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Лайк.">
-            <p class="photo-block__likes">Нравится: 215</p>
-          </div>
-        </div>
+    <div class="main-block-photo">
+      <h1 class="main-block-photo__heading">Фотографии пользователей</h1>
+    </div>
+    <section class="main-block-photo-description">
+      <p class="main-block-photo-description__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+    </section>
 
-        <div class="photo-block">
-          <img class="photo-block__picture" src="https://via.placeholder.com/150x150" width="50" height="50" alt="фотография машины.">
-          <div class="photo-block__description">
-            <h3 class="photo-block__title">Левон (5 часов назад)</h3>
-            <p class="photo-block__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <img class="photo-block__like--like-active" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Лайк.">
-            <p class="photo-block__likes">Нравится: 356</p>
-          </div>
-        </div>
+    <h2 class="visually-hidden">галерея фотографий</h2>
+    <div class="photo-block">
+      <span class="photo-block__panorama">Панорама дня</span>
+      <a><img class="photo-block__picture" src="https://via.placeholder.com/150x150" width="50" height="50" alt="прыжок с высоты."></a>
+      <div class="photo-block__description">
+        <h3 class="photo-block__title">Анна <span>(5 минут назад)</span></h3>
+        <p class="photo-block__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямуб трансляцию в перископе, задавайте свои вопросы!</p>
+        <img class="photo-block__like photo-block__like--like-active" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Лайк.">
+      </div>
+    </div>
 
-        <div class="photo-block">
-          <img class="photo-block__picture" src="https://via.placeholder.com/150x150" width="50" height="50" alt="фотография барабанной установки.">
-          <div class="photo-block__description">
-            <h3 class="photo-block__title">Антон (12 часов назад)</h3>
-            <p class="photo-block__text">Соседи будут рады!</p>
-            <img class="photo-block__like--like-active" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Лайк.">
-            <p class="photo-block__likes">Нравится: 666</p>
-          </div>
-        </div>
+    <div class="photo-block">
+      <a><img class="photo-block__picture" src="https://via.placeholder.com/150x150" width="50" height="50" alt="фотография машины."></a>
+      <div class="photo-block__description">
+        <h3 class="photo-block__title">Левон <span>(5 часов назад)</span></h3>
+        <p class="photo-block__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+        <img class="photo-block__like photo-block__like--like-active" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Лайк.">
+      </div>
+    </div>
 
-        <div class="photo-block">
-          <img class="photo-block__picture" src="https://via.placeholder.com/150x150" width="50" height="50" alt="фотография здания.">
-          <div class="photo-block__description">
-            <h3 class="photo-block__title">Борис (20 часов назад)</h3>
-            <p class="photo-block__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <img class="photo-block__like--like-active" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Лайк.">
-            <p class="photo-block__likes">Нравится: 215</p>
-          </div>
-        </div>
+    <div class="photo-block">
+      <a><img class="photo-block__picture" src="https://via.placeholder.com/150x150" width="50" height="50" alt="фотография барабанной установки."></a>
+      <div class="photo-block__description">
+        <h3 class="photo-block__title">Антон <span>(12 часов назад)</span></h3>
+        <p class="photo-block__text">Соседи будут рады!</p>
+        <img class="photo-block__like photo-block__like--like-active" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Лайк.">
+      </div>
+    </div>
 
-        <div class="photo-block">
-          <img class="photo-block__picture" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Кубанская бахча.">
-          <div class="photo-block__description">
-            <h3 class="photo-block__title">Сергей (25 часов назад)</h3>
-            <p class="photo-block__text">Самая кубанская в мире!</p>
-            <img class="photo-block__like--like-active" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Лайк.">
-            <p class="photo-block__likes">Нравится: 4</p>
-          </div>
-        </div>
+    <div class="photo-block">
+      <a><img class="photo-block__picture" src="https://via.placeholder.com/150x150" width="50" height="50" alt="фотография здания."></a>
+      <div class="photo-block__description">
+        <h3 class="photo-block__title">Борис <span>(20 часов назад)</span></h3>
+        <p class="photo-block__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+        <img class="photo-block__like photo-block__like--like-active" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Лайк.">
+      </div>
+    </div>
 
-        <div class="photo-block">
-          <img class="photo-block__picture" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Фотография гор">
-          <div class="photo-block__description">
-            <h3 class="photo-block__title">Максим (40 часов назад)</h3>
-            <p class="photo-block__text">Где снег-то?</p>
-            <img class="photo-block__like--like-active" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Лайк.">
-            <p class="photo-block__likes">Нравится: 150</p>
-          </div>
-        </div>
+    <div class="photo-block">
+      <a><img class="photo-block__picture" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Кубанская бахча."></a>
+      <div class="photo-block__description">
+        <h3 class="photo-block__title">Сергей <span>(25 часов назад)</span></h3>
+        <p class="photo-block__text">Самая кубанская в мире!</p>
+        <img class="photo-block__like photo-block__like--like-active" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Лайк.">
+      </div>
+    </div>
 
-        <div class="photo-block">
-          <img class="photo-block__picture" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Фотография заката в самолете">
-          <div class="photo-block__description">
-            <h3 class="photo-block__title">Надежда (45 часов назад)</h>
-            <p class="photo-block__text">Всем GN и взаимные лайки!</p>
-            <img class="photo-block__like--like-active" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Лайк.">
-            <p class="photo-block__likes">Нравится: 2560</p>
-          </div>
-        </div>
-    </main>
-    <footer class="footer-page">
-      <section class="footer-items">
-        <div class="footer-items__footer-logo">
-          <img class="photo-block__footer-logo--footer-logo-active1" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Логотип розовые очки.">
-          <img class="photo-block__footer-logo--footer-logo-active2" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Логотип PINK.">
-        </div>
-        <div class="footer-items__social-icons">
-        <a class="social-icons" href="#">
-          <img src="https://via.placeholder.com/150x150"  width="20" height="20" alt="ссылка на твиттер."></a>
-        <a class="social-icons" href="#">
-          <img src="https://via.placeholder.com/150x150"  width="20" height="20" alt="ссылка на фейсбук."></a>
-        <a class="social-icons" href="#">
-          <img src="https://via.placeholder.com/150x150"  width="20" height="20" alt="ссылка на ютуб."></a>
+    <div class="photo-block">
+      <a><img class="photo-block__picture" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Фотография гор"></a>
+      <div class="photo-block__description">
+        <h3 class="photo-block__title">Максим <span>(40 часов назад)</span></h3>
+        <p class="photo-block__text">Где снег-то?</p>
+        <img class="photo-block__like photo-block__like--like-active" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Лайк.">
+      </div>
+    </div>
+
+    <div class="photo-block">
+      <a><img class="photo-block__picture" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Фотография заката в самолете"></a>
+      <div class="photo-block__description">
+        <h3 class="photo-block__title">Надежда <span>(45 часов назад)</span></h>
+          <p class="photo-block__text">Всем GN и взаимные лайки!</p>
+          <img class="photo-block__like photo-block__like--like-active" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Лайк.">
+      </div>
+    </div>
+  </main>
+  <footer class="footer-page">
+    <section class="footer-items">
+      <div class="footer-items__footer-logo">
+        <img class="footer-items__footer-logo footer-items__footer-logo--footer-logo-active1" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Логотип розовые очки.">
+        <img class="footer-items__footer-logo footer-items__footer-logo--footer-logo-active2" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Логотип PINK.">
+      </div>
+      <div class="social-icons-block">
+        <a class="social-icons-block__link" href="#"><img src="https://via.placeholder.com/150x150" width="20" height="20" alt="ссылка на твиттер."></a>
+        <a class="social-icons-block__link" href="#"><img src="https://via.placeholder.com/150x150" width="20" height="20" alt="ссылка на фейсбук."></a>
+        <a class="social-icons-block__link" href="#"><img src="https://via.placeholder.com/150x150" width="20" height="20" alt="ссылка на ютуб."></a>
       </div>
       <div class="footer-items__developed-by">
-      <a class="footer-items__developed-by-text" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="разработано html academy">Разработано</a>
-      <a class="footer-items__developed-by-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="ссылка на html academy"></a>
+        <a class="footer-items__developed-by-text" href="https://htmlacademy.ru/intensive/adaptive" aria-label="разработано html academy">Разработано</a>
+        <a class="footer-items__developed-by-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="ссылка на html academy"></a>
       </div>
-      </section>
+    </section>
 
-    </footer>
-  </body>
+  </footer>
+</body>
+
 </html>
-.
