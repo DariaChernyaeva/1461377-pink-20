@@ -1,12 +1,72 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <!--link href="css/style.css" rel="stylesheet">-->
+</head>
 
-  </body>
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img src="https://via.placeholder.com/150x150" width="50" height="50" alt="логотип сайта Pink.">
+    </a>
+    <nav class="main-navigation">
+      <button class="main-navigation__toggle" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
+      </button>
+      <div class="main-navigation__wrapper">
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
+          <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+          <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+          <li class="site-list__item"><a href="#">HTML ACADEMY</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Pink - Взгляните на жизнь иначе!</h1>
+    <div class="main-block-information">
+      <h2 class="main-block-information-description">Взгляните на жизнь иначе!</h2>
+      <a class="main-block-information__download-button main-block-information__download-button--download-button-active" href="#" download>Скачать приложение</a>
+      <div class="main-block-information__application-systems main-block-information__application-systems--application-systems-active">
+        <a class="application-systems" href="#"><img src="https://via.placeholder.com/150x150" width="50" height="50" alt="доступно на Iphone."></a>
+        <a class="application-systems" href="#"><img src="https://via.placeholder.com/150x150" width="50" height="50" alt="доступно на Android."></a>
+        <a class="application-systems" href="#"><img src="https://via.placeholder.com/150x150" width="50" height="50" alt="доступно на Windows 8."></a>
+        <p class="main-block-information__examples">Доступно для Iphone, Ipad, Android,<br> Windows Phone, OS X, Windows 8</p>
+      </div>
+    </div>
+
+    <section class="main-block-descripton">
+      <h1 class="visually-hidden">Pink - Взгляните на жизнь иначе!</h1>
+      <p class="main-block-descripton__description-text">Устали от серости мегаполиса? Нам есть, что Вам предложить!</p>
+    </section>
+
+    <section class="block-advantages">
+      <h1 class="visually-hidden">Pink - Взгляните на жизнь иначе!</h1>
+      <div class="block-advantages__line">
+        <h3 class="block-advantages__title">Поднимает настроение</h3>
+        <p class="block-advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+      </div>
+      <div class="block-advantages__line">
+        <h3 class="block-advantages__title">Меняет мир вокруг</h3>
+        <p class="block-advantages__text">Сделайте снимок и украсьте его смайликом или тектовой подписью, чтобы усилить эффект</p>
+      </div>
+      <div class="block-advantages__line">
+        <h3 class="block-advantages__title">Заводит новых друзей</h3>
+        <p class="block-advantages__text">Ставьте лайки, комментируйте делитесь фотографиями с друзьями и заводите новых</p>
+      </div>
+      <div class="block-advantages__picture block-advantages__picture--picture-active">
+        <img src="https://via.placeholder.com/150x150" width="50" height="50" alt="Всем привет">
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer-page">
+  </footer>
+</body>
+
 </html>
