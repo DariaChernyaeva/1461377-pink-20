@@ -43,7 +43,7 @@
       <div class="photo-block__description">
         <h3 class="photo-block__title">Анна <span>(5 минут назад)</span></h3>
         <p class="photo-block__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямуб трансляцию в перископе, задавайте свои вопросы!</p>
-        <img class="photo-block__like photo-block__like--like-active" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Лайк.">
+        <p class="photo-block__likes">Нравится: 215</p>
       </div>
     </div>
 
@@ -52,7 +52,7 @@
       <div class="photo-block__description">
         <h3 class="photo-block__title">Левон <span>(5 часов назад)</span></h3>
         <p class="photo-block__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-        <img class="photo-block__like photo-block__like--like-active" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Лайк.">
+        <p class="photo-block__likes">Нравится: 356</p>
       </div>
     </div>
 
@@ -61,7 +61,7 @@
       <div class="photo-block__description">
         <h3 class="photo-block__title">Антон <span>(12 часов назад)</span></h3>
         <p class="photo-block__text">Соседи будут рады!</p>
-        <img class="photo-block__like photo-block__like--like-active" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Лайк.">
+        <p class="photo-block__likes">Нравится: 666</p>
       </div>
     </div>
 
@@ -70,7 +70,7 @@
       <div class="photo-block__description">
         <h3 class="photo-block__title">Борис <span>(20 часов назад)</span></h3>
         <p class="photo-block__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-        <img class="photo-block__like photo-block__like--like-active" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Лайк.">
+        <p class="photo-block__likes">Нравится: 215</p>
       </div>
     </div>
 
@@ -79,7 +79,7 @@
       <div class="photo-block__description">
         <h3 class="photo-block__title">Сергей <span>(25 часов назад)</span></h3>
         <p class="photo-block__text">Самая кубанская в мире!</p>
-        <img class="photo-block__like photo-block__like--like-active" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Лайк.">
+        <p class="photo-block__likes">Нравится: 4</p>
       </div>
     </div>
 
@@ -88,18 +88,38 @@
       <div class="photo-block__description">
         <h3 class="photo-block__title">Максим <span>(40 часов назад)</span></h3>
         <p class="photo-block__text">Где снег-то?</p>
-        <img class="photo-block__like photo-block__like--like-active" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Лайк.">
+        <p class="photo-block__likes">Нравится: 150</p>
       </div>
     </div>
 
     <div class="photo-block">
       <a><img class="photo-block__picture" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Фотография заката в самолете"></a>
       <div class="photo-block__description">
-        <h3 class="photo-block__title">Надежда <span>(45 часов назад)</span></h>
+        <h3 class="photo-block__title">Надежда<span>(45 часов назад)</span></h3>
           <p class="photo-block__text">Всем GN и взаимные лайки!</p>
-          <img class="photo-block__like photo-block__like--like-active" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Лайк.">
+          <p class="photo-block__likes">Нравится: 2560</p>
       </div>
     </div>
+
+    <form action="https://echo.htmlacademy.ru" method="post">
+    <div class="upload-block">
+      <p class="upload-block__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+    </div>
+    <div class="upload-block-photo"><img src="https://via.placeholder.com/150x150" alt="образец загрузки фотографии" width="25" height="25"></div>
+    <div class="upload-block-instruments">
+      <button class="upload-block-instruments__button upload-block-instruments__button--active" type="button"></button>
+      <button class="upload-block-instruments__button upload-block-instruments__button--active" type="button"></button>
+      <button class="upload-block-instruments__button upload-block-instruments__button--active" type="button"></button>
+    </div>
+    <div class="upload-block-scale">
+      <label for="scale"></label>
+      <input type="range" name="scale" id="scale" min="0" max="100" step="1" value="80" > 
+    </div>
+    <div class="upload-block-share">
+      <button class="upload-block-share__button1 upload-block-share__button1--active" type="submit">Запостить</button>
+      <button class="upload-block-share__button2 upload-block-share__button2--active" disabled>Отмена</button>
+    </div>
+    </form>
   </main>
   <footer class="footer-page">
     <section class="footer-items">
