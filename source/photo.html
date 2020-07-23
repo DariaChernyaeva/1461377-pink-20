@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <!--link href="css/style.css" rel="stylesheet">-->
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img src="https://via.placeholder.com/150x150" width="50" height="50" alt="логотип сайта Pink.">
+      <img class="page-header__logo-whitepink" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="логотип сайта Pink.">
     </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button">
@@ -19,10 +19,10 @@
       </button>
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list site-list">
-          <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
-          <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-          <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-          <li class="site-list__item"><a href="#">HTML ACADEMY</a></li>
+          <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="#">Главная</a></li>
+          <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="photo.html">Фотографии</a></li>
+          <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="form.html">Конкурс</a></li>
+          <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="#">HTML ACADEMY</a></li>
         </ul>
       </div>
     </nav>
@@ -39,105 +39,103 @@
     <h2 class="visually-hidden">галерея фотографий</h2>
     <div class="photo-block">
       <span class="photo-block__panorama">Панорама дня</span>
-      <a><img class="photo-block__picture" src="https://via.placeholder.com/150x150" width="50" height="50" alt="прыжок с высоты."></a>
+      <a><img class="photo-block__picture" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="прыжок с высоты."></a>
       <div class="photo-block__description">
-        <h3 class="photo-block__title">Анна <span>(5 минут назад)</span></h3>
+        <h3 class="photo-block__title">Анна <span class="photo-block__title-time">(5 минут назад)</span></h3>
         <p class="photo-block__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямуб трансляцию в перископе, задавайте свои вопросы!</p>
         <p class="photo-block__likes">Нравится: 215</p>
       </div>
     </div>
 
     <div class="photo-block">
-      <a><img class="photo-block__picture" src="https://via.placeholder.com/150x150" width="50" height="50" alt="фотография машины."></a>
+      <a><img class="photo-block__picture" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="фотография машины."></a>
       <div class="photo-block__description">
-        <h3 class="photo-block__title">Левон <span>(5 часов назад)</span></h3>
+        <h3 class="photo-block__title">Левон <span class="photo-block__title-time">(5 часов назад)</span></h3>
         <p class="photo-block__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
         <p class="photo-block__likes">Нравится: 356</p>
       </div>
     </div>
 
     <div class="photo-block">
-      <a><img class="photo-block__picture" src="https://via.placeholder.com/150x150" width="50" height="50" alt="фотография барабанной установки."></a>
+      <a><img class="photo-block__picture" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="фотография барабанной установки."></a>
       <div class="photo-block__description">
-        <h3 class="photo-block__title">Антон <span>(12 часов назад)</span></h3>
+        <h3 class="photo-block__title">Антон <span class="photo-block__title-time">(12 часов назад)</span></h3>
         <p class="photo-block__text">Соседи будут рады!</p>
         <p class="photo-block__likes">Нравится: 666</p>
       </div>
     </div>
 
     <div class="photo-block">
-      <a><img class="photo-block__picture" src="https://via.placeholder.com/150x150" width="50" height="50" alt="фотография здания."></a>
+      <a><img class="photo-block__picture" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="фотография здания."></a>
       <div class="photo-block__description">
-        <h3 class="photo-block__title">Борис <span>(20 часов назад)</span></h3>
+        <h3 class="photo-block__title">Борис <span class="photo-block__title-time">(20 часов назад)</span></h3>
         <p class="photo-block__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
         <p class="photo-block__likes">Нравится: 215</p>
       </div>
     </div>
 
     <div class="photo-block">
-      <a><img class="photo-block__picture" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Кубанская бахча."></a>
+      <a><img class="photo-block__picture" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Кубанская бахча."></a>
       <div class="photo-block__description">
-        <h3 class="photo-block__title">Сергей <span>(25 часов назад)</span></h3>
+        <h3 class="photo-block__title">Сергей <span class="photo-block__title-time">(25 часов назад)</span></h3>
         <p class="photo-block__text">Самая кубанская в мире!</p>
         <p class="photo-block__likes">Нравится: 4</p>
       </div>
     </div>
 
     <div class="photo-block">
-      <a><img class="photo-block__picture" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Фотография гор"></a>
+      <a><img class="photo-block__picture" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография гор"></a>
       <div class="photo-block__description">
-        <h3 class="photo-block__title">Максим <span>(40 часов назад)</span></h3>
+        <h3 class="photo-block__title">Максим <span class="photo-block__title-time">(40 часов назад)</span></h3>
         <p class="photo-block__text">Где снег-то?</p>
         <p class="photo-block__likes">Нравится: 150</p>
       </div>
     </div>
 
     <div class="photo-block">
-      <a><img class="photo-block__picture" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Фотография заката в самолете"></a>
+      <a><img class="photo-block__picture" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография заката в самолете"></a>
       <div class="photo-block__description">
-        <h3 class="photo-block__title">Надежда<span>(45 часов назад)</span></h3>
-          <p class="photo-block__text">Всем GN и взаимные лайки!</p>
-          <p class="photo-block__likes">Нравится: 2560</p>
+        <h3 class="photo-block__title">Надежда<span class="photo-block__title-time">(45 часов назад)</span></h3>
+        <p class="photo-block__text">Всем GN и взаимные лайки!</p>
+        <p class="photo-block__likes">Нравится: 2560</p>
       </div>
     </div>
 
     <form action="https://echo.htmlacademy.ru" method="post">
-    <div class="upload-block">
-      <p class="upload-block__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-    </div>
-    <div class="upload-block-photo"><img src="https://via.placeholder.com/150x150" alt="образец загрузки фотографии" width="25" height="25"></div>
-    <div class="upload-block-instruments">
-      <button class="upload-block-instruments__button upload-block-instruments__button--active" type="button"></button>
-      <button class="upload-block-instruments__button upload-block-instruments__button--active" type="button"></button>
-      <button class="upload-block-instruments__button upload-block-instruments__button--active" type="button"></button>
-    </div>
-    <div class="upload-block-scale">
-      <label for="scale"></label>
-      <input type="range" name="scale" id="scale" min="0" max="100" step="1" value="80" > 
-    </div>
-    <div class="upload-block-share">
-      <button class="upload-block-share__button1 upload-block-share__button1--active" type="submit">Запостить</button>
-      <button class="upload-block-share__button2 upload-block-share__button2--active" disabled>Отмена</button>
-    </div>
+      <div class="upload-block">
+        <p class="upload-block__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
+      <div class="upload-block-photo"><img src="https://via.placeholder.com/150x150" alt="образец загрузки фотографии" width="25" height="25"></div>
+      <div class="upload-block-instruments">
+        <button class="upload-block-instruments__button upload-block-instruments__button--active" type="button"></button>
+        <button class="upload-block-instruments__button upload-block-instruments__button--active" type="button"></button>
+        <button class="upload-block-instruments__button upload-block-instruments__button--active" type="button"></button>
+      </div>
+      <div class="upload-block-scale">
+        <label for="scale"></label>
+        <input type="range" name="scale" id="scale" min="0" max="100" step="1" value="80">
+      </div>
+      <div class="upload-block-share">
+        <button class="upload-block-share__button1 upload-block-share__button1--active" type="submit">Запостить</button>
+        <button class="upload-block-share__button2 upload-block-share__button2--active" disabled>Отмена</button>
+      </div>
     </form>
   </main>
   <footer class="footer-page">
     <section class="footer-items">
       <div class="footer-items__footer-logo">
-        <img class="footer-items__footer-logo footer-items__footer-logo--footer-logo-active1" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Логотип розовые очки.">
-        <img class="footer-items__footer-logo footer-items__footer-logo--footer-logo-active2" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Логотип PINK.">
+        <img class="footer-items__footer-logo" src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Логотип pink.">
       </div>
       <div class="social-icons-block">
-        <a class="social-icons-block__link" href="#"><img src="https://via.placeholder.com/150x150" width="20" height="20" alt="ссылка на твиттер."></a>
-        <a class="social-icons-block__link" href="#"><img src="https://via.placeholder.com/150x150" width="20" height="20" alt="ссылка на фейсбук."></a>
-        <a class="social-icons-block__link" href="#"><img src="https://via.placeholder.com/150x150" width="20" height="20" alt="ссылка на ютуб."></a>
+        <a class="social-icons-block__link" href="#"><img src="img/icon-twitter.svg" width="18" height="14" alt="ссылка на твиттер."></a>
+        <a class="social-icons-block__link" href="#"><img src="img/icon-facebook.svg" width="9" height="18" alt="ссылка на фейсбук."></a>
+        <a class="social-icons-block__link" href="#"><img src="img/icon-youtube.svg" width="15" height="13" alt="ссылка на ютуб."></a>
       </div>
       <div class="footer-items__developed-by">
         <a class="footer-items__developed-by-text" href="https://htmlacademy.ru/intensive/adaptive" aria-label="разработано html academy">Разработано</a>
-        <a class="footer-items__developed-by-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="ссылка на html academy"></a>
+        <a class="footer-items__developed-by-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="ссылка на html academy"><img src="img/htmlacademy.svg" width="27" height="24" alt="логотип html academy."></a>
       </div>
     </section>
-
   </footer>
 </body>
 
