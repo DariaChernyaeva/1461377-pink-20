@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <!--link href="css/style.css" rel="stylesheet">-->
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img src="https://via.placeholder.com/150x150" width="50" height="50" alt="логотип сайта Pink.">
+      <img class="page-header__logo-whitepink" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="логотип сайта Pink.">
     </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button">
@@ -19,10 +19,10 @@
       </button>
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list site-list">
-          <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
-          <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-          <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-          <li class="site-list__item"><a href="#">HTML ACADEMY</a></li>
+          <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="#">Главная</a></li>
+          <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="photo.html">Фотографии</a></li>
+          <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="form.html">Конкурс</a></li>
+          <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="#">HTML ACADEMY</a></li>
         </ul>
       </div>
     </nav>
@@ -30,12 +30,12 @@
   <main class="page-main">
     <h1 class="visually-hidden">Pink - Взгляните на жизнь иначе!</h1>
     <div class="main-block-information">
-      <h2 class="main-block-information-description">Взгляните на жизнь иначе!</h2>
-      <a class="main-block-information__download-button main-block-information__download-button--download-button-active" href="#" download>Скачать приложение</a>
-      <div class="main-block-information__application-systems main-block-information__application-systems--application-systems-active">
-        <a class="application-systems" href="#"><img src="https://via.placeholder.com/150x150" width="50" height="50" alt="доступно на Iphone."></a>
-        <a class="application-systems" href="#"><img src="https://via.placeholder.com/150x150" width="50" height="50" alt="доступно на Android."></a>
-        <a class="application-systems" href="#"><img src="https://via.placeholder.com/150x150" width="50" height="50" alt="доступно на Windows 8."></a>
+      <h2 class="main-block-information__description">Взгляните на жизнь иначе!</h2>
+      <a class="main-block-information__download-button" href="#" download>Скачать приложение</a>
+      <div class="main-block-information__application-systems">
+        <a class="main-block-information__application-systems" href="#"><img src="img/logo-apple.svg" width="47" height="56" alt="доступно на Iphone."></a>
+        <a class="main-block-information__application-systems" href="#"><img src="img/logo-android.svg" width="43" height="47" alt="доступно на Android."></a>
+        <a class="main-block-information__application-systems" href="#"><img src="img/logo-microsoft.svg" width="44" height="41" alt="доступно на Windows 8."></a>
         <p class="main-block-information__examples">Доступно для Iphone, Ipad, Android,<br> Windows Phone, OS X, Windows 8</p>
       </div>
     </div>
@@ -59,8 +59,8 @@
         <h3 class="block-advantages__title">Заводит новых друзей</h3>
         <p class="block-advantages__text">Ставьте лайки, комментируйте делитесь фотографиями с друзьями и заводите новых</p>
       </div>
-      <div class="block-advantages__picture block-advantages__picture--picture-active">
-        <img src="https://via.placeholder.com/150x150" width="50" height="50" alt="Всем привет">
+      <div class="block-advantages__picture">
+        <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет">
       </div>
     </section>
     <section class="feedback"> 
@@ -123,17 +123,16 @@
   <footer class="footer-page">
     <section class="footer-items">
       <div class="footer-items__footer-logo">
-        <img class="footer-items__footer-logo footer-items__footer-logo--footer-logo-active1" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Логотип розовые очки.">
-        <img class="footer-items__footer-logo footer-items__footer-logo--footer-logo-active2" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Логотип PINK.">
+        <img class="footer-items__footer-logo" src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Логотип pink.">
       </div>
       <div class="social-icons-block">
-        <a class="social-icons-block__link" href="#"><img src="https://via.placeholder.com/150x150" width="20" height="20" alt="ссылка на твиттер."></a>
-        <a class="social-icons-block__link" href="#"><img src="https://via.placeholder.com/150x150" width="20" height="20" alt="ссылка на фейсбук."></a>
-        <a class="social-icons-block__link" href="#"><img src="https://via.placeholder.com/150x150" width="20" height="20" alt="ссылка на ютуб."></a>
+        <a class="social-icons-block__link" href="#"><img src="img/icon-twitter.svg" width="18" height="14" alt="ссылка на твиттер."></a>
+        <a class="social-icons-block__link" href="#"><img src="img/icon-facebook.svg" width="9" height="18" alt="ссылка на фейсбук."></a>
+        <a class="social-icons-block__link" href="#"><img src="img/icon-youtube.svg" width="15" height="13" alt="ссылка на ютуб."></a>
       </div>
       <div class="footer-items__developed-by">
         <a class="footer-items__developed-by-text" href="https://htmlacademy.ru/intensive/adaptive" aria-label="разработано html academy">Разработано</a>
-        <a class="footer-items__developed-by-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="ссылка на html academy"></a>
+        <a class="footer-items__developed-by-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="ссылка на html academy"><img src="img/htmlacademy.svg" width="27" height="24" alt="логотип html academy."></a>
       </div>
     </section>
   </footer>
