@@ -40,16 +40,16 @@
     <div class="form-block">
       <form action="https://echo.htmlacademy.ru" method="post">
         <div class="form-block-text">
-          <label for="surname">Фамилия:</label>
+          <label class="form-block__label" for="surname">Фамилия:</label>
           <input type="text" name="surname" id="surname" required placeholder="Укажите фамилию *">
-          <label for="name">Имя:</label>
+          <label class="form-block__label" for="name">Имя:</label>
           <input type="text" name="name" id="name" required placeholder="Введите ваше имя *">
-          <label for="patronymic">Отчество:</label>
+          <label class="form-block__label" for="patronymic">Отчество:</label>
           <input type="text" name="patronymic" id="patronymic" required placeholder="Ну и отчество тоже *">
         </div>
 
         <div class="form-block-checkbox">
-          <h3 class="form-block-checkbox__description">Ваши безбашеннные достижения в путешествии</h3>
+          <h3 class="form-block__description">Ваши безбашеннные достижения в путешествии</h3>
           <ul class="form-block-checkbox__checkboxes">
             <li class="form-block-checkbox__filter">
               <input class="form-block-checkbox__items" type="checkbox" name="selfie" id="selfie" checked>
@@ -79,14 +79,14 @@
         </div>
 
         <div class="form-block-contacts">
-          <label for="tel" class="form-block-contacts__answer">Номер телефона</label>
-          <input class="form-block-contacts__items" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
-          <label for="email" class="form-block-contacts__answer">Адрес почты</label>
-          <input class="form-block-contacts__items" type="email" name="email" id="email" placeholder="Введите почту *" required>
+          <label class="form-block__label" for="tel" >Номер телефона</label>
+          <input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+          <label class="form-block__label" for="email">Адрес почты</label>
+          <input type="email" name="email" id="email" placeholder="Введите почту *" required>
         </div>
 
         <div class="form-block-radio">
-          <h3 class="form-block-radio__title">С каким приложением путешествовали?</h3>
+          <h3 class="form-block__description">С каким приложением путешествовали?</h3>
           <label>
             <input class="form-block-radio__items" type="radio" name="question" value="Pink для ios" checked>Pink для ios
           </label>
@@ -99,7 +99,7 @@
         </div>
 
         <div class="form-block-textarea">
-          <h3 class="form-block-textarea__title">Опишите свои эмоции</h3>
+          <h3 class="form-block__description">Опишите свои эмоции</h3>
           <textarea class="form-block-textarea__text" name="comment" id="comment-field" rows="6">Можно прямо в красках, не стесняясь в выражениях</textarea>
         </div>
 
@@ -109,7 +109,7 @@
 
       </form>
       <div class="required-block">
-        <p class="required-block__star"><small>*</small>— обязательные поля</p>
+        <p class="required-block__star"><small class="required-block__grill">*</small>— обязательные поля</p>
       </div>
     </div>
   </main>
