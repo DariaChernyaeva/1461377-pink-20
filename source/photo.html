@@ -32,8 +32,8 @@
     <div class="main-block-photo">
       <h1 class="main-block-photo__heading">Фотографии пользователей</h1>
     </div>
-    <section class="main-block-photo-description">
-      <p class="main-block-photo-description__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+    <section class="main-block-photo__description">
+      <p class="main-block-photo__description-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
     </section>
 
     <h2 class="visually-hidden">галерея фотографий</h2>
@@ -105,19 +105,19 @@
       <div class="upload-block">
         <p class="upload-block__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       </div>
-      <div class="upload-block-photo"><img src="https://via.placeholder.com/150x150" alt="образец загрузки фотографии" width="25" height="25"></div>
-      <div class="upload-block-instruments">
-        <button class="upload-block-instruments__button upload-block-instruments__button--active" type="button"></button>
-        <button class="upload-block-instruments__button upload-block-instruments__button--active" type="button"></button>
-        <button class="upload-block-instruments__button upload-block-instruments__button--active" type="button"></button>
+      <div class="upload-block__photo"><img src="img/photo-road-mobile@1x.jpg" alt="образец загрузки фотографии" width="280" height="374"></div>
+      <div class="upload-block__instruments">
+        <button class="upload-block__instruments-button upload-block__instruments-button--crop" type="button"><img src="img/icon-editor-crop.svg" width="44" height="44" alt="иконка обрезать по размеру"></button>
+        <button class="upload-block__instruments-button upload-block__instruments-button--fill" type="button"><img src="img/fill.svg" width="48" height="43" alt="иконка заливка цветом"></button>
+        <button class="upload-block__instruments-button upload-block__instruments-button--contrast" type="button"><img src="img/icon-editor-contrast.svg" width="32" height="32" alt="иконка добавить контраст"></button>
       </div>
-      <div class="upload-block-scale">
+      <div class="upload-block__scale">
         <label for="scale"></label>
         <input type="range" name="scale" id="scale" min="0" max="100" step="1" value="80">
       </div>
-      <div class="upload-block-share">
-        <button class="upload-block-share__button1 upload-block-share__button1--active" type="submit">Запостить</button>
-        <button class="upload-block-share__button2 upload-block-share__button2--active" disabled>Отмена</button>
+      <div class="upload-block__share">
+        <button class="upload-block__share-button1 upload-block__share-button1--active" type="submit">Запостить</button>
+        <button class="upload-block__share-button2 upload-block__share-button2--active" disabled>Отмена</button>
       </div>
     </form>
   </main>
