@@ -1,3 +1,7 @@
+.main-navigation {
+  display: flex;
+}
+
 .main-navigation__toggle {
   background-image: url("../img/icon-menu-burger.svg");
   padding-left: 17px;
@@ -6,6 +10,9 @@
   background-repeat: no-repeat;
   background-color: transparent;
   border: 0;
+  align-self: flex-end;
+  order: 1;
+  align-self: flex-start;
 }
 
 .main-navigation__list-links {
@@ -19,5 +26,41 @@
 }
 
 .main-navigation__list-item {
-  list-style: none;
+  background: @dark-blue;
+  box-shadow: 0px 1px 0px @black, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+  list-style: none;}
+
+
+@media (min-width: @desktop-width) {
+  .main-navigation__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+}
+@media (min-width: @desktop-width) {
+  .main-navigation__list-item {
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    color: @white;
+    box-shadow:none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-navigation {
+    background: url("../img/logo-pink-white-tablet.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-navigation {
+    background: url("../img/logo-pink-white-desktop");
+    background-repeat: no-repeat;
+  }
 }

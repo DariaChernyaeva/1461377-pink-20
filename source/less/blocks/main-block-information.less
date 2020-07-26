@@ -2,6 +2,24 @@
   background-color: #1d2631;
   width: 320px;
   height: 733px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+ display: flex;
+ flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .main-block-information {
+    width: 660px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-block-information {
+    width: 1200px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
 }
 
 .main-block-information__description {
@@ -11,7 +29,6 @@
   font-style: normal;
   color: @white;
   text-align: center;
-  padding: 29px 20px 34px;
 }
 
 .main-block-information__download-button {
@@ -23,9 +40,7 @@
   border: 3px solid @white;
   border-radius: 29px;
   text-decoration: none;
-  margin: 28px 20px 38px;
   text-align: center;
-  padding: 28px 20px;
 }
 
 .main-block-information__application-systems {
@@ -41,5 +56,4 @@
   font-size: 14px;
   line-height: 24px;
   color: @white;
-  padding: 31px 20px 38px;
 }

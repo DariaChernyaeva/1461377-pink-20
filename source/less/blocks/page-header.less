@@ -1,6 +1,24 @@
 .page-header {
-  background-color: @black;
-  width: 320px;
+  background-color: @dark-blue;
   padding-top: 22px;
   padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.page-header__logo {
+  height: 23px;
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    height: 40px;
+ }
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    height: 40px;
+ }
+}
+}
 }
