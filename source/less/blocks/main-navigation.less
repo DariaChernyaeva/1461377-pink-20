@@ -20,7 +20,6 @@
   color: @white;
   font-style: normal;
   font-weight: bold;
-  font-size: @base-font;
   line-height: 32px;
   text-transform: uppercase;
 }
@@ -28,17 +27,8 @@
 .main-navigation__list-item {
   background: @dark-blue;
   box-shadow: 0px 1px 0px @black, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
-  list-style: none;}
+  list-style: none;
 
-
-@media (min-width: @desktop-width) {
-  .main-navigation__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-  }
-}
 @media (min-width: @desktop-width) {
   .main-navigation__list-item {
     border: none;
@@ -47,20 +37,16 @@
     font-size: 18px;
     line-height: 18px;
     color: @white;
-    box-shadow:none;
+    box-shadow: none;
   }
 }
-
-@media (min-width: @tablet-width) {
-  .main-navigation {
-    background: url("../img/logo-pink-white-tablet.svg");
-    background-repeat: no-repeat;
-  }
 }
 
 @media (min-width: @desktop-width) {
-  .main-navigation {
-    background: url("../img/logo-pink-white-desktop");
-    background-repeat: no-repeat;
+  .main-navigation__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
   }
 }
