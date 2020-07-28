@@ -1,8 +1,17 @@
 .footer-items {
-  width: 320px;
-  height: 284px;
   background-color: @white;
   padding: 40px 87px 41px 88px;
+
+  @media (min-width: @mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .footer-items__developed-by-text {

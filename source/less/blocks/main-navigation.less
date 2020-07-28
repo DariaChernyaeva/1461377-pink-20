@@ -10,7 +10,6 @@
   background-repeat: no-repeat;
   background-color: transparent;
   border: 0;
-  align-self: flex-end;
   order: 1;
   align-self: flex-start;
 }
@@ -26,11 +25,11 @@
 
 .main-navigation__list-item {
   background: @dark-blue;
-  box-shadow: 0px 1px 0px @black, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+  box-shadow: 1px @black;
+  inset: 1px rgba(255, 255, 255, 0.15);
   list-style: none;
 
-@media (min-width: @desktop-width) {
-  .main-navigation__list-item {
+  @media (min-width: @desktop-width) {
     border: none;
     font-style: normal;
     font-weight: normal;
@@ -40,13 +39,11 @@
     box-shadow: none;
   }
 }
-}
 
 @media (min-width: @desktop-width) {
   .main-navigation__list {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
   }
 }

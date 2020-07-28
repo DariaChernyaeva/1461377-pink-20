@@ -11,6 +11,7 @@
 
 <body class="page__body">
   <header class="page-header">
+    <div class="page-header__container">
     <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-whitepink" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="логотип сайта Pink.">
     </a>
@@ -19,7 +20,7 @@
         <span class="visually-hidden">Закрыть меню</span>
       </button>
       <div class="main-navigation__wrapper">
-        <ul class="main-navigation__list site-list">
+        <ul class="main-navigation__list">
           <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="#">Главная</a></li>
           <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="photo.html">Фотографии</a></li>
           <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="form.html">Конкурс</a></li>
@@ -27,6 +28,7 @@
         </ul>
       </div>
     </nav>
+  </div>
   </header>
   <main class="page-main">
 
@@ -40,14 +42,14 @@
     <h2 class="visually-hidden">галерея фотографий</h2>
     <div class="photo-block">
       <span class="photo-block__panorama">Панорама дня</span>
-      <a><img class="photo-block__picture" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="прыжок с высоты."></a>
-      <div class="photo-block__description">
-        <h3 class="photo-block__title">Анна <span class="photo-block__title-time">(5 минут назад)</span></h3>
-        <p class="photo-block__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямуб трансляцию в перископе, задавайте свои вопросы!</p>
-        <p class="photo-block__likes">Нравится: 215</p>
-      </div>
+      <div class="photo-block__picture-panorama"><a><img class="photo-block__picture-panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="прыжок с высоты."></a></div>
+      <div class="photo-block__description-panorama">
+        <h3 class="photo-block__title-panorama">Анна <span class="photo-block__title-time">(5 минут назад)</span></h3>
+        <p class="photo-block__text-panorama">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямуб трансляцию в перископе, задавайте свои вопросы!</p>
+        <p class="photo-block__likes-panorama">Нравится: 215</p>
     </div>
 
+    <div class="photo-block__grid">
     <div class="photo-block">
       <a><img class="photo-block__picture" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="фотография машины."></a>
       <div class="photo-block__description">
@@ -101,6 +103,7 @@
         <p class="photo-block__likes">Нравится: 2560</p>
       </div>
     </div>
+  </div>
 
     <form action="https://echo.htmlacademy.ru" method="post">
       <div class="upload-block">

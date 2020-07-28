@@ -7,19 +7,24 @@
   justify-content: space-around;
 }
 
+.page-header__container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .page-header__logo {
   height: 23px;
 
-@media (min-width: @tablet-width) {
-    background: url(../img/logo-pink-white-tablet.svg);
+  @media (min-width: @tablet-width) {
+    background: url("../img/logo-pink-white-tablet.svg");
     background-repeat: no-repeat;
     height: 40px;
   }
 
-@media (min-width: @desktop-width) {
-    background: url(../img/logo-pink-white-desktop);
+  @media (min-width: @desktop-width) {
+    background: url("../img/logo-pink-white-desktop");
     background-repeat: no-repeat;
     height: 40px;
   }
 }
-

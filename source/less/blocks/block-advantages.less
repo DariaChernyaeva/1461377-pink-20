@@ -17,24 +17,54 @@
 
 .block-advantages__picture {
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    align-self: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-self: flex-end;
+  }
 }
 
 .block-advantages {
   background-color: @extra-light-gray;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   width: 320px;
 
-@media (win-width: @tablet-width) {
- display: flex;
- flex-direction: column;
- align-items: flex-end;
- width: 660px;
- }
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    width: 660px;
+  }
 
-@media (win-width: @desktop-width) {
-  display: flex;
-  flex-direction: row;
-  width: 1200px;
- }
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+  }
 }
 
+.block-advantages__picture--mobile-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.block-advantages__line {
+  @media (min-width: @desktop-width) {
+    width: 252px;
+    height: 103px;
+  }
+}
+
+.block-advantages__wrap {
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}

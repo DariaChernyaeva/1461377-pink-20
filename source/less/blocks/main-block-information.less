@@ -7,7 +7,6 @@
   color: @white;
   border-radius: 29px;
   text-decoration: none;
-
 }
 
 .main-block-information__application-systems {
@@ -27,19 +26,19 @@
 
 .main-block-information {
   background-color: #1d2631;
-  width: 320px;
-  height: 733px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
 
-@media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     width: 660px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    display: flex;
+    flex-direction: column;
   }
 
-@media (min-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     width: 1200px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
   }
@@ -47,8 +46,9 @@
 
 .main-block-information__photo {
   @media (min-width: @tablet-width) {
-  align-self: flex-end;
- }
+    align-self: flex-end;
+    order: -1;
+  }
 }
 
 .main-block-information__description {
@@ -59,7 +59,9 @@
   color: @white;
   text-align: center;
 
-@media (min-width: @tablet-width) {
-  align-self: flex-start;
- }
+  @media (min-width: @tablet-width) {
+    width: 140px;
+    display: flex;
+    align-items: stretch;
+  }
 }

@@ -11,6 +11,7 @@
 
 <body class="page__body">
   <header class="page-header">
+    <div class="page-header__container">
     <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-whitepink" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="логотип сайта Pink.">
     </a>
@@ -27,6 +28,7 @@
         </ul>
       </div>
     </nav>
+  </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Pink - Взгляните на жизнь иначе!</h1>
@@ -44,11 +46,13 @@
 
     <section class="main-block-descripton">
       <h2 class="visually-hidden">Возможности приложения pink</h2>
-      <p class="main-block-descripton__description-text">Устали от серости мегаполиса? Нам есть, что Вам предложить!</p>
+      <p class="main-block-descripton__description-text">Устали от серости мегаполиса?<br> Нам есть, что Вам предложить!</p>
     </section>
 
     <section class="block-advantages">
+
       <h2 class="visually-hidden">Плюсы приложения pink</h2>
+      <div class="block-advantages__wrap">
       <div class="block-advantages__line">
         <h3 class="block-advantages__title">Поднимает настроение</h3>
         <p class="block-advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
@@ -61,10 +65,25 @@
         <h3 class="block-advantages__title">Заводит новых друзей</h3>
         <p class="block-advantages__text">Ставьте лайки, комментируйте делитесь фотографиями с друзьями и заводите новых</p>
       </div>
-      <div class="block-advantages__picture">
-        <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет">
       </div>
+
+      <div class="block-advantages__picture">
+        <img class="block-advantages__picture--mobile-hidden" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет">
+        <img class="block-advantages__picture--mobile-desktop" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет">
+        <img class="block-advantages__picture--mobile-desktop" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет">
+      </div>
+    </div>
     </section>
+
+    <div class="effect-block">
+    <div class="effect-block__photo"><img src="img/icon-timer.svg" width="238" height="276" alt="иконка таймер"></div>
+    <div class="effect-block__text">
+      <h2 class="effect-block__title">Эффект на 24 часа!</h2>
+      <p class="effect-block__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+      <a class="effect-block__link" href="#">Узнать больше об исследовании</a>
+    </div>
+  </div>
+
     <section class="feedback">
       <h2 class="visually-hidden">Отзывы о работе с приложением</h2>
       <div class="feedback__block">
