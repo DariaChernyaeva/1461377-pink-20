@@ -6,10 +6,12 @@
   <title>HTML Academy: Пинк</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body class="page__body">
   <header class="page-header">
+    <div class="page-header container">
     <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-whitepink" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="логотип сайта Pink.">
     </a>
@@ -18,7 +20,7 @@
         <span class="visually-hidden">Закрыть меню</span>
       </button>
       <div class="main-navigation__wrapper">
-        <ul class="main-navigation__list site-list">
+        <ul class="main-navigation__list">
           <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="#">Главная</a></li>
           <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="photo.html">Фотографии</a></li>
           <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="form.html">Конкурс</a></li>
@@ -26,11 +28,13 @@
         </ul>
       </div>
     </nav>
+  </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Pink - Взгляните на жизнь иначе!</h1>
-    <div class="main-block-information">
+    <div class="main-block-information container">
       <h2 class="main-block-information__description">Взгляните на жизнь иначе!</h2>
+      <img class="main-block-information__photo" src="img/iphone-hand-mobile@1x.png" width="320" height="286" alt="задний фон">
       <a class="main-block-information__download-button" href="#" download>Скачать приложение</a>
       <div class="main-block-information__application-systems">
         <a class="main-block-information__application-systems" href="#"><img src="img/logo-apple.svg" width="47" height="56" alt="доступно на Iphone."></a>
@@ -41,12 +45,17 @@
     </div>
 
     <section class="main-block-descripton">
+      <div class="main-block-descripton container">
       <h2 class="visually-hidden">Возможности приложения pink</h2>
       <p class="main-block-descripton__description-text">Устали от серости мегаполиса? Нам есть, что Вам предложить!</p>
+    </div>
     </section>
 
     <section class="block-advantages">
+
       <h2 class="visually-hidden">Плюсы приложения pink</h2>
+      <div class="block-advantages__wrap container">
+        <div class="block-advantages__general">
       <div class="block-advantages__line">
         <h3 class="block-advantages__title">Поднимает настроение</h3>
         <p class="block-advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
@@ -59,10 +68,25 @@
         <h3 class="block-advantages__title">Заводит новых друзей</h3>
         <p class="block-advantages__text">Ставьте лайки, комментируйте делитесь фотографиями с друзьями и заводите новых</p>
       </div>
-      <div class="block-advantages__picture">
-        <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет">
       </div>
+
+      <div class="block-advantages__picture">
+        <img class="block-advantages__picture--mobile-hidden" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет">
+        <img class="block-advantages__picture--mobile-desktop" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет">
+        <img class="block-advantages__picture--mobile-desktop" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет">
+      </div>
+    </div>
     </section>
+
+    <div class="effect-block container">
+    <div class="effect-block__photo"><img src="img/icon-timer.svg" width="238" height="276" alt="иконка таймер"></div>
+    <div class="effect-block__text">
+      <h2 class="effect-block__title">Эффект на 24 часа!</h2>
+      <p class="effect-block__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+      <a class="effect-block__link" href="#">Узнать больше об исследовании</a>
+    </div>
+  </div>
+
     <section class="feedback">
       <h2 class="visually-hidden">Отзывы о работе с приложением</h2>
       <div class="feedback__block">
@@ -122,6 +146,7 @@
 
   <footer class="footer-page">
     <section class="footer-items">
+      <div class="footer-items container">
       <div class="footer-items__footer-logo">
         <img class="footer-items__footer-logo" src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Логотип pink.">
       </div>
@@ -134,6 +159,7 @@
         <a class="footer-items__developed-by-text" href="https://htmlacademy.ru/intensive/adaptive" aria-label="разработано html academy">Разработано</a>
         <a class="footer-items__developed-by-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="ссылка на html academy"><img src="img/htmlacademy.svg" width="27" height="24" alt="логотип html academy."></a>
       </div>
+    </div>
     </section>
   </footer>
 </body>

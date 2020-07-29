@@ -1,10 +1,3 @@
-.block-advantages {
-  height: 828px;
-  width: 280px;
-  background-color: @extra-light-gray;
-  text-align: center;
-}
-
 .block-advantages__title {
   font-style: normal;
   font-weight: bold;
@@ -16,12 +9,74 @@
 
 .block-advantages__text {
   font-style: normal;
-  font-weight: normanl;
+  font-weight: normal;
   font-size: @small-font;
   line-height: 24px;
   color: @dark-blue;
 }
 
+.block-advantages {
+  background-color: @extra-light-gray;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+  }
+}
+
+.block-advantages__picture--mobile-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-left: 137px;
+  }
+}
+
+.block-advantages__line {
+  @media (min-width: @desktop-width) {
+    width: 33.3333%;
+  }
+}
+
+.block-advantages__general {
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+
+.block-advantages__wrap {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 .block-advantages__picture {
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    align-self: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
 }

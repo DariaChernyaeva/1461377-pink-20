@@ -1,3 +1,7 @@
+.main-navigation {
+  display: flex;
+}
+
 .main-navigation__toggle {
   background-image: url("../img/icon-menu-burger.svg");
   padding-left: 17px;
@@ -6,6 +10,8 @@
   background-repeat: no-repeat;
   background-color: transparent;
   border: 0;
+  order: 1;
+  align-self: flex-start;
 }
 
 .main-navigation__list-links {
@@ -13,11 +19,31 @@
   color: @white;
   font-style: normal;
   font-weight: bold;
-  font-size: @base-font;
   line-height: 32px;
   text-transform: uppercase;
 }
 
 .main-navigation__list-item {
+  background: @dark-blue;
+  box-shadow: 1px @black;
+  inset: 1px rgba(255, 255, 255, 0.15);
   list-style: none;
+
+  @media (min-width: @desktop-width) {
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    color: @white;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-navigation__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
