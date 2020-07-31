@@ -5,3 +5,17 @@
   background-color: @standard-green;
   margin-top: 52px;
 }
+
+.form-block-buttons {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    order: 5;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-row-end: 6;
+    grid-column-end: 2;
+  }
+}

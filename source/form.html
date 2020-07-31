@@ -42,8 +42,9 @@
     </div>
     </section>
 
-    <div class="form-block">
-      <form action="https://echo.htmlacademy.ru" method="post">
+    <form action="https://echo.htmlacademy.ru" method="post">
+
+      <div class="form-block container">
         <div class="form-block__text">
           <label class="form-block__label" for="surname">Фамилия:</label>
           <input  class="form-block__input" type="text" name="surname" id="surname" required placeholder="Укажите фамилию *">
@@ -106,17 +107,20 @@
         <div class="form-block-textarea">
           <h3 class="form-block-textarea__description">Опишите свои эмоции</h3>
           <textarea class="form-block-textarea__text" name="comment" id="comment-field" rows="6">Можно прямо в красках, не стесняясь в выражениях</textarea>
+          <textarea class="form-block-textarea__text-hidden2" name="comment" id="comment-field" rows="8" cols="50">Можно прямо в красках, не стесняясь в выражениях</textarea>
+          <textarea class="form-block-textarea__text-hidden3" name="comment" id="comment-field" rows="8" cols="80">Можно прямо в красках, не стесняясь в выражениях</textarea>
         </div>
 
         <div class="form-block-buttons">
           <button class="form-block-buttons__send" type="submit">Отправить форму</button>
         </div>
 
-      </form>
+
       <div class="required-block">
         <p class="required-block__star"><small class="required-block__grill">*</small>— обязательные поля</p>
       </div>
     </div>
+  </form>
   </main>
 
   <footer class="footer-page">

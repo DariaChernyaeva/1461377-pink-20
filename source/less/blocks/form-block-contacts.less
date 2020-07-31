@@ -1,5 +1,18 @@
 .form-block-contacts {
   background-color: @white;
+  width: 230px;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+    width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 3;
+  }
 }
 
 .form-block-contacts__form-block-label {
@@ -8,6 +21,7 @@
   font-size: @small-font;
   line-height: 30px;
   color: @fuchsia;
+  padding-left: 20px;
 }
 
 .form-block-contacts__form-block-input {
@@ -18,4 +32,10 @@
   color: @dark-blue;
   border: 2px solid @light-gray;
   outline: none;
+  width: 276px;
+  height: 59px;
+
+  @media (min-width: @tablet-width) {
+    width: 600px;
+  }
 }

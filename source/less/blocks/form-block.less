@@ -4,6 +4,7 @@
   font-size: @small-font;
   line-height: 30px;
   color: @fuchsia;
+  padding-left: 20px;
 }
 
 .form-block__input::placeholder {
@@ -21,8 +22,15 @@
   font-size: @base-font;
   line-height: 30px;
   color: @dark-blue;
+  width: 276px;
+  height: 59px;
   border: 2px solid @light-gray;
   outline: none;
+
+  @media (min-width: @tablet-width) {
+    width: 521px;
+    margin-bottom: 56px;
+  }
 }
 
 .form-block__description {
@@ -32,4 +40,28 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @fuchsia;
+}
+
+.form-block {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    order: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: repeat(6, 0.5fr);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
+  }
 }
