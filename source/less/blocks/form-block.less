@@ -45,15 +45,14 @@
 .form-block {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: @tablet-width) {
-    width: 660px;
     order: -1;
   }
 
   @media (min-width: @desktop-width) {
-    width: 960px;
     display: grid;
     grid-template-columns: repeat(2, 0.5fr);
     grid-template-rows: repeat(6, 0.5fr);

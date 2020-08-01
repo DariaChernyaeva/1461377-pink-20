@@ -1,6 +1,24 @@
 .footer-items {
   background-color: @white;
   padding: 40px 87px 41px 88px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: @mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.footer-items__div {
+  background-color: @white;
+  padding: 40px 87px 41px 88px;
 
   @media (min-width: @mobile-width-only) {
     display: flex;
