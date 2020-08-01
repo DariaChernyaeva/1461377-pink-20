@@ -1,5 +1,8 @@
 .contact-information__block {
-  width: 320px;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .contact-information__block-question {
@@ -13,7 +16,14 @@
 }
 
 .contact-information__communication-block {
-  width: 320px;
+  @media (min-width: @tablet-width) {
+    align-self: center;
+    margin: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    align-self: center;
+  }
 }
 
 .contact-information__communication-block-action {
@@ -32,4 +42,23 @@
   line-height: 33px;
   text-align: center;
   color: @fuchsia;
+}
+
+.contact-information {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contact-information__firstsecond {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.contact-information__general {
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
 }

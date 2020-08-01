@@ -12,10 +12,21 @@
 
 .form-block-checkbox {
   background-color: @extra-light-gray;
-}
 
-.form-block-checkbox__checkboxes {
-  list-style: none;
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    background-color: @white;
+    order: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 3;
+    display: grid;
+  }
 }
 
 .form-block-checkbox__description {
@@ -25,4 +36,20 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @fuchsia;
+}
+
+.form-block-checkbox__filter {
+  margin-bottom: 69px;
+}
+
+.form-block-checkbox__checkboxes {
+  list-style: none;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+  }
 }

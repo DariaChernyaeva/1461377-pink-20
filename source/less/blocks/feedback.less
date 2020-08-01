@@ -1,7 +1,10 @@
 .feedback__block-example {
-  width: 320px;
-  height: 364px;
   background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .feedback__block-example-title {
@@ -29,4 +32,36 @@
   background-repeat: no-repeat;
   background-color: transparent;
   border: 0;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.feedback__block {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.feedback__block-example-profession {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    order: -1;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.feedback {
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -2,6 +2,20 @@
   width: 320px;
   height: 340px;
   background-color: @extra-light-gray;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+    order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 3;
+  }
 }
 
 .form-block-radio__description {
@@ -20,4 +34,5 @@
   line-height: 30px;
   align-items: center;
   color: @dark-blue;
+  margin-bottom: 62px;
 }

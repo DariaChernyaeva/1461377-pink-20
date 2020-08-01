@@ -42,4 +42,52 @@
   background-repeat: no-repeat;
   background-color: transparent;
   border: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.price__block {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.price__block-table {
+  border-spacing: 1;
+  empty-cells: hide;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+td {
+  padding: 10px 20px;
+  text-align: center;
+  border-bottom: 2px solid #e5e5e5;
+  background-color: #ffffff;
+  color: #283645;
+}
+
+.price__block-tarif {
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: #283645;
+}
+
+.price__block-yes {
+  fill: @green;
+}
+
+.price__block-no {
+  fill: @orange;
+}
+
+.price {
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -1,6 +1,18 @@
 .form-block-textarea {
   background-color: @white;
-  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    order: 4;
+    width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-row-end: 5;
+    grid-column-end: 3;
+    width: 960px;
+  }
 }
 
 .form-block-textarea__text {
@@ -9,6 +21,10 @@
   font-size: @base-font;
   line-height: 30px;
   color: @dark-blue;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .form-block-textarea__description {
@@ -18,4 +34,26 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @fuchsia;
+}
+
+.form-block-textarea__text-hidden2 {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    font-size: @base-font;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.form-block-textarea__text-hidden3 {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    font-size: @base-font;
+  }
 }
