@@ -5,6 +5,17 @@
   line-height: 24px;
   color: @black;
   padding-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: @super-big;
+    line-height: 30px;
+    width: 240px;
+    text-align: center;
+  }
 }
 
 .block-advantages__text {
@@ -13,6 +24,20 @@
   font-size: @small-font;
   line-height: 24px;
   color: @dark-blue;
+  width: 250px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: @base-font;
+    line-height: 30px;
+    width: 240px;
+    text-align: center;
+  }
 }
 
 .block-advantages {
@@ -50,6 +75,8 @@
 }
 
 .block-advantages__general {
+  text-align: center;
+
   @media (min-width: @desktop-width) {
     display: flex;
   }

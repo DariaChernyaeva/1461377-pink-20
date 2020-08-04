@@ -32,14 +32,30 @@
   line-height: 120%;
   color: @dark-blue;
   text-align: center;
+  width: 280px;
 
   @media (min-width: @tablet-width) {
-    font-size: @super-super-big;
-    line-height: 54px;
+    display: none;
+  }
+}
+
+.main-block-descripton__description-text-hidden {
+  @media (min-width: @mobile-width-only) {
+    display: none;
   }
 
   @media (min-width: @tablet-width) {
+    width: 588px;
+    font-size: @super-super-big;
+    line-height: 54px;
+    text-align: center;
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
     font-size: @extra-big;
-    line-height: 68px;
+    width: 780px;
+    margin-left: 90px;
+    margin-top: 50px;
   }
 }

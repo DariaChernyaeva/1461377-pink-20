@@ -5,14 +5,51 @@
   font-size: @base-font;
   line-height: 18px;
   color: @white;
-  border-radius: 29px;
   text-decoration: none;
+  border: 3px solid  @white;
+  border-radius: 29px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  margin-top: 46px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 280px;
+  text-align: center;
+
+  &:hover {
+    color: @fuchsia;
+    background-color: @white;
+  }
+
+  &:active {
+    color: @fuchsia;
+    opacity: 0.3;
+    background-color: @white;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: @standard-font;
+    margin-left: 110px;
+  }
 }
 
 .main-block-information__application-systems {
   width: 320px;
   margin-top: 38px;
-  text-align: center;
+  margin-left: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+  }
 }
 
 .main-block-information__examples {
@@ -21,6 +58,14 @@
   font-size: 14px;
   line-height: 24px;
   color: @white;
+  margin-left: 20px;
+  margin-bottom: 38px;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    font-size: @base-font;
+    width: 300px;
+  }
 }
 
 .main-block-information {
@@ -34,6 +79,7 @@
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: cover;
     display: flex;
     flex-direction: column;
   }
@@ -44,9 +90,17 @@
 }
 
 .main-block-information__photo {
+  width: 320px;
+  height: 286px;
+
   @media (min-width: @tablet-width) {
     align-self: flex-end;
     order: -1;
+    position: absolute;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
   }
 }
 
@@ -57,10 +111,22 @@
   font-style: normal;
   color: @white;
   text-align: center;
+  padding-left: 20px;
+  padding-top: 95px;
+  width: 280px;
 
   @media (min-width: @tablet-width) {
-    width: 140px;
+    font-size: @super-super-big;
+    width: 230px;
     display: flex;
     align-items: stretch;
+    padding: 0;
+    padding-left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: @extra-big;
+    padding-left: 130px;
+    padding-top: 114px;
   }
 }
