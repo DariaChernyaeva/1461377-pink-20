@@ -63,6 +63,15 @@
 
 .effect-block__text {
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    padding-left: 71px;
+  }
 }
 
 .effect-block__numbers {
@@ -107,6 +116,8 @@
 
 .effect-block__svg {
   fill: @gray;
+  width: 238px;
+  height: 276px;
 
   @media (min-width: @desktop-width) {
     display: none;
@@ -115,6 +126,8 @@
 
 .effect-block__svg2 {
   fill: @gray;
+  width: 298px;
+  height: 345px;
 
   @media (min-width: @tablet-width) {
     display: none;
