@@ -12,17 +12,23 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__div container">
+      <div class="page-header__logotoggle">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-whitepink" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="логотип сайта Pink.">
+      <picture>
+        <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg" width="147" height="40" alt="логотип сайта Pink.">
+        <source media="(min-width: 640px)" srcset="img/logo-pink-white-tablet.svg" width="145" height="40" alt="логотип сайта Pink.">
+        <img src="img/logo-pink-white-mobile.svg"  width="74" height="23" alt="логотип сайта Pink.">
+      </picture>
     </a>
-    <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button">
-        <span class="visually-hidden">Закрыть меню</span>
-      </button>
+    <button class="main-navigation__toggle" type="button">
+      <span class="visually-hidden">Закрыть меню</span>
+    </button>
+      </div>
+    <nav class="main-navigation main-navigation--closed main-navigation--nojs">
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list">
-          <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="index.html">Главная</a></li>
-          <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="photo.html"><span class="main-navigation__list-linksphoto">Фотографии</span></a></li>
+          <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="#">Главная</a></li>
+          <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="photo.html">Фотографии</a></li>
           <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="form.html">Конкурс</a></li>
           <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="#">HTML ACADEMY</a></li>
         </ul>
@@ -33,9 +39,9 @@
   <main class="page-main">
 
     <div class="main-block-photo container size">
-      <h1 class="main-block-photo__heading">Фотографии пользователей</h1>
+      <h1 class="main-block-photo__heading">Фотографии<br>пользователей</h1>
     </div>
-    <p class="main-block-photo__description-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+    <p class="main-block-photo__description-text container">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
 
     <h2 class="visually-hidden">галерея фотографий</h2>
     <div class="photo-block container size">
@@ -44,9 +50,12 @@
       <div class="photo-block__description-panorama">
         <h3 class="photo-block__title-panorama">Анна <span class="photo-block__title-time">(5 минут назад)</span></h3>
         <p class="photo-block__text-panorama">Прыгать или нет? Напишите в<br>комментарии свой совет и<br>смотрите прямую трансляцию в<br>перископе, задавайте свои вопросы!</p>
-        <svg class="photo-block__heart-panorama" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+        <div class="photo-block__flex">
+        <a class="photo-block__heart-panorama">
+          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
           <g><path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/></g>
-        </svg>
+          </svg>
+        </a>
         <a class="photo-block__likes-panorama">Нравится: 215</a>
     </div>
   </div>
@@ -58,9 +67,11 @@
         <h3 class="photo-block__title">Левон <span class="photo-block__title-time">(5 часов назад)</span></h3>
         <p class="photo-block__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
           <div class="photo-block__likeheart">
-        <svg class="photo-block__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+        <a class="photo-block__heart">
+          <svg  version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
           <g><path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/></g>
         </svg>
+        </a>
         <a class="photo-block__likes">Нравится: 356</a>
         </div>
       </div>
@@ -72,9 +83,11 @@
         <h3 class="photo-block__title">Антон <span class="photo-block__title-time">(12 часов назад)</span></h3>
         <p class="photo-block__text">Соседи будут рады!</p>
         <div class="photo-block__likeheart">
-        <svg class="photo-block__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+        <a class="photo-block__heart">
+          <svg  version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
           <g><path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/></g>
         </svg>
+        </a>
         <a class="photo-block__likes">Нравится: 666</a>
         </div>
       </div>
@@ -86,9 +99,11 @@
         <h3 class="photo-block__title">Борис <span class="photo-block__title-time">(20 часов назад)</span></h3>
         <p class="photo-block__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
         <div class="photo-block__likeheart">
-        <svg class="photo-block__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+        <a class="photo-block__heart">
+          <svg  version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
           <g><path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/></g>
         </svg>
+        </a>
         <a class="photo-block__likes">Нравится: 215</a>
       </div>
       </div>
@@ -100,9 +115,11 @@
         <h3 class="photo-block__title">Сергей <span class="photo-block__title-time">(25 часов назад)</span></h3>
         <p class="photo-block__text">Самая кубанская в мире!</p>
         <div class="photo-block__likeheart">
-        <svg class="photo-block__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+        <a class="photo-block__heart">
+          <svg  version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
           <g><path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/></g>
         </svg>
+        </a>
         <a class="photo-block__likes">Нравится: 4</a>
       </div>
       </div>
@@ -114,9 +131,11 @@
         <h3 class="photo-block__title">Максим <span class="photo-block__title-time">(40 часов назад)</span></h3>
         <p class="photo-block__text">Где снег-то?</p>
         <div class="photo-block__likeheart">
-        <svg class="photo-block__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+        <a class="photo-block__heart">
+          <svg  version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
           <g><path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/></g>
         </svg>
+      </a>
         <a class="photo-block__likes">Нравится: 150</a>
       </div>
       </div>
@@ -128,9 +147,11 @@
         <h3 class="photo-block__title">Надежда<span class="photo-block__title-time">(45 часов назад)</span></h3>
         <p class="photo-block__text">Всем GN и взаимные лайки!</p>
         <div class="photo-block__likeheart">
-        <svg class="photo-block__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+        <a class="photo-block__heart">
+          <svg class="photo-block__heart" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
           <g><path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/></g>
         </svg>
+        </a>
         <a class="photo-block__likes">Нравится: 2560</a>
       </div>
       </div>
@@ -139,7 +160,8 @@
 
     <form action="https://echo.htmlacademy.ru" method="post">
       <div class="upload-block container">
-        <p class="upload-block__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="upload-block__title">Затмите их всех!<br> Выкладывайте все, что накопилось в<br>телефоне!</p>
+        <p class="upload-block__title-hidden">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
       </div>
       <div class="upload-block__general container size">
       <div class="upload-block__photo"><img src="img/photo-road-mobile@1x.jpg" alt="образец загрузки фотографии" width="280" height="374"></div>

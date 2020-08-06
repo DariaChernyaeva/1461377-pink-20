@@ -12,16 +12,22 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__div container">
+      <div class="page-header__logotoggle">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-whitepink" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="логотип сайта Pink.">
+      <picture>
+        <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg" width="147" height="40" alt="логотип сайта Pink.">
+        <source media="(min-width: 640px)" srcset="img/logo-pink-white-tablet.svg" width="145" height="40" alt="логотип сайта Pink.">
+        <img src="img/logo-pink-white-mobile.svg"  width="74" height="23" alt="логотип сайта Pink.">
+      </picture>
     </a>
-    <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button">
-        <span class="visually-hidden">Закрыть меню</span>
-      </button>
+    <button class="main-navigation__toggle" type="button">
+      <span class="visually-hidden">Закрыть меню</span>
+    </button>
+      </div>
+    <nav class="main-navigation main-navigation--closed main-navigation--nojs">
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list">
-          <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="index.html">Главная</a></li>
+          <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="#">Главная</a></li>
           <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="photo.html">Фотографии</a></li>
           <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="form.html">Конкурс</a></li>
           <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="#">HTML ACADEMY</a></li>

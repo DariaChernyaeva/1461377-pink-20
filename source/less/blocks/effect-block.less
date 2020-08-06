@@ -44,6 +44,7 @@
 .effect-block {
   margin-left: auto;
   margin-right: auto;
+  padding-top: 54px;
 
   @media (min-width: @mobile-width-only) {
     display: none;
@@ -56,9 +57,71 @@
 
   @media (min-width: @desktop-width) {
     background-color: @extra-light-gray;
+    padding-bottom: 67px;
   }
 }
 
 .effect-block__text {
   margin: 0 auto;
+}
+
+.effect-block__numbers {
+  margin: 0;
+  margin-top: 0;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: @clocksmall-font;
+  line-height: 163px;
+  color: @fuchsia;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-top: 15px;
+    text-align: center;
+    font-size: @clockbig-font;
+  }
+}
+
+.effect-block__clock {
+  position: absolute;
+  top: 56px;
+  left: 18px;
+  border: 16px solid @fuchsia;
+  border-radius: 150px;
+  width: 170px;
+  height: 170px;
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 70px;
+    left: 75px;
+    width: 220px;
+    height: 220px;
+  }
+}
+
+.effect-block__photo {
+  position: relative;
+}
+
+.effect-block__svg {
+  fill: @gray;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.effect-block__svg2 {
+  fill: @gray;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    padding-left: 50px;
+  }
 }

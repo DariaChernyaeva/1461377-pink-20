@@ -1,18 +1,12 @@
 .footer-items {
   background-color: @white;
-  padding: 40px 87px 41px 88px;
   margin-left: auto;
   margin-right: auto;
-
-  @media (min-width: @mobile-width-only) {
-    display: flex;
-    flex-direction: column;
-  }
+  margin-top: 40px;
+  margin-bottom: 40px;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    margin: 0;
   }
 }
 
@@ -27,7 +21,21 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 36px;
+    padding-bottom: 51px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 70px;
+    padding-bottom: 87px;
   }
 }
 
@@ -42,10 +50,15 @@
 
 .footer-items__footer-logo {
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 41px;
 
   &:hover {
     color: @fuchsia;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -53,7 +66,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 53px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .footer-items__social-icons-block-link {
@@ -86,7 +103,8 @@
   margin: auto;
 
   @media (min-width: @tablet-width) {
-    margin-top: 10px;
+    margin-top: 0;
+    margin: 0;
   }
 }
 
@@ -103,6 +121,10 @@
   &:active {
     fill: @dark-blue;
     opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 15px;
   }
 }
 
