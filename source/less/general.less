@@ -10,7 +10,16 @@ img {
 
 .page__body {
   min-height: 100%;
-  margin: 0;
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .visually-hidden {
@@ -37,6 +46,6 @@ img {
   }
 
   @media (min-width: @desktop-width) {
-    width: 960px;
+    width: 1200px;
   }
 }

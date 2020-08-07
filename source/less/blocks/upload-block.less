@@ -11,11 +11,25 @@
   text-align: center;
   background-color: @white;
   color: @dark-blue;
-  width: 320px;
 
   @media (min-width: @tablet-width) {
-    width: 660px;
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.upload-block__title-hidden {
+  @media (min-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
     font-size: @base-font;
+    text-align: center;
   }
 }
 

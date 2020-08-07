@@ -6,6 +6,18 @@
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 78px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    padding-bottom: 127px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    padding-top: 74px;
+    padding-bottom: 102px;
+  }
 }
 
 .main-block-photo__heading {
@@ -15,23 +27,32 @@
   line-height: 33px;
   color: @white;
   text-align: center;
-  padding-top: 36px;
-  padding-bottom: 51px;
-  padding-left: 46px;
-  padding-right: 46px;
 
   @media (min-width: @tablet-width) {
     font-size: @extra-big;
     line-height: 68px;
-    padding-top: 81px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 74px;
+  }
+}
+
+.main-block-photo__headingform {
+  font-style: normal;
+  font-weight: 300;
+  font-size: @big-font;
+  line-height: 33px;
+  color: @white;
+  padding-top: 81px;
+  text-align: center;
+  width: 230px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    font-size: @extra-big;
+    line-height: 68px;
+    width: 620px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 74px;
-    padding-bottom: 104px;
+    width: 750px;
   }
 }
 
@@ -42,21 +63,49 @@
   line-height: 30px;
   color: @dark-blue;
   background-color: @white;
-  padding-top: 46px;
+  padding-top: 54px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
     font-size: @base-font;
     display: flex;
     flex-direction: row;
-    padding-top: 100px;
-    padding-bottom: 116px;
+    width: 620px;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
-    padding-top: 100px;
+    width: 572px;
+    margin: 0 auto;
+  }
+}
+
+.main-block-photo__description-textform {
+  font-style: normal;
+  font-weight: normal;
+  font-size: @small-font;
+  line-height: 30px;
+  color: @dark-blue;
+  background-color: @white;
+  padding-top: 54px;
+  padding-bottom: 55px;
+  margin: 0 auto;
+  text-align: center;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    font-size: @base-font;
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 750px;
   }
 }
 
@@ -64,7 +113,7 @@
   display: none;
 
   @media (min-width: @tablet-width) {
-    display: inline;
+    display: inline-block;
   }
 
   @media (min-width: @desktop-width) {
