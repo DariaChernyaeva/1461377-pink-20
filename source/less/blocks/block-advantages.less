@@ -1,10 +1,62 @@
+.block-advantages {
+  background-color: @extra-light-gray;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    padding-top: 6px;
+    padding-bottom: 53px;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+}
+
+.block-advantages__general {
+  text-align: center;
+  padding-top: 53px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    padding-top: 50px;
+    padding-left: 42px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    padding: 0;
+    padding-top: 59px;
+  }
+}
+
+.block-advantages__line {
+  padding-bottom: 43px;
+
+  @media (min-width: @desktop-width) {
+    width: 33.3333%;
+    padding-bottom: 0;
+    padding-left: 20px;
+  }
+}
+
 .block-advantages__title {
   font-style: normal;
   font-weight: bold;
   font-size: @base-font;
   line-height: 24px;
   color: @black;
-  padding-top: 20px;
+  margin: 0;
+  padding-bottom: 24px;
 
   @media (min-width: @tablet-width) {
     text-align: left;
@@ -40,22 +92,17 @@
   }
 }
 
-.block-advantages {
-  background-color: @extra-light-gray;
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
+.block-advantages__picture {
+  text-align: center;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-end;
+    align-self: flex-start;
+    padding-top: 30px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
-    flex-direction: row;
+    padding-top: 0;
   }
 }
 
@@ -64,24 +111,9 @@
 
   @media (min-width: @desktop-width) {
     display: block;
-    margin-left: 137px;
+    margin-left: 150px;
   }
 }
-
-.block-advantages__line {
-  @media (min-width: @desktop-width) {
-    width: 33.3333%;
-  }
-}
-
-.block-advantages__general {
-  text-align: center;
-
-  @media (min-width: @desktop-width) {
-    display: flex;
-  }
-}
-
 
 .block-advantages__wrap {
   @media (min-width: @tablet-width) {
@@ -92,17 +124,5 @@
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: column-reverse;
-  }
-}
-
-.block-advantages__picture {
-  text-align: center;
-
-  @media (min-width: @tablet-width) {
-    align-self: flex-start;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: flex;
   }
 }

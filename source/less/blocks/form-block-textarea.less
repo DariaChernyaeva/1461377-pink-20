@@ -1,9 +1,16 @@
 .form-block-textarea {
   background-color: @white;
+  margin-top: 42px;
+  margin-left: 22px;
+  margin-right: 22px;
 
   @media (min-width: @tablet-width) {
     order: 4;
-    width: 660px;
+    width: 616px;
+    margin-top: 0;
+    border: 2px solid @light-gray;
+    border-radius: 1px;
+    height: 289px;
   }
 
   @media (min-width: @desktop-width) {
@@ -11,7 +18,9 @@
     grid-column-start: 1;
     grid-row-end: 5;
     grid-column-end: 3;
-    width: 960px;
+    width: 936px;
+    height: 240px;
+    margin: 0 auto;
   }
 }
 
@@ -21,6 +30,9 @@
   font-size: @base-font;
   line-height: 30px;
   color: @dark-blue;
+  resize: none;
+  text-align: center;
+  border-color: @light-gray;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -34,6 +46,23 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @fuchsia;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    line-height: 30px;
+    margin-bottom: 0;
+    margin-top: -15px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: @white;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 340px;
+    margin-right: 340px;
+  }
 }
 
 .form-block-textarea__text-hidden2 {
@@ -42,6 +71,13 @@
   @media (min-width: @tablet-width) {
     display: block;
     font-size: @base-font;
+    resize: none;
+    margin-top: 42px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 53px;
+    text-align: center;
+    border-color: @light-gray;
   }
 
   @media (min-width: @desktop-width) {
@@ -55,5 +91,13 @@
   @media (min-width: @desktop-width) {
     display: block;
     font-size: @base-font;
+    text-align: center;
+    border-color: @light-gray;
+    resize: none;
+    margin-top: 39px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 45px;
+    color: @dark-blue;
   }
 }

@@ -12,38 +12,88 @@
 
 .form-block-checkbox {
   background-color: @extra-light-gray;
+  padding-left: 22px;
+  padding-top: 42px;
 
   @media (min-width: @tablet-width) {
-    width: 660px;
     background-color: @white;
     order: 3;
+    padding: 0;
+    margin-top: 51px;
+    margin-bottom: 65px;
+    border: 2px solid @light-gray;
+    border-radius: 1px;
+    padding-left: 60px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 960px;
     grid-row-start: 3;
     grid-column-start: 1;
     grid-row-end: 4;
     grid-column-end: 3;
     display: grid;
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 64px;
   }
 }
 
 .form-block-checkbox__description {
   font-style: normal;
   font-weight: normal;
-  font-size: @small-font;
+  font-size: @base-font;
   line-height: 18px;
   text-transform: uppercase;
   color: @fuchsia;
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: @mobile-width-only) {
+    display: block;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.form-block-checkbox__description-hidden {
+  font-style: normal;
+  font-weight: normal;
+  font-size: @base-font;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @fuchsia;
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-top: -7px;
+    background-color: @white;
+    width: 480px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 170px;
+  }
 }
 
 .form-block-checkbox__filter {
-  margin-bottom: 69px;
+  margin-bottom: 52px;
 }
 
 .form-block-checkbox__checkboxes {
   list-style: none;
+  padding-left: 0;
 
   @media (min-width: @desktop-width) {
     display: grid;
@@ -52,4 +102,9 @@
     grid-column-gap: 0;
     grid-row-gap: 0;
   }
+}
+
+.form-block-checkbox__items:checked + label::before {
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
 }
