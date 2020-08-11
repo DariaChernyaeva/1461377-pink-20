@@ -6,19 +6,21 @@
 
   @media (min-width: @tablet-width) {
     order: 4;
-    width: 616px;
+    width: 660px;
     margin-top: 0;
     border: 2px solid @light-gray;
     border-radius: 1px;
     height: 289px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   @media (min-width: @desktop-width) {
     grid-row-start: 4;
     grid-column-start: 1;
     grid-row-end: 5;
-    grid-column-end: 3;
-    width: 936px;
+    grid-column-end: -1;
+    width: 100%;
     height: 240px;
     margin: 0 auto;
   }
@@ -73,7 +75,7 @@
     font-size: @base-font;
     resize: none;
     margin-top: 42px;
-    margin-left: 60px;
+    margin-left: 90px;
     margin-right: 60px;
     margin-bottom: 53px;
     text-align: center;
