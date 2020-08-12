@@ -1,10 +1,37 @@
+.form-block__text {
+  margin-bottom: 44px;
+  margin-left: 22px;
+  margin-right: 22px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 432px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .form-block__label {
   font-style: normal;
   font-weight: normal;
   font-size: @small-font;
   line-height: 30px;
   color: @fuchsia;
-  padding-left: 20px;
+  padding-left: 43px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-left: 0;
+  }
 }
 
 .form-block__input::placeholder {
@@ -26,10 +53,59 @@
   height: 59px;
   border: 2px solid @light-gray;
   outline: none;
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 19px;
 
   @media (min-width: @tablet-width) {
-    width: 521px;
-    margin-bottom: 56px;
+    width: 460px;
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 270px;
+    margin-bottom: 45px;
+  }
+
+  &:hover {
+    border: 2px solid @dark-blue;
+  }
+
+  &:focus {
+    border: 2px solid @fuchsia;
+  }
+}
+
+.form-block__inputname {
+  font-style: normal;
+  font-weight: normal;
+  font-size: @base-font;
+  line-height: 30px;
+  color: @dark-blue;
+  width: 276px;
+  height: 59px;
+  border: 2px solid @light-gray;
+  outline: none;
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    width: 500px;
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 310px;
+    margin-bottom: 40px;
+  }
+
+  &:hover {
+    border: 2px solid @dark-blue;
+  }
+
+  &:focus {
+    border: 2px solid @fuchsia;
   }
 }
 
@@ -54,13 +130,14 @@
 
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: repeat(2, 0.5fr);
-    grid-template-rows: repeat(6, 0.5fr);
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(5, 0.5fr);
     grid-column-gap: 0;
     grid-row-gap: 0;
     grid-row-start: 1;
     grid-column-start: 1;
     grid-row-end: 2;
     grid-column-end: 2;
+    width: 936px;
   }
 }

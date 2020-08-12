@@ -5,6 +5,11 @@
   line-height: 30px;
   text-transform: uppercase;
   color: @dark-blue;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    width: 200px;
+  }
 }
 
 .required-block__grill {
@@ -12,9 +17,12 @@
 }
 
 .required-block {
+  @media (min-width: @mobile-width-only) {
+    margin: 0 auto;
+  }
+
   @media (min-width: @tablet-width) {
-    order: 6;
-    align-self: flex-end;
+    margin-right: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -22,5 +30,7 @@
     grid-column-start: 2;
     grid-row-end: 6;
     grid-column-end: 3;
+    position: absolute;
+    left: 770px;
   }
 }
