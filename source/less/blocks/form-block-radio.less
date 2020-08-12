@@ -120,8 +120,12 @@
   border: 2px solid @dark-blue;
 }
 
-.form-block-radio__items + label:active::before {
-  border: 2px solid @fuchsia;
+.form-block-radio__items:focus + label {
+  outline: 1px solid @light-gray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 [type="radio"]:checked + label::after,

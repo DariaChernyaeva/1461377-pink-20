@@ -6,6 +6,10 @@
   text-transform: uppercase;
   color: @dark-blue;
   margin: 0;
+
+  @media (min-width: @desktop-width) {
+    width: 200px;
+  }
 }
 
 .required-block__grill {
@@ -26,5 +30,7 @@
     grid-column-start: 2;
     grid-row-end: 6;
     grid-column-end: 3;
+    position: absolute;
+    left: 770px;
   }
 }

@@ -11,11 +11,19 @@
 }
 
 .form-block-checkbox__items + label:hover::before {
-  border: 2px solid @dark-blue;
+  box-shadow: 0 0 0 2px @dark-blue;
 }
 
 .form-block-checkbox__items + label:active::before {
-  border: 2px solid @fuchsia;
+  box-shadow: 0 0 0 2px @fuchsia;
+}
+
+.form-block-checkbox__items:focus + label {
+  outline: 1px solid @light-gray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .form-block-checkbox {
