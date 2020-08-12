@@ -85,7 +85,6 @@
   line-height: 30px;
   color: @dark-blue;
   margin-bottom: 62px;
-  display: none;
 }
 
 [type="radio"]:checked,
@@ -120,12 +119,8 @@
   border: 2px solid @dark-blue;
 }
 
-.form-block-radio__items:focus + label {
-  outline: 1px solid @light-gray;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
+.form-block-radio__items:focus + label::before {
+  border: 2px solid @dark-blue;
 }
 
 [type="radio"]:checked + label::after,
