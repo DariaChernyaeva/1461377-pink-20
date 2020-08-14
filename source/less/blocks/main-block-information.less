@@ -77,16 +77,28 @@
   margin-left: auto;
   margin-right: auto;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 }
 
@@ -102,6 +114,29 @@
 
   @media (min-width: @desktop-width) {
     position: absolute;
+  }
+}
+
+.main-block-information__image {
+  width: 320px;
+  height: 286px;
+  object-fit: contain;
+  object-position: left;
+
+  @media (min-width: @tablet-width) {
+    align-self: flex-end;
+    order: -1;
+    position: absolute;
+    width: 660px;
+    height: 540px;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    width: 1050px;
+    height: 645px;
   }
 }
 

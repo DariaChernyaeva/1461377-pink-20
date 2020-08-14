@@ -71,7 +71,19 @@
 }
 
 .upload-block__photo {
+  width: 280px;
+  height: 374px;
   background-color: @extra-light-gray;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    height: 400px;
+  }
 }
 
 .upload-block__share {

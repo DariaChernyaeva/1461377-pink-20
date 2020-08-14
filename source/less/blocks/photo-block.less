@@ -12,10 +12,36 @@
 }
 
 .photo-block__picture-panorama {
+  width: 320px;
+  height: 137px;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 660px;
+    height: 509px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    height: 506px;
+  }
+}
+
+.photo-block__picture {
+  width: 280px;
+  height: 180px;
+
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    height: 400px;
   }
 }
 
@@ -158,7 +184,7 @@
   color: @dark-blue;
   background-color: @extra-light-gray;
   padding-left: 17px;
-  padding-right: 10px;
+  margin-right: 37px;
   margin-bottom: 20px;
   padding-bottom: 20px;
 

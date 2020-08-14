@@ -15,8 +15,8 @@
       <div class="page-header__logotoggle">
     <a class="page-header__logo" href="index.html">
       <picture>
-        <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg" width="147" height="40" alt="логотип сайта Pink.">
-        <source media="(min-width: 640px)" srcset="img/logo-pink-white-tablet.svg" width="145" height="40" alt="логотип сайта Pink.">
+        <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg" width="147" height="40" alt="логотип сайта Pink.">
+        <source media="(min-width: 768px)" srcset="img/logo-pink-white-tablet.svg" width="145" height="40" alt="логотип сайта Pink.">
         <img src="img/logo-pink-white-mobile.svg"  width="74" height="23" alt="логотип сайта Pink.">
       </picture>
     </a>
@@ -46,7 +46,15 @@
     <h2 class="visually-hidden">галерея фотографий</h2>
     <div class="photo-block size">
       <span class="photo-block__panorama">Панорама дня</span>
-      <div class="photo-block__picture-panorama"><a><img class="photo-block__picture-panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="прыжок с высоты."></a></div>
+      <div class="photo-block__picture-panorama">
+        <a>
+          <picture>
+          <source media="(min-width: @desktop-width)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+          <source media="(min-width: @tablet-width)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+        <img class="photo-block__picture-panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="прыжок с высоты.">
+          </picture>
+      </a>
+    </div>
       <div class="photo-block__description-panorama">
         <h3 class="photo-block__title-panorama">Анна <span class="photo-block__title-time">(5 минут назад)</span></h3>
         <p class="photo-block__text-panorama">Прыгать или нет? Напишите в<br>комментарии свой совет и<br>смотрите прямую трансляцию в<br>перископе, задавайте свои вопросы!</p>
@@ -62,7 +70,15 @@
 
     <div class="photo-block__grid size">
     <div class="photo-block">
-      <a><img class="photo-block__picture" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="фотография машины."></a>
+      <div class="photo-block__picture">
+      <a>
+        <picture>
+          <source media="(min-width: @desktop-width)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+          <source media="(min-width: @tablet-width)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+          <img class="photo-block__picture" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="фотография машины.">
+      </picture>
+      </a>
+    </div>
       <div class="photo-block__description">
         <h3 class="photo-block__title">Левон <span class="photo-block__title-time">(5 часов назад)</span></h3>
         <p class="photo-block__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -78,7 +94,13 @@
     </div>
 
     <div class="photo-block">
-      <a><img class="photo-block__picture" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="фотография барабанной установки."></a>
+      <a>
+        <picture>
+          <source media="(min-width: @desktop-width)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+          <source media="(min-width: @tablet-width)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+          <img class="photo-block__picture" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="фотография барабанной установки.">
+        </picture>
+      </a>
       <div class="photo-block__description photo-block__description--padding">
         <h3 class="photo-block__title">Антон <span class="photo-block__title-time">(12 часов назад)</span></h3>
         <p class="photo-block__text">Соседи будут рады!</p>
@@ -94,7 +116,13 @@
     </div>
 
     <div class="photo-block">
-      <a><img class="photo-block__picture" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="фотография здания."></a>
+      <a>
+        <picture>
+          <source media="(min-width: @desktop-width)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+          <source media="(min-width: @tablet-width)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+          <img class="photo-block__picture" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="фотография здания.">
+        </picture>
+        </a>
       <div class="photo-block__description">
         <h3 class="photo-block__title">Борис <span class="photo-block__title-time">(20 часов назад)</span></h3>
         <p class="photo-block__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -110,7 +138,13 @@
     </div>
 
     <div class="photo-block">
-      <a><img class="photo-block__picture" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Кубанская бахча."></a>
+      <a>
+        <picture>
+          <source media="(min-width: @desktop-width)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+          <source media="(min-width: @tablet-width)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+          <img class="photo-block__picture" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Кубанская бахча.">
+      </picture>
+      </a>
       <div class="photo-block__description photo-block__description photo-block__description--padding">
         <h3 class="photo-block__title">Сергей <span class="photo-block__title-time">(25 часов назад)</span></h3>
         <p class="photo-block__text">Самая кубанская в мире!</p>
@@ -126,7 +160,13 @@
     </div>
 
     <div class="photo-block">
-      <a><img class="photo-block__picture" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография гор"></a>
+      <a>
+        <picture>
+          <source media="(min-width: @desktop-width)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+          <source media="(min-width: @tablet-width)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+          <img class="photo-block__picture" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография гор">
+        </picture>
+      </a>
       <div class="photo-block__description photo-block__description--padding">
         <h3 class="photo-block__title">Максим <span class="photo-block__title-time">(40 часов назад)</span></h3>
         <p class="photo-block__text">Где снег-то?</p>
@@ -142,7 +182,13 @@
     </div>
 
     <div class="photo-block">
-      <a><img class="photo-block__picture" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография заката в самолете"></a>
+      <a>
+        <picture>
+          <source media="(min-width: @desktop-width)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+          <source media="(min-width: @tablet-width)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+          <img class="photo-block__picture" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография заката в самолете">
+        </picture>
+      </a>
       <div class="photo-block__description photo-block__description--padding">
         <h3 class="photo-block__title">Надежда<span class="photo-block__title-time">(45 часов назад)</span></h3>
         <p class="photo-block__text">Всем GN и взаимные лайки!</p>
@@ -164,7 +210,13 @@
         <p class="upload-block__title-hidden">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
       </div>
       <div class="upload-block__general container">
-      <div class="upload-block__photo"><img src="img/photo-road-mobile@1x.jpg" alt="образец загрузки фотографии" width="280" height="374"></div>
+      <div class="upload-block__photo">
+        <picture>
+          <source media="(min-width: @desktop-width)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+          <source media="(min-width: @tablet-width)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+          <img class="upload-block__photo" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="образец загрузки фотографии" width="280" height="374">
+        </picture>
+      </div>
       <div class="upload-block__instruments">
         <button class="upload-block__instruments-button upload-block__instruments-button--crop" type="button"><img src="img/icon-editor-crop.svg" width="44" height="44" alt="иконка обрезать по размеру"></button>
         <button class="upload-block__instruments-button upload-block__instruments-button--fill" type="button"><img src="img/fill.svg" width="48" height="43" alt="иконка заливка цветом"></button>
