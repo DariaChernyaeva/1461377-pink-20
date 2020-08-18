@@ -15,19 +15,19 @@
       <div class="page-header__logotoggle">
     <a class="page-header__logo" href="index.html">
       <picture>
-        <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg" width="147" height="40" alt="логотип сайта Pink.">
-        <source media="(min-width: 640px)" srcset="img/logo-pink-white-tablet.svg" width="145" height="40" alt="логотип сайта Pink.">
+        <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-pink-white-tablet.svg">
         <img src="img/logo-pink-white-mobile.svg"  width="74" height="23" alt="логотип сайта Pink.">
       </picture>
     </a>
-    <button class="main-navigation__toggle" type="button">
+    <button class="page-header__toggle" type="button">
       <span class="visually-hidden">Закрыть меню</span>
     </button>
       </div>
     <nav class="main-navigation main-navigation--closed main-navigation--nojs">
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list">
-          <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="#">Главная</a></li>
+          <li class="main-navigation__list-item main-navigation__list-item--border"><a class="main-navigation__list-links" href="#">Главная</a></li>
           <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="photo.html">Фотографии</a></li>
           <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="form.html">Конкурс</a></li>
           <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="#">HTML ACADEMY</a></li>
@@ -40,7 +40,11 @@
     <h1 class="visually-hidden">Pink - Взгляните на жизнь иначе!</h1>
     <div class="main-block-information container size">
       <h2 class="main-block-information__description">Взгляните на жизнь иначе!</h2>
-      <img class="main-block-information__photo" src="img/iphone-hand-mobile@1x.png" width="320" height="286" alt="задний фон">
+      <picture class="main-block-information__photo">
+        <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+        <img class="main-block-information__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" width="320" height="286" alt="картинка рука с телефоном">
+      </picture>
       <a class="main-block-information__download-button" href="#" download>Скачать приложение</a>
       <div class="main-block-information__application-systems">
         <a class="main-block-information__application-systems" href="#"><img src="img/logo-apple.svg" width="47" height="56" alt="доступно на Iphone."></a>
@@ -78,9 +82,14 @@
       </div>
 
       <div class="block-advantages__picture">
-        <img class="block-advantages__picture--mobile-hidden" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет">
-        <img class="block-advantages__picture--mobile-desktop" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет">
-        <img class="block-advantages__picture--mobile-desktop" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет">
+        <img class="block-advantages__picture block-advantages__picture--mobile-desktop" src="img/iphone-screen-1-desktop@1x.png" scrset="img/iphone-screen-1-desktop@2x.png 2x" width="186" height="382" alt="Всем привет">
+        <img class="block-advantages__picture block-advantages__picture--mobile-desktop" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" width="186" height="382" alt="Всем привет">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+        <img class="block-advantages__picture block-advantages__picture--mod" src="img/iphone-screen-mobile@1x.png"  srcset="img/iphone-screen-mobile@2x.png 2x" height="320" width="157" alt="Всем привет">
+      </picture>
+
       </div>
     </div>
     </section>
@@ -264,10 +273,17 @@
     </div>
     </div>
 
-    <section>
+    <div class="card">
       <h2 class="visually-hidden">Карта</h2>
+      <div class="card__pictures">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+      <img class="card__pictures" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" width="320" height="200" alt="мы находимся по адресу ул. Большая Кнюшенная 19/8">
+    </picture>
+      </div>
       <!--iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002806!2d30.320858715677204!3d59.93871916905467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595165161419!5m2!1sru!2sru" width="320" height="200" tabindex="0"></iframe-->
-    </section>
+  </div>
 
   </main>
 
