@@ -20,14 +20,14 @@
         <img src="img/logo-pink-white-mobile.svg"  width="74" height="23" alt="логотип сайта Pink.">
       </picture>
     </a>
-    <button class="main-navigation__toggle" type="button">
+    <button class="page-header__toggle" type="button">
       <span class="visually-hidden">Закрыть меню</span>
     </button>
       </div>
     <nav class="main-navigation main-navigation--closed main-navigation--nojs">
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list">
-          <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="index.html">Главная</a></li>
+          <li class="main-navigation__list-item main-navigation__list-item--border"><a class="main-navigation__list-links" href="index.html">Главная</a></li>
           <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="photo.html">Фотографии</a></li>
           <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="form.html">Конкурс</a></li>
           <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="#">HTML ACADEMY</a></li>
@@ -43,7 +43,10 @@
     <div class="main-block-photo size">
       <h2 class="main-block-photo__headingform">Конкурс на самое безбашенное<br>путешествие с Пинк</h2>
     </div>
-    <p class="main-block-photo__description-textform size">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="main-block-photo__hidden"> Пожалуйста, заполните форму ниже:</span></p>
+
+    <div class="headline-block">
+    <p class="headline-block__description size">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="headline-block__hidden"> Пожалуйста, заполните форму ниже:</span></p>
+    </div>
 
     <form action="https://echo.htmlacademy.ru" method="post">
 
@@ -51,10 +54,10 @@
         <div class="form-block__text">
           <label class="form-block__label" for="surname">Фамилия:</label>
           <input  class="form-block__input" type="text" name="surname" id="surname" required placeholder="Укажите фамилию *">
-          <label class="form-block__label" for="name">Имя:</label>
+          <label class="form-block__labelsecond" for="name">Имя:</label>
           <input class="form-block__inputname" type="text" name="name" id="name" required placeholder="Введите ваше имя *">
           <label class="form-block__label" for="patronymic">Отчество:</label>
-          <input class="form-block__input" type="text" name="patronymic" id="patronymic" required placeholder="Ну и отчество тоже *">
+          <input class="form-block__input form-block__input--letterspacing" type="text" name="patronymic" id="patronymic" required placeholder="Ну и отчество тоже *">
         </div>
 
         <div class="form-block-checkbox">
@@ -73,7 +76,7 @@
               <input class="form-block-checkbox__items visually-hidden" type="checkbox" name="norris" id="norris">
               <label for="norris" class="form-block-checkbox__answer">Видел Чака Норриса</label>
             </li>
-            <li class="form-block-checkbox__filter">
+            <li class="form-block-checkbox__filter form-block-checkbox__filter--paddingtop">
               <input class="form-block-checkbox__items visually-hidden" type="checkbox" name="souvenirs" id="souvenirs">
               <label for="souvenirs" class="form-block-checkbox__answer">Накупил сувениров</label>
             </li>
@@ -81,7 +84,7 @@
               <input class="form-block-checkbox__items visually-hidden" type="checkbox" name="tower" id="tower" checked>
               <label for="tower" class="form-block-checkbox__answer">Удержал башню</label>
             </li>
-            <li class="form-block-checkbox__filter">
+            <li class="form-block-checkbox__filter form-block-checkbox__filter--margin">
               <input class="form-block-checkbox__items visually-hidden" type="checkbox" name="hotel" id="hotel">
               <label for="hotel" class="form-block-checkbox__answer">Разгромил отель</label>
             </li>
@@ -131,15 +134,15 @@
           <h3 class="form-block-radio__description">С каким приложением<br>путешествовали?</h3>
           <h3 class="form-block-radio__description-hidden">С каким приложением путешествовали?</h3>
 
-          <p>
-            <input class="form-block-radio__items visually-hidden" type="radio" id="ios" name="question" value="Pink для ios" checked>
+          <p class="form-block-radio__firstline">
+            <input class="form-block-radio__items visually-hidden" type="radio" id="ios" name="question" value="Pink для IOS" checked>
             <label class="form-block-radio__label" for="ios"><span class="form-block-radio__name">Pink для ios</span></label>
           </p>
-          <p>
+          <p class="form-block-radio__secondline">
             <input class="form-block-radio__items visually-hidden" type="radio" id="pink" name="question" value="Pink на Android">
             <label class="form-block-radio__label" for="pink"><span class="form-block-radio__name">Pink на Android</span></label>
           </p>
-          <p>
+          <p class="form-block-radio__thirdline">
             <input class="form-block-radio__items visually-hidden" type="radio" id="phone" name="question" value="Windows Phone">
             <label class="form-block-radio__label" for="phone"><span class="form-block-radio__name">Windows phone</span></label>
           </p>
@@ -183,7 +186,7 @@
         </a>
       </div>
       <div class="footer-items__social-icons-block">
-        <a class="footer-items__social-icons-block-link " href="#">
+        <a class="footer-items__social-icons-block-link footer-items__social-icons-block-link--mod" href="#">
           <svg class="footer-items__social-icons-block-img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve"><g id="W6EeEF_1_"><g>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/></g></g>
           </svg>

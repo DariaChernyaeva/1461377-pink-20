@@ -1,55 +1,3 @@
-.upload-block {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 35px;
-  margin-bottom: 38px;
-
-  @media (min-width: @tablet-width) {
-    margin-top: 44px;
-    margin-bottom: 83px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: 67px;
-    margin-bottom: 75px;
-  }
-}
-
-.upload-block__title {
-  font-style: normal;
-  font-weight: normal;
-  font-size: @small-font;
-  line-height: 30px;
-  text-align: center;
-  background-color: @white;
-  color: @dark-blue;
-
-  @media (min-width: @tablet-width) {
-    display: none;
-    margin: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.upload-block__title-hidden {
-  @media (min-width: @mobile-width-only) {
-    display: none;
-  }
-
-  @media (min-width: @tablet-width) {
-    line-height: 30px;
-    display: block;
-    font-size: @base-font;
-    text-align: center;
-  }
-
-  @media (min-width: @desktop-width) {
-    font-size: @base-font;
-  }
-}
 
 .upload-block__instruments {
   background-color: @extra-light-gray;
@@ -186,7 +134,7 @@
   }
 }
 
-.upload-block__general {
+.upload-block {
   margin-left: auto;
   margin-right: auto;
   background-color: @extra-light-gray;
@@ -294,7 +242,7 @@
 }
 
 .range {
-  -webkit-appearance: none;
+  appearance: none;
   width: 240px;
   height: 2px;
   margin-top: 10px;
@@ -319,7 +267,7 @@ input[type="range"]:focus {
 }
 
 input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
+  appearance: none;
   border-radius: 50%;
   height: 14px;
   width: 14px;

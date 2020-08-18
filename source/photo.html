@@ -20,7 +20,7 @@
         <img src="img/logo-pink-white-mobile.svg"  width="74" height="23" alt="логотип сайта Pink.">
       </picture>
     </a>
-    <button class="main-navigation__toggle" type="button">
+    <button class="page-header__toggle" type="button">
       <span class="visually-hidden">Закрыть меню</span>
     </button>
       </div>
@@ -41,7 +41,10 @@
     <div class="main-block-photo container size">
       <h1 class="main-block-photo__heading">Фотографии<br>пользователей</h1>
     </div>
-    <p class="main-block-photo__description-text container">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+
+    <div class="headline-block">
+    <p class="headline-block__description-second container">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+    </div>
 
     <h2 class="visually-hidden">галерея фотографий</h2>
     <div class="photo-block size">
@@ -215,12 +218,12 @@
   </div>
 
     <form action="https://echo.htmlacademy.ru" method="post">
-      <div class="upload-block">
-        <p class="upload-block__title">Затмите их всех!<br> Выкладывайте все, что накопилось в<br>телефоне!</p>
-        <p class="upload-block__title-hidden">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="title-block">
+        <p class="title-block__title">Затмите их всех!<br> Выкладывайте все, что накопилось в<br>телефоне!</p>
+        <p class="title-block__title-hidden">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
       </div>
 
-      <div class="upload-block__general container">
+      <div class="upload-block container">
       <div class="upload-block__photo">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
@@ -272,11 +275,12 @@
 
       <div class="upload-block__share">
         <button class="upload-block__share-button1 upload-block__share-button1--active" type="submit">Запостить</button>
-        <button class="upload-block__share-button2 upload-block__share-button2--active" disabled>Отмена</button>
+        <button class="upload-block__share-button2 upload-block__share-button2--active" type="reset">Отмена</button>
       </div>
 
     </div>
 
+    </div>
     </div>
     </form>
   </main>

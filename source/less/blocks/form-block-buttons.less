@@ -1,9 +1,9 @@
 .form-block-buttons__send {
-  width: 276px;
-  height: 59px;
+  width: 278px;
+  height: 61px;
   color: @white;
   background-color: @standard-green;
-  margin-top: 42px;
+  margin-top: 49px;
   margin-left: 22px;
   margin-right: 22px;
   margin-bottom: 34px;
@@ -13,6 +13,11 @@
   line-height: 30px;
   text-transform: uppercase;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    margin-top: 66px;
+  }
 
   &:hover {
     background-color: @hover-green;
