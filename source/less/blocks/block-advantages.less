@@ -105,21 +105,21 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
+    justify-content: space-between;
     padding-top: 0;
-    width: 186px;
     height: 382px;
+    width: 100%;
+    margin-left: 0;
+    position: initial;
   }
 
   &--mod {
     @media (min-width: @desktop-width) {
       display: block;
-      margin-left: 70px;
       margin-top: 20px;
       width: 292px;
       height: 302px;
       object-fit: cover;
-      position: absolute;
-      left: 56%;
     }
   }
 }
@@ -129,7 +129,6 @@
 
   @media (min-width: @desktop-width) {
     display: block;
-    margin-left: 70px;
     margin-top: 20px;
     width: 292px;
     height: 302px;
