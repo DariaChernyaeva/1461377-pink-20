@@ -32,6 +32,11 @@
     padding-right: 22px;
     padding-left: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
+    padding-right: 25px;
+  }
 }
 
 .form-block__labelsecond {
@@ -47,6 +52,75 @@
     padding: 0;
     padding-top: 32px;
     padding-right: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
+    margin-right: 15px;
+    padding-top: 20px;
+  }
+}
+
+.form-block__labelthird {
+  font-style: normal;
+  font-weight: normal;
+  font-size: @small-font;
+  line-height: 30px;
+  color: @fuchsia;
+  padding-left: 21px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    padding-right: 20px;
+    margin-top: 20px;;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 20px;
+    padding-left: 0;
+    margin-top: 13px;
+    padding-right: 18px;
+  }
+}
+
+.form-block__inputthird {
+  font-style: normal;
+  font-weight: normal;
+  font-size: @base-font;
+  line-height: 30px;
+  color: @dark-blue;
+  width: 253px;
+  height: 45px;
+  border: 2px solid @light-gray;
+  outline: none;
+  padding-left: 21px;
+  padding-right: 2px;
+  padding-top: 10px;
+  padding-bottom: 1px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  margin-left: -3px;
+  letter-spacing: 0.6px;
+
+  @media (min-width: @tablet-width) {
+    width: 500px;
+    height: 47px;
+    padding: 0;
+    margin: 0;
+    padding-left: 18px;
+    padding-top: 10px;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin-top: 2px;
+    margin-bottom: 56px;
+    padding-left: 20px;
+    width: 300px;
+    padding-right: 15px;
+    height: 49px;
   }
 }
 
@@ -93,8 +167,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 270px;
+    width: 310px;
+    height: 45px;
+    margin-top: 2px;
     margin-bottom: 45px;
+    padding-left: 20px;
+    margin-right: 0px;
+    letter-spacing: 0.3px;
   }
 
   &:hover {
@@ -106,7 +185,7 @@
   }
 }
 
-.form-block__inputname {
+.form-block__inputsecond {
   font-style: normal;
   font-weight: normal;
   font-size: @base-font;
@@ -134,7 +213,11 @@
 
   @media (min-width: @desktop-width) {
     width: 310px;
-    margin-bottom: 40px;
+    margin-top: 4px;
+    margin-bottom: 50px;
+    margin-right: 0;
+    padding-left: 25px;
+    padding-right: 43px;
   }
 
   &:hover {

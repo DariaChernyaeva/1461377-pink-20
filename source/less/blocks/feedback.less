@@ -14,10 +14,15 @@
   line-height: 30px;
   color: @black;
   text-align: center;
+  margin-top: 41px;
+  margin-bottom: 12px;
 
   @media (min-width: @tablet-width) {
     font-size: @almost-standard-font;
     margin-bottom: 0;
+    margin-top: 0;
+    margin-top: 35px;
+    margin-right: 38px;
   }
 
   @media (min-width: @desktop-width) {
@@ -33,9 +38,19 @@
   line-height: 30px;
   color: @dark-blue;
   text-align: center;
+  margin-top: 0;
+  width: 285px;
+  padding-left: 17px;
+  letter-spacing: 0.4px;
 
   @media (min-width: @tablet-width) {
     font-size: @base-font;
+    width: 628px;
+    padding-left: 0;
+    margin-bottom: 0px;
+    margin-top: 0;
+    margin-top: -11px;
+    margin-left: -4px;
   }
 
   @media (min-width: @desktop-width) {
@@ -47,9 +62,9 @@
 .feedback__block {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: -47px;
   margin-bottom: 60px;
-  margin-left: 20px;
+  margin-left: 0;
   margin-right: 20px;
 
   @media (min-width: @tablet-width) {
@@ -83,7 +98,10 @@
     display: flex;
     justify-content: center;
     margin: 0;
-    padding-bottom: 49px;
+    padding-bottom: 0;
+    margin-right: 41px;
+    letter-spacing: 0.2px;
+
   }
 
   @media (min-width: @desktop-width) {
@@ -92,8 +110,10 @@
 }
 
 .feedback {
-  margin-left: auto;
-  margin-right: auto;
+  @media (min-width: @mobile-width-only) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .feedback__block-toggles {
@@ -103,11 +123,19 @@
   margin: 0;
   padding-top: 16px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 10px;
+  padding-top: 18px;
+  margin-left: 59px;
 
   @media (min-width: @tablet-width) {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-left: 140px;
+    padding-left: 0;
+    padding-top: 0;
+    padding-top: 35px;
   }
 
   @media (min-width: @desktop-width) {
@@ -120,6 +148,7 @@
   background-repeat: no-repeat;
   width: 6px;
   height: 6px;
+  padding-left: 10px;
 }
 
 .feedback__block-toggles-noncurrent {
@@ -127,7 +156,19 @@
   background-repeat: no-repeat;
   width: 6px;
   height: 6px;
-  margin-left: 19px;
+  margin-left: 10px;
+  margin-top: 3px;
+  padding-left: 0;
+}
+
+.feedback__block-toggles-noncurrent2 {
+  background-image: url("../img/slider.svg");
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 6px;
+  margin-left: 17px;
+  margin-top: 3px;
+  padding-left: 0;
 }
 
 .feedback__block-quote {

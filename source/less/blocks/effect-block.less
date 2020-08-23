@@ -8,6 +8,10 @@
   width: 186px;
   margin-bottom: 0;
 
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
+
   @media (min-width: @desktop-width) {
     width: 300px;
     padding-top: 115px;
@@ -15,13 +19,17 @@
 }
 
 .effect-block__description {
-  font-style: normal;
-  font-weight: normal;
-  font-size: @small-font;
-  line-height: 24px;
-  color: @dark-blue;
-  width: 310px;
-  margin-bottom: 24px;
+  @media (min-width: @tablet-width) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: @small-font;
+    line-height: 24px;
+    color: @dark-blue;
+    width: 310px;
+    margin-bottom: 10px;
+    margin-top: 12px;
+    letter-spacing: 0.3px;
+  }
 
   @media (min-width: @desktop-width) {
     font-size: @base-font;
@@ -33,12 +41,15 @@
 }
 
 .effect-block__link {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  text-decoration-line: underline;
-  color: @fuchsia;
+  @media (min-width: @tablet-width) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: @fuchsia;
+    letter-spacing: 0.2px;
+  }
 
   @media (min-width: @desktop-width) {
     font-size: @base-font;
@@ -54,7 +65,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
-    padding-top: 54px;
+    padding-top: 0;
     padding-bottom: 109px;
     padding-left: 20px;
     padding-right: 20px;
@@ -75,6 +86,7 @@
 
   @media (min-width: @tablet-width) {
     padding-left: 72px;
+    margin-top: 34px;
   }
 
   @media (min-width: @desktop-width) {
@@ -102,13 +114,15 @@
 }
 
 .effect-block__clock {
-  position: absolute;
-  top: 56px;
-  left: 18px;
-  border: 16px solid @fuchsia;
-  border-radius: 150px;
-  width: 170px;
-  height: 170px;
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 74px;
+    left: 18px;
+    border: 16px solid @fuchsia;
+    border-radius: 150px;
+    width: 170px;
+    height: 170px;
+  }
 
   @media (min-width: @desktop-width) {
     position: absolute;
@@ -124,9 +138,12 @@
 }
 
 .effect-block__svg {
-  fill: @gray;
-  width: 238px;
-  height: 276px;
+  @media (min-width: @tablet-width) {
+    fill: @gray;
+    width: 239px;
+    height: 276px;
+    margin-top: 18px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 298px;

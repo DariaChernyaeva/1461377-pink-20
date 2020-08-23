@@ -17,6 +17,7 @@
   @media (min-width: @tablet-width) {
     font-size: @super-super-big;
     line-height: 120%;
+    padding-top: 4px;
   }
 
   @media (min-width: @desktop-width) {
@@ -26,14 +27,35 @@
 }
 
 .main-block-descripton__description-text {
-  font-style: normal;
-  font-weight: 300;
-  font-size: @big-font;
-  line-height: 120%;
-  color: @dark-blue;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  @media (min-width: @mobile-width-only) {
+    font-style: normal;
+    font-weight: 300;
+    font-size: @big-font;
+    line-height: 120%;
+    color: @dark-blue;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 17px;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-block-descripton__description-text-second {
+  @media (min-width: @mobile-width-only) {
+    font-style: normal;
+    font-weight: 300;
+    font-size: @big-font;
+    line-height: 120%;
+    color: @dark-blue;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+  }
 
   @media (min-width: @tablet-width) {
     display: none;

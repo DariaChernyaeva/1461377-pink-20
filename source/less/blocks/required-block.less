@@ -1,4 +1,5 @@
 .required-block__star {
+  @media (min-width: @mobile-width-only) {
   font-style: normal;
   font-weight: normal;
   font-size: @small-font;
@@ -6,9 +7,16 @@
   text-transform: uppercase;
   color: @dark-blue;
   margin: 0;
+  display: block;
+}
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 
   @media (min-width: @desktop-width) {
     width: 200px;
+    display: block;
   }
 }
 
@@ -37,5 +45,22 @@
     grid-column-end: 3;
     position: absolute;
     left: 770px;
+
+  }
+}
+
+.required-block__hidden {
+  @media (min-width: @desktop-width) {
+    display: inline;
+    position: absolute;
+    left: 770px;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @mobile-width-only) {
+    display: none;
   }
 }
