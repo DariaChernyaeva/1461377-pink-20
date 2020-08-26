@@ -48,14 +48,23 @@
   position: absolute;
 
   @media (min-width: @tablet-width) {
-   top: 7px;
-   left: -40px;
-   bottom: 48px;
-   padding-left: 41px;
-   padding-right: 49px;
-   padding-bottom: 0;
-   margin-top: 4px;
-   margin-bottom: 3px;
+    top: 7px;
+    left: -40px;
+    bottom: 48px;
+    padding-left: 41px;
+    padding-right: 49px;
+    padding-bottom: 0;
+    margin-top: 4px;
+    margin-bottom: 3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 44px;
+    top: 7px;
+    bottom: 57px;
+    left: -40px;
+    margin-top: 11px;
+    margin-left: 6px;
   }
 }
 
@@ -132,6 +141,8 @@
 
   @media (min-width: @desktop-width) {
     padding-bottom: 0;
+    margin-left: 105px;
+    margin-right: 149px;
   }
 }
 
@@ -154,15 +165,23 @@ td {
   background-color: #283645;
   position: relative;
   overflow: hidden;
-  padding-left: 35px;
+  padding-left: 36px;
   padding-right: 33px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 48px;
+    padding-right: 41px;
+    margin-left: 0;
+    padding-top: 15px;
+    padding-bottom: 25px;
   }
+}
 
 .price__block-yes {
   @media (min-width: @tablet-width) {
     fill: @green;
     padding-left: 0;
-    padding-top: 3px;
+    padding-top: 6px;
   }
 }
 
@@ -182,6 +201,12 @@ td {
   overflow: hidden;
   padding-left: 19px;
   padding-right: 9px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 18px;
+    padding-right: 15px;
+    padding-top: 5px;
+  }
 }
 
 .price__block-tarif3 {
@@ -192,6 +217,12 @@ td {
   overflow: hidden;
   padding-left: 17px;
   padding-right: 29px;
+
+  @media (min-width: @desktop-width) {
+    padding-right: 32px;
+    padding-left: 25px;
+    padding-top: 5px;
+  }
 }
 
 .price {
@@ -201,9 +232,10 @@ td {
   padding-top: 69px;
   padding-left: 20px;
   padding-right: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    padding-top: 0;
     padding-top: 41px;
     padding-left: 0;
     padding-right: 0;
@@ -212,10 +244,12 @@ td {
 
   @media (min-width: @desktop-width) {
     padding: 0;
-    padding-top: 61px;
     padding-left: 22px;
     padding-right: 22px;
-    padding-bottom: 70px;
+    padding-bottom: 93px;
+    margin-top: 184px;
+    margin-bottom: 53px;
+    overflow: hidden;
   }
 }
 
@@ -264,12 +298,18 @@ td {
 }
 
 .price__block-title-standard {
+  @media (min-width: @mobile-width-only) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   @media (min-width: @tablet-width) {
     margin: 0;
     font-size: @middle-font;
     line-height: 30px;
     margin-left: -3px;
-    margin-top: -1px;
+    margin-top: 0;
+    margin-bottom: 0;
     letter-spacing: 1px;
   }
 }
@@ -280,8 +320,13 @@ td {
     font-size: @middle-font;
     line-height: 30px;
     margin-left: -5px;
-    margin-top: 0px;
+    margin-top: 0;
     letter-spacing: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-transform: uppercase;
+    font-size: @base-font;
   }
 }
 
@@ -291,8 +336,14 @@ td {
     font-size: @middle-font;
     line-height: 30px;
     margin-right: -2px;
-    margin-top: 0px;
+    margin-top: 0;
     letter-spacing: 1px;
+    padding-left: 4px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-transform: uppercase;
+    font-size: @base-font;
   }
 }
 
@@ -318,6 +369,7 @@ td {
 
   @media (min-width: @desktop-width) {
     width: 940px;
+    height: 59px;
   }
 }
 
@@ -333,7 +385,8 @@ td {
   line-height: 30px;
 
   @media (min-width: @desktop-width) {
-    font-size: @base-font;
+    font-size: 18px;
+    text-transform: uppercase;
   }
 }
 
@@ -349,16 +402,51 @@ td {
   }
 }
 
+.price__block-tarif-price2 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: @base-font;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: @big-font;
+  }
+}
+
+.price__block-tarif-price3 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: @base-font;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin-right: -9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: @big-font;
+  }
+}
+
 .price__block-filter-svg {
   margin-left: 78px;
+  fill: @green;
 }
 
 .price__block-filter-svg2 {
   margin-left: 129px;
+  fill: @green;
 }
 
 .price__block-filter-svg3 {
   margin-left: 102px;
+  fill: @orange;
 }
 
 .price_block-pink {
@@ -381,14 +469,33 @@ td {
 
 .price__block-ober {
   margin-left: 13px;
+  letter-spacing: 0.3px;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 23px;
+  }
 }
 
 .price__block-ober2 {
   margin-left: 14px;
+  letter-spacing: 0.3px;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 24px;
+  }
 }
 
 .price__block-ober3 {
   margin-left: 14px;
-  margin-top: 3px;
-  display: block;
+  margin-top: -1px;
+  letter-spacing: 0.3px;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 17px;
+    letter-spacing: -0.2px;
+  }
+}
+
+.price__figura {
+  position: absolute;
 }

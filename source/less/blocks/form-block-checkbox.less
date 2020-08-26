@@ -10,7 +10,7 @@
   vertical-align: middle;
 
   @media (min-width: @desktop-width) {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   }
 }
 
@@ -52,13 +52,13 @@
     display: grid;
     width: 100%;
     margin: 0 auto;
-    margin-top: 51px;
+    margin-top: 56px;
     margin-bottom: 54px;
     margin-left: 0;
     margin-right: 0;
     padding-left: 0;
     padding-bottom: 0;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   }
 }
 
@@ -112,13 +112,13 @@
   @media (min-width: @desktop-width) {
     margin-left: 250px;
     margin-right: 230px;
-    margin-top: -7px;
+    margin-top: -11px;
     width: 433px;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 10px;
     border: 1px solid @light-gray;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
     border-top: none;
   }
 }
@@ -130,13 +130,45 @@
     padding-left: 25px;
     margin-bottom: 48px;
 
-  &--margin {
-    margin-bottom: 55px;
+    &--margin {
+      margin-bottom: 55px;
+    }
+
+    &--paddingtop {
+      padding-top: 5px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 23px;
+    margin-bottom: 27px;
+  }
+
+  &--chack {
+    @media (min-width: @desktop-width) {
+      padding-left: 6px;
+    }
   }
 
   &--paddingtop {
-    padding-top: 5px;
+    @media (min-width: @desktop-width) {
+      padding-left: 5px;
+      padding-top: 1px;
+    }
   }
+
+  &--bashnya {
+    @media (min-width: @desktop-width) {
+      padding-left: 3px;
+    }
+  }
+
+  &--margin {
+    @media (min-width: @desktop-width) {
+      padding-left: 0;
+      margin-left: 0;
+      margin-right: 20px;
+    }
   }
 }
 
@@ -150,20 +182,18 @@
   }
 
   @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0;
-    grid-row-gap: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 200px;
     margin-bottom: 0;
-    margin-top: 38px;
   }
 }
 
 .form-block-checkbox__items:checked + label::before {
   background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
-  background-position: center right;
+  background-position: center;
 }
 
 .form-block-checkbox__answer {

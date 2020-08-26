@@ -16,7 +16,7 @@
     <a class="page-header__logo" href="index.html">
       <picture>
         <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logo-pink-white-tablet.svg">
+        <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
         <img src="img/logo-pink-white-mobile.svg"  width="74" height="23" alt="логотип сайта Pink.">
       </picture>
     </a>
@@ -29,7 +29,7 @@
         <ul class="main-navigation__list">
           <li class="main-navigation__list-item main-navigation__list-item--border"><a class="main-navigation__list-links" href="index.html">Главная</a></li>
           <li class="main-navigation__list-item main-navigation__list-item--padding"><a class="main-navigation__list-links" href="photo.html">Фотографии</a></li>
-          <li class="main-navigation__list-item main-navigation__list-item--padding2"><a class="main-navigation__list-links" href="form.html">Конкурс</a></li>
+          <li class="main-navigation__list-item main-navigation__list-item--padding2"><a class="main-navigation__list-links" href="form.html"><span class="main-navigation__list-item-current">Конкурс</span></a></li>
           <li class="main-navigation__list-item main-navigation__list-item--padding3"><a class="main-navigation__list-links" href="#">HTML Academy</a></li>
         </ul>
       </div>
@@ -72,7 +72,7 @@
               <input class="form-block-checkbox__items visually-hidden" type="checkbox" name="sunburn" id="sunburn" checked>
               <label for="sunburn" class="form-block-checkbox__answer">Обгорел на пляже</label>
             </li>
-            <li class="form-block-checkbox__filter">
+            <li class="form-block-checkbox__filter form-block-checkbox__filter--chack">
               <input class="form-block-checkbox__items visually-hidden" type="checkbox" name="norris" id="norris">
               <label for="norris" class="form-block-checkbox__answer">Видел Чака Норриса</label>
             </li>
@@ -80,7 +80,7 @@
               <input class="form-block-checkbox__items visually-hidden" type="checkbox" name="souvenirs" id="souvenirs">
               <label for="souvenirs" class="form-block-checkbox__answer">Накупил сувениров</label>
             </li>
-            <li class="form-block-checkbox__filter">
+            <li class="form-block-checkbox__filter form-block-checkbox__filter--bashnya">
               <input class="form-block-checkbox__items visually-hidden" type="checkbox" name="tower" id="tower" checked>
               <label for="tower" class="form-block-checkbox__answer">Удержал башню</label>
             </li>
@@ -161,7 +161,7 @@
 
 
       <div class="required-block">
-        <p class="required-block__star"><small class="required-block__grill">*</small>— обязательные <span class="required-block__hidden">для заполнения </span>поля</p>
+        <p class="required-block__star"><small class="required-block__grill">*</small> <span class="a">—обязательные <span class="required-block__hidden">для заполнения</span>поля</span></p>
       </div>
         </div>
     </div>
@@ -169,7 +169,7 @@
   </main>
 
   <footer class="footer-page">
-    <section class="footer-items">
+    <section class="footer-items footer-items--formmob footer-items--formtab footer-items--formdesk">
       <div class="footer-items__div size">
       <div class="footer-items__footer-logo">
         <a class="footer-items__footer-logo">

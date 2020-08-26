@@ -4,7 +4,7 @@
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -3px;
+  margin-top: -1px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -24,12 +24,11 @@
 
 .block-advantages__general {
   text-align: center;
-  padding-top: 54px;
+  padding-top: 20px;
   padding-bottom: 51px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    padding-top: 0;
     padding-top: 34px;
     padding-right: 20px;
     margin-left: 108px;
@@ -38,7 +37,9 @@
   @media (min-width: @desktop-width) {
     display: flex;
     padding: 0;
-    padding-top: 59px;
+    padding-top: 0;
+    margin-top: -44px;
+    margin-left: 11px;
   }
 }
 
@@ -49,7 +50,8 @@
   @media (min-width: @desktop-width) {
     width: 33.3333%;
     padding-bottom: 0;
-    padding-left: 20px;
+    padding-left: 0;
+    margin-top: 38px;
   }
 }
 
@@ -59,7 +61,8 @@
   @media (min-width: @desktop-width) {
     width: 33.3333%;
     padding-bottom: 0;
-    padding-left: 20px;
+    padding-left: 0;
+    margin-top: 35px;
   }
 }
 
@@ -67,14 +70,14 @@
   margin-top: 30px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 0;
     margin-top: 32px;
   }
 
   @media (min-width: @desktop-width) {
     width: 33.3333%;
     padding-bottom: 0;
-    padding-left: 20px;
+    padding-left: 0;
+    margin-top: 39px;
   }
 }
 
@@ -90,7 +93,6 @@
   @media (min-width: @tablet-width) {
     text-align: left;
     padding-left: 0;
-    padding-bottom: 0;
     padding-bottom: 10px;
   }
 
@@ -99,6 +101,7 @@
     line-height: 30px;
     width: 240px;
     text-align: center;
+    margin-left: 19px;
   }
 }
 
@@ -121,6 +124,7 @@
     line-height: 30px;
     width: 240px;
     text-align: center;
+    margin-left: 29px;
   }
 }
 
@@ -142,6 +146,7 @@
     line-height: 30px;
     width: 240px;
     text-align: center;
+    margin-left: 39px;
   }
 }
 
@@ -166,6 +171,10 @@
     line-height: 30px;
     width: 240px;
     text-align: center;
+    margin-top: 14px;
+    padding-right: 0;
+    margin-right: 51px;
+    letter-spacing: 0.4px;
   }
 }
 
@@ -190,6 +199,15 @@
     line-height: 30px;
     width: 240px;
     text-align: center;
+    margin-top: 12px;
+    margin-right: 40px;
+    padding-right: 0;
+  }
+}
+
+.block-advantages__text-white-space {
+  @media (min-width: @tablet-width) {
+    white-space: pre;
   }
 }
 
@@ -214,6 +232,8 @@
     line-height: 30px;
     width: 240px;
     text-align: center;
+    margin-top: 11px;
+    margin-right: 31px;
   }
 }
 
@@ -228,19 +248,34 @@
     width: 266px;
     height: 530px;
     object-fit: contain;
-    margin-top: 0;
     margin-top: -14px;
     margin-left: 69px;
+    z-index: 1;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-top: 0;
     height: 382px;
     width: 100%;
-    margin-left: 0;
     position: initial;
+    margin-left: -128px;
+    z-index: 1;
+
+    &--mobile-desktop {
+      margin-left: 131px;
+      margin-right: 32px;
+    }
+
+    &--mobile-desktop2 {
+      margin-left: 0;
+      margin-right: 29px;
+    }
+
+    &--mod {
+      margin-left: 65px;
+    }
   }
 
   &--mod {
@@ -266,15 +301,74 @@
   }
 }
 
+.block-advantages__picture--mobile-desktop2 {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-top: 20px;
+    width: 292px;
+    height: 302px;
+    object-fit: cover;
+  }
+}
+
 .block-advantages__wrap {
+  @media (min-width: @mobile-width-only) {
+    position: relative;
+  }
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row-reverse;
     margin-right: 0;
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: column-reverse;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+  }
+}
+
+.block-advantages__figura {
+  position: absolute;
+  transform: rotate(180deg);
+  top: -90px;
+  left: -77px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.block-advantages__figura2 {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    transform: rotate(360deg);
+    top: -3px;
+    left: -136px;
+    height: 55px;
+    fill: @white;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    transform: rotate(360deg);
+    height: 120px;
+    left: -127px;
+    top: -20px;
+    fill: @white;
   }
 }
