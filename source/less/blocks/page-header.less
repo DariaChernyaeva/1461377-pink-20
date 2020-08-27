@@ -1,5 +1,14 @@
 .page-header {
   background-color: rgba(0, 50, 50, 0.1);
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: -90px;
+  }
+
+  &--firstdesk {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 .page-header__div {
