@@ -31,6 +31,7 @@
     @media (min-width: @desktop-width) {
       padding-top: 11px;
       margin-bottom: 0;
+      padding-left: 110px;
     }
   }
 }
@@ -70,6 +71,24 @@
 
     &--seconddesk {
       padding-top: 83px;
+    }
+  }
+
+  &--modfirstdesktop {
+    @media (min-width: @desktop-width) {
+      margin-left: 0;
+      padding-left: 130px;
+      padding-right: 130px;
+      box-sizing: border-box;
+    }
+  }
+
+  &--formsecondpage {
+    @media (min-width: @tablet-width) {
+      margin-left: 0;
+      padding-left: 20px;
+      padding-right: 19px;
+      box-sizing: border-box;
     }
   }
 }
@@ -185,94 +204,128 @@
     margin-left: 0;
     padding-left: 220px;
     padding-top: 19px;
+  }
 
-    &--firstdesk {
-      margin-left: 216px;
-      position: relative;
+  &--firstdesk {
+    @media (min-width: @desktop-width) {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      margin: 12px auto 0;
+      margin-right: 0;
+      margin-top: -5px;
     }
   }
 
   &--thirdform {
     @media (min-width: @desktop-width) {
-      position: relative;
-      padding-top: 22px;
+      padding: 0;
+      display: flex;
+      margin: -4px auto 0;
+      align-items: center;
+      padding-right: 1px;
     }
   }
 
   &--secondform {
     @media (min-width: @tablet-width) {
-      padding-top: 19px;
-      position: relative;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      margin: 1px auto 0;
+      padding-left: 66px;
     }
   }
 
   &--mobform {
     @media (min-width: @mobile-width-only) {
-      position: relative;
-      padding-top: 27px;
-      padding-right: 29px;
-      margin-top: 0;
+      padding: 0;
+      display: flex;
+      margin: 18px auto 0;
+      align-items: center;
     }
   }
 
   &--firstmob {
-    position: relative;
-    padding-top: 17px;
-    padding-right: 25px;
-    padding-left: 2px;
+    @media (min-width: @mobile-width-only) {
+      padding: 0;
+      display: flex;
+      margin: 12px auto 0;
+      align-items: center;
+    }
   }
 
   &--firsttab {
     @media (min-width: @tablet-width) {
-      position: relative;
+      padding: 0;
+      padding-left: 27px;
+      display: flex;
+      margin: 12px auto 0;
+      margin-top: -5px;
+      align-items: center;
     }
   }
 
   &--firstphoto {
     @media (min-width: @mobile-width-only) {
-      margin-top: 23px;
-      margin-left: 95px;
+      padding: 0;
+      display: flex;
+      margin: 17px auto 0;
+      align-items: center;
+    }
+  }
+
+  &--secondphoto {
+    @media (min-width: @tablet-width) {
+      padding: 0;
+      display: flex;
+      margin: 5px auto 0;
+      align-items: center;
+      padding-left: 30px;
+    }
+  }
+
+  &--thirdphoto {
+    @media (min-width: @desktop-width) {
+      padding: 0;
+      display: flex;
+      margin: -1px auto 0;
+      align-items: center;
+      padding-right: 45px;
     }
   }
 }
 
 .footer-items__developed-by-svg {
   @media (min-width: @mobile-width-only) {
-    position: absolute;
-    right: -4px;
-    top: 11.7px;
-    margin-top: 6px;
+    position: initial;
   }
 
   @media (min-width: @tablet-width) {
-    position: absolute;
-    left: 110.367px;
-    top: 6.7px;
+    position: initial;
+    margin-left: 0;
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    left: 344.367px;
-    top: 5.7px;
+    position: initial;
+    margin-left: 0;
   }
 }
 
 .footer-items__developed-by-svg-firstpage {
-  position: absolute;
-  top: 10px;
-  left: 71px;
-  margin-left: 31px;
+  @media (min-width: @mobile-width-only) {
+    position: initial;
+    margin-left: 0;
+  }
 
   @media (min-width: @tablet-width) {
-    position: absolute;
-    top: 11px;
-    left: 80px;
+    position: initial;
+    margin-left: 0;
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    left: 95px;
-    top: 11px;
+    position: initial;
+    margin-left: 0;
   }
 }
 
@@ -282,7 +335,6 @@
     fill: @fuchsia;
     width: 27px;
     height: 34px;
-    position: relative;
   }
 
   &:hover,
@@ -293,11 +345,6 @@
   &:active {
     fill: @dark-blue;
     opacity: 0.3;
-  }
-
-  @media (min-width: @tablet-width) {
-    padding-left: 15px;
-    margin-left: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -387,8 +434,17 @@
 
 .footer-items__developed-by-svg-secondpage {
   @media (min-width: @mobile-width-only) {
-    position: absolute;
-    left: 0;
-    top: -4.2px;
+    position: initial;
+    margin-left: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: initial;
+    margin-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: initial;
+    margin-left: 0;
   }
 }
