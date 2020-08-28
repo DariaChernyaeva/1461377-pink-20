@@ -16,7 +16,7 @@
     <a class="page-header__logo" href="index.html">
       <picture>
         <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logo-pink-white-tablet.svg">
+        <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
         <img src="img/logo-pink-white-mobile.svg"  width="74" height="23" alt="логотип сайта Pink.">
       </picture>
     </a>
@@ -28,9 +28,9 @@
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list">
           <li class="main-navigation__list-item main-navigation__list-item--border"><a class="main-navigation__list-links" href="index.html">Главная</a></li>
-          <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="photo.html">Фотографии</a></li>
-          <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="form.html">Конкурс</a></li>
-          <li class="main-navigation__list-item"><a class="main-navigation__list-links" href="#">HTML ACADEMY</a></li>
+          <li class="main-navigation__list-item main-navigation__list-item--padding"><a class="main-navigation__list-links" href="photo.html">Фотографии</a></li>
+          <li class="main-navigation__list-item main-navigation__list-item--padding2"><a class="main-navigation__list-links" href="form.html"><span class="main-navigation__list-item-current">Конкурс</span></a></li>
+          <li class="main-navigation__list-item main-navigation__list-item--padding3"><a class="main-navigation__list-links" href="#">HTML Academy</a></li>
         </ul>
       </div>
     </nav>
@@ -55,9 +55,9 @@
           <label class="form-block__label" for="surname">Фамилия:</label>
           <input  class="form-block__input" type="text" name="surname" id="surname" required placeholder="Укажите фамилию *">
           <label class="form-block__labelsecond" for="name">Имя:</label>
-          <input class="form-block__inputname" type="text" name="name" id="name" required placeholder="Введите ваше имя *">
-          <label class="form-block__label" for="patronymic">Отчество:</label>
-          <input class="form-block__input form-block__input--letterspacing" type="text" name="patronymic" id="patronymic" required placeholder="Ну и отчество тоже *">
+          <input class="form-block__inputsecond" type="text" name="name" id="name" required placeholder="Введите ваше имя *">
+          <label class="form-block__labelthird" for="patronymic">Отчество:</label>
+          <input class="form-block__inputthird form-block__input--letterspacing" type="text" name="patronymic" id="patronymic" required placeholder="Ну и отчество тоже *">
         </div>
 
         <div class="form-block-checkbox">
@@ -72,7 +72,7 @@
               <input class="form-block-checkbox__items visually-hidden" type="checkbox" name="sunburn" id="sunburn" checked>
               <label for="sunburn" class="form-block-checkbox__answer">Обгорел на пляже</label>
             </li>
-            <li class="form-block-checkbox__filter">
+            <li class="form-block-checkbox__filter form-block-checkbox__filter--chack">
               <input class="form-block-checkbox__items visually-hidden" type="checkbox" name="norris" id="norris">
               <label for="norris" class="form-block-checkbox__answer">Видел Чака Норриса</label>
             </li>
@@ -80,7 +80,7 @@
               <input class="form-block-checkbox__items visually-hidden" type="checkbox" name="souvenirs" id="souvenirs">
               <label for="souvenirs" class="form-block-checkbox__answer">Накупил сувениров</label>
             </li>
-            <li class="form-block-checkbox__filter">
+            <li class="form-block-checkbox__filter form-block-checkbox__filter--bashnya">
               <input class="form-block-checkbox__items visually-hidden" type="checkbox" name="tower" id="tower" checked>
               <label for="tower" class="form-block-checkbox__answer">Удержал башню</label>
             </li>
@@ -111,7 +111,7 @@
 
 
           <div class="form-block-contacts__flex2">
-          <input class="form-block-contacts__form-block-input" type="email" name="email" id="email" placeholder="Введите почту *" required>
+          <input class="form-block-contacts__form-block-input form-block-contacts__form-block-input--modif" type="email" name="email" id="email" placeholder="Введите почту *" required>
           <span class="form-block-contacts__mail-square"><svg class="form-block-contacts__mail" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.988px" height="13.966px" viewBox="0 0 17.988 13.966" enable-background="new 0 0 17.988 13.966" xml:space="preserve">
             <g>
               <g>
@@ -125,7 +125,7 @@
             </g>
           </svg>
         </span>
-          <label class="form-block-contacts__form-block-label" for="email">Адрес почты</label>
+          <label class="form-block-contacts__form-block-label form-block-contacts__form-block-label--left" for="email">Адрес почты</label>
           </div>
 
         </div>
@@ -161,7 +161,7 @@
 
 
       <div class="required-block">
-        <p class="required-block__star"><small class="required-block__grill">*</small>— обязательные поля</p>
+        <p class="required-block__star"><small class="required-block__grill">*</small> <span class="a">—обязательные <span class="required-block__hidden">для заполнения</span>поля</span></p>
       </div>
         </div>
     </div>
@@ -169,8 +169,8 @@
   </main>
 
   <footer class="footer-page">
-    <section class="footer-items">
-      <div class="footer-items__div size">
+    <section class="footer-items footer-items--formmob footer-items--formtab footer-items--formdesk">
+      <div class="footer-items__div footer-items__div--formsecondpage size">
       <div class="footer-items__footer-logo">
         <a class="footer-items__footer-logo">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
@@ -191,21 +191,21 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/></g></g>
           </svg>
         </a>
-        <a class="footer-items__social-icons-block-link" href="#">
+        <a class="footer-items__social-icons-block-link footer-items__social-icons-block-link--mod2" href="#">
         <svg class="footer-items__social-icons-block-img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
           <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
         </svg>
       </a>
-        <a class="footer-items__social-icons-block-link" href="#">
+        <a class="footer-items__social-icons-block-link footer-items__social-icons-block-link--mod3" href="#">
           <svg class="footer-items__social-icons-block-img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
             <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
           </svg>
         </a>
       </div>
-      <div class="footer-items__developed-by">
+      <div class="footer-items__developed-by footer-items__developed-by--thirdform footer-items__developed-by--secondform footer-items__developed-by--mobform">
         <a class="footer-items__developed-by-text" href="https://htmlacademy.ru/intensive/adaptive" aria-label="разработано html academy">Разработано</a>
         <a class="footer-items__developed-by-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="логотип на html academy">
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+          <svg class="footer-items__developed-by-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
             <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
           </svg>
         </a>

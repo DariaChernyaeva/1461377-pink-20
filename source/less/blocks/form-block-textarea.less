@@ -21,8 +21,10 @@
     grid-row-end: 5;
     grid-column-end: -1;
     width: 100%;
-    height: 240px;
+    height: 220px;
     margin: 0 auto;
+    margin-top: 8px;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   }
 }
 
@@ -33,29 +35,35 @@
   line-height: 30px;
   color: @dark-blue;
   resize: none;
-  text-align: center;
   border: 2px solid @light-gray;
-  width: 272px;
   height: 183px;
   padding-top: 12px;
+  letter-spacing: 0.2px;
+  padding-left: 16px;
+  padding-right: 4px;
+  width: 252px;
 
   @media (min-width: @tablet-width) {
+    padding-left: 18px;
     margin-top: 32px;
     margin-left: 60px;
     margin-right: 60px;
     margin-bottom: 53px;
-    width: 496px;
+    width: 474px;
     height: 179px;
-    padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 39px;
-    margin-left: 60px;
+    margin-top: 26px;
+    margin-left: 55px;
     margin-right: 60px;
     margin-bottom: 45px;
-    width: 816px;
-    height: 124px;
+    width: 802px;
+    height: 116px;
+    text-align: left;
+    padding-top: 12px;
+    padding-left: 21px;
+    letter-spacing: 0.2px;
   }
 
   &:hover {
@@ -91,5 +99,6 @@
   @media (min-width: @desktop-width) {
     margin-left: 340px;
     margin-right: 340px;
+    margin-top: -17px;
   }
 }
