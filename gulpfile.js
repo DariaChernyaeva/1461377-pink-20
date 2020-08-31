@@ -25,7 +25,7 @@ const styles = () => {
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(csso())
-    .pipe(rename("styles.min.css"))
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
@@ -119,7 +119,8 @@ exports.clean = clean;
     "source/img/**",
     "source/js/**",
     "source/*.ico",
-    "source/*.html"
+    "source/*.html",
+    "source/css/**"
   ], {
       base: "source"
   })
