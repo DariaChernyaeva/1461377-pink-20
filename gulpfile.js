@@ -22,6 +22,8 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
@@ -61,6 +63,7 @@ exports.watcher = watcher
 const html = () => {
   return gulp.src("source/*.html")
     .pipe(gulp.dest("build"))
+    .pipe(sync.stream())
 }
 
 exports.html = html
@@ -142,23 +145,21 @@ exports.copyhtml = copyhtml;
 //Build
 
 const build = (done) => gulp.series(
-  "clean",
-  "copy",
-  "styles",
-  "sprite")
+  clean,
+  copy,
+  styles,
+  sprite)
   (done);
 
 exports.build = build;
 
 //Start
 
-const start = () => gulp.series(
-  "clean",
-  "copy",
-  "style",
-  "sprite",
-  "server",
-  "watcher"
+exports.default = gulp.series(
+  clean,
+  copy,
+  styles,
+  sprite,
+  server,
+  watcher
 );
-
-exports.start = start;
