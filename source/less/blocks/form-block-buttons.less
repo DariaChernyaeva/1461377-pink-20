@@ -3,7 +3,7 @@
   height: 61px;
   color: @white;
   background-color: @standard-green;
-  margin-top: 51px;
+  margin-top: 49px;
   margin-left: 22px;
   margin-right: 22px;
   margin-bottom: 34px;
@@ -16,12 +16,13 @@
 
   @media (min-width: @tablet-width) {
     width: 300px;
+    margin-top: 0;
     margin-top: 64px;
     margin-left: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    margin-top: 0;
     margin-top: 26px;
     margin-right: 19px;
     margin-left: -2px;
@@ -66,5 +67,16 @@
     grid-row-start: 5;
     grid-row-end: 6;
     position: relative;
+    margin-top: 21px;
+  }
+}
+
+.form-block-buttons {
+  @media (min-width: @tablet-width) {
+    margin-top: -3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
   }
 }

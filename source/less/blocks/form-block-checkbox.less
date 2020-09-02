@@ -8,10 +8,6 @@
   background: @white;
   border: 1px solid @light-gray;
   vertical-align: middle;
-
-  @media (min-width: @desktop-width) {
-    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-  }
 }
 
 .form-block-checkbox__items + label:hover::before {
@@ -30,12 +26,14 @@
   background-color: @extra-light-gray;
   padding-left: 18px;
   padding-top: 38px;
+  margin-top: 2px;
 
   @media (min-width: @tablet-width) {
     background-color: @white;
     order: 3;
     padding: 0;
-    margin-top: 69px;
+    margin-top: 0;
+    margin-top: 72px;
     margin-bottom: 60px;
     margin-left: 20px;
     margin-right: 20px;
@@ -52,33 +50,32 @@
     display: grid;
     width: 100%;
     margin: 0 auto;
-    margin-top: 56px;
+    margin-top: 0;
+    margin-top: 54px;
     margin-bottom: 54px;
     margin-left: 0;
     margin-right: 0;
     padding-left: 0;
     padding-bottom: 0;
-    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   }
 }
 
 .form-block-checkbox__description {
-  font-style: normal;
-  font-weight: normal;
-  font-size: @small-font;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: @fuchsia;
-  margin: 0;
-  text-align: center;
-  padding-left: 15px;
-  padding-right: 25px;
-  padding-bottom: 0;
-  margin-bottom: 44px;
-  letter-spacing: 0.2px;
-
   @media (min-width: @mobile-width-only) {
     display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: @small-font;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: @fuchsia;
+    margin: 0;
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 25px;
+    padding-bottom: 0;
+    margin-bottom: 44px;
+    letter-spacing: 0.2px;
   }
 
   @media (min-width: @tablet-width) {
@@ -110,15 +107,14 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 250px;
+    margin-left: 0;
+    margin-left: 249px;
     margin-right: 230px;
-    margin-top: -11px;
+    margin-top: -9px;
     width: 433px;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 10px;
-    border: 1px solid @light-gray;
-    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    padding-bottom: 1px;
     border-top: none;
   }
 }
@@ -140,26 +136,55 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 23px;
+    margin-top: 32px;
     margin-bottom: 27px;
   }
 
-  &--chack {
+  &--obgorel {
+    @media (min-width: @tablet-width) {
+      margin-top: 51px;
+    }
+
     @media (min-width: @desktop-width) {
-      padding-left: 6px;
+      margin-top: 0;
+      margin-top: 23px;
+      padding-left: 0;
+      padding-left: 24px;
+    }
+  }
+
+  &--chack {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 46px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 0;
+      padding-left: 3px;
     }
   }
 
   &--paddingtop {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 49px;
+    }
+
     @media (min-width: @desktop-width) {
-      padding-left: 5px;
       padding-top: 1px;
+      margin-top: 22px;
+      padding-left: 3px;
+      margin-bottom: 0;
     }
   }
 
   &--bashnya {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 50px;
+    }
+
     @media (min-width: @desktop-width) {
-      padding-left: 3px;
+      padding-left: 2px;
+      margin-bottom: 0;
     }
   }
 
@@ -168,6 +193,7 @@
       padding-left: 0;
       margin-left: 0;
       margin-right: 20px;
+      margin-top: 23px;
     }
   }
 }
@@ -179,6 +205,7 @@
 
   @media (min-width: @tablet-width) {
     padding-left: 30px;
+    margin-top: 14px;
   }
 
   @media (min-width: @desktop-width) {
@@ -187,6 +214,7 @@
     flex-wrap: wrap;
     height: 200px;
     margin-bottom: 0;
+    margin-top: 0;
   }
 }
 
