@@ -29,7 +29,7 @@
     padding-bottom: 57px;
     background-size: cover;
     background-position: 50% 50%;
-    padding-top: 114px;
+    padding-top: 112px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -38,13 +38,15 @@
 }
 
 .main-block-photo2 {
-  background: url("../img/bg-back-mobile@1x.jpg");
-  display: flex;
-  flex-direction: column;
-  padding-top: 10px;
-  padding-bottom: 63px;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @media (min-width: @mobile-width-only) {
+    background: url("../img/bg-back-mobile@1x.jpg");
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -55,8 +57,8 @@
   @media (min-width: @tablet-width) {
     background: url("../img/bg-back-tablet@1x.jpg");
     background-position: 50% 30%;
-    padding-bottom: 95px;
-    padding-top: 30px;
+    padding-bottom: 94px;
+    padding-top: 37px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -69,7 +71,7 @@
     padding-bottom: 55px;
     background-size: cover;
     background-position: 50% 50%;
-    padding-top: 145px;
+    padding-top: 148px;
   }
 
   @media (min-resolution: 2dppx) {

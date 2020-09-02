@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "del": "^5.1.0",
+    "gulp-cheerio": "^1.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-watcher": "^1.0.1"
   }
