@@ -12,6 +12,7 @@
   position: relative;
   overflow: hidden;
   padding-bottom: 4px;
+  margin-top: 2px;
 }
 
 .price__block-hit {
@@ -266,19 +267,37 @@ td {
 }
 
 .price__block-toggles-noncurrent {
-  background-image: url("../img/slider.svg");
-  background-repeat: no-repeat;
-  width: 6px;
-  height: 6px;
-  margin-left: 19px;
+  fill: @dark-blue;
+  opacity: 0.3;
+  margin-top: -42px;
+  margin-left: 12px;
+
+  &:hover {
+    fill: @dark-blue;
+    opacity: 0.6;
+  }
+
+  &:active {
+    fill: @dark-blue;
+    opacity: 0.1;
+  }
 }
 
 .price__block-toggles-noncurrent2 {
-  background-image: url("../img/slider.svg");
-  background-repeat: no-repeat;
-  width: 6px;
-  height: 6px;
-  margin-left: 12px;
+  fill: @dark-blue;
+  opacity: 0.3;
+  margin-top: -42px;
+  margin-left: 5px;
+
+  &:hover {
+    fill: @dark-blue;
+    opacity: 0.6;
+  }
+
+  &:active {
+    fill: @dark-blue;
+    opacity: 0.1;
+  }
 }
 
 .price__block-toggles--current {
