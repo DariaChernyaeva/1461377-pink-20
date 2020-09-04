@@ -56,13 +56,13 @@
             </g>
           </svg>
         </a>
-        <button class="page-header__toggle" type="button">
-          <svg aria-label="знак меню" width="50" height="24">
-          <use xlink:href="img/sprite.svg#icon-menu-burger" /></svg>
+        <button class="page-header__toggle page-header__toggle--nojs" type="button">
+          <svg aria-label="знак меню" width="23" height="23">
+          <use xlink:href="img/sprite.svg#icon-menu-cross" /></svg>
           <span class="visually-hidden">Закрыть меню</span>
         </button>
       </div>
-      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+      <nav class="main-navigation main-navigation--opened main-navigation--nojs">
         <div class="main-navigation__wrapper">
           <ul class="main-navigation__list">
             <li class="main-navigation__list-item main-navigation__list-item--border"><a class="main-navigation__list-links" href="index.html">Главная</a></li>
@@ -399,6 +399,7 @@
       </div>
     </section>
   </footer>
+   <script src="js/menu.js"></script>
 </body>
 
 </html>

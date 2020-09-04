@@ -56,13 +56,13 @@
         </g>
       </svg>
     </a>
-    <button class="page-header__toggle" type="button">
-      <svg aria-label="знак меню" width="50" height="24">
-      <use xlink:href="img/sprite.svg#icon-menu-burger" /></svg>
+    <button class="page-header__toggle page-header__toggle--nojs" type="button">
+      <svg aria-label="знак меню" width="23" height="23">
+      <use xlink:href="img/sprite.svg#icon-menu-cross" /></svg>
       <span class="visually-hidden">Закрыть меню</span>
     </button>
       </div>
-    <nav class="main-navigation main-navigation--closed main-navigation--nojs main-navigation--formrhird">
+    <nav class="main-navigation main-navigation--opened main-navigation--nojs main-navigation--formrhird">
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list">
           <li class="main-navigation__list-item main-navigation__list-item--border"><a class="main-navigation__list-links" href="index.html">Главная</a></li>
@@ -86,12 +86,12 @@
     <p class="headline-block__description size">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="headline-block__hidden"> Пожалуйста, заполните форму ниже:</span></p>
     </div>
 
-    <form action="https://echo.htmlacademy.ru" method="post">
+    <form action="https://echo.htmlacademy.ru" method="post" class="qwerty">
 
       <div class="form-block size">
         <div class="form-block__text">
           <label class="form-block__label" for="surname">Фамилия:</label>
-          <input  class="form-block__input" type="text" name="surname" id="surname" required placeholder="Укажите фамилию *">
+          <input  class="form-block__input pop-up-fail-error" type="text" name="surname" id="surname" required placeholder="Укажите фамилию *">
           <label class="form-block__labelsecond" for="name">Имя:</label>
           <input class="form-block__inputsecond" type="text" name="name" id="name" required placeholder="Введите ваше имя *">
           <label class="form-block__labelthird" for="patronymic">Отчество:</label>
@@ -240,33 +240,35 @@
     </div>
     </section>
   </footer>
-  <script src="js/pop-up-fail.js">
-  <div class="pop-up-fail pop-up-fail-error">
-    <div class="pop-up-fail__description">
-      <p class="pop-up-fail__description-heading">Что-то пошло не так!</p>
-    </div>
-    <div class="pop-up-fail__text">
-      <p class="pop-up-fail__text-text">Проверьте поля, выделенные красным, скорее всего вы забыли из заполнить</p>
-    </div>
-    <div class="pop-up-fail__button">
-      <button class="pop-up-fail__button-close" type="submit">Ок</button>
-    </div>
-  </div>
-  </script>
- <script src="js/pop-up-fail.js">
-  <div class="pop-up-success">
-    <div class="pop-up-success__description">
-      <p class="pop-up-success__description-heading">Ваша заявка отправлена</p>
-    </div>
-    <div class="pop-up-success__text">
-      <p class="pop-up-success__text-text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-    </div>
-    <div class="pop-up-success__button">
-      <button class="pop-up-success__button-close" type="submit">Закрыть окно</button>
-    </div>
-  </div>
-</script>
 
+
+  <div class="pop-up pop-up--fail pop-up-fail-error">
+    <div class="pop-up__description">
+      <p class="pop-up__description-heading">Что-то пошло не так!</p>
+    </div>
+    <div class="pop-up__text pop-up__text--first">
+      <p class="pop-up__text-text">Проверьте поля, выделенные красным, скорее всего вы забыли из заполнить</p>
+    </div>
+    <div class="pop-up__button">
+      <button class="pop-up__button-close" type="submit">Ок</button>
+    </div>
+  </div>
+
+
+  <div class="pop-up pop-up-success pop-up--padding pop-up-success--show">
+    <div class="pop-up__description">
+      <p class="pop-up__description-heading pop-up__description-heading--width">Ваша заявка отправлена</p>
+    </div>
+    <div class="pop-up__text pop-up__text--margin">
+      <p class="pop-up__text-text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+    </div>
+    <div class="pop-up__button pop-up__button--grey">
+      <button class="pop-up__button-close pop-up__button-close--wide" type="submit">Закрыть окно</button>
+    </div>
+  </div>
+
+  <script src="js/pop-up.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 
 </html>

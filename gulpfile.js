@@ -55,6 +55,7 @@ exports.server = server;
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series(styles));
   gulp.watch("source/*.html", gulp.series(html));
+  gulp.watch("source/js/*.js", gulp.series(js));
 }
 
 exports.watcher = watcher
@@ -68,6 +69,16 @@ const html = () => {
 }
 
 exports.html = html
+
+// Js
+const js = () => {
+  return gulp.src("source/js/*.js")
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream())
+}
+
+exports.js = js
+
 
 //Images
 

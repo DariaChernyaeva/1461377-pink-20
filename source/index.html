@@ -58,8 +58,13 @@
             </svg>
 
         </a>
-        <button class="page-header__toggle" type="button">
-          <svg aria-label="знак меню" width="50" height="24" >
+        <button class="page-header__toggle page-header__toggle--nojs" type="button">
+          <svg aria-label="знак меню" width="23" height="23" >
+          <use xlink:href="img/sprite.svg#icon-menu-cross" /></svg>
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
+        <button class="page-header__toggleburger page-header__toggle--nojs" type="button">
+          <svg aria-label="знак меню" width="23" height="23" >
           <use xlink:href="img/sprite.svg#icon-menu-burger" /></svg>
           <span class="visually-hidden">Закрыть меню</span>
         </button>
@@ -334,15 +339,15 @@
         <div class="contact-information__general">
           <div class="contact-information__communication-block">
             <p class="contact-information__communication-block-action">Звоните:</p>
-            <a class="contact-information__together"><p class="contact-information__communication-block-details contact-information__communication-block-details--margin-left">+7 (812) 555-66-66</p></a>
+            <a class="contact-information__together" href="#"><p class="contact-information__communication-block-details contact-information__communication-block-details--margin-left">+7 (812) 555-66-66</p></a>
           </div>
           <div class="contact-information__communication-block contact-information__communication-block--order">
             <p class="contact-information__communication-block-action contact-information__communication-block-action--margin">Пишите:</p>
-            <a class="contact-information__together"><p class="contact-information__communication-block-details contact-information__communication-block-details--margin">mail@htmlacademy.ru</p></a>
+            <a class="contact-information__together" href="#"><p class="contact-information__communication-block-details contact-information__communication-block-details--margin">mail@htmlacademy.ru</p></a>
           </div>
           <div class="contact-information__communication-block contact-information__communication-block--margin">
             <p class="contact-information__communication-block-action contact-information__communication-block-action--guest">Приезжайте в гости:</p>
-            <a class="contact-information__together"><p class="contact-information__communication-block-details">ул. Большая<br>Конюшенная, 19/8</p></a>
+            <a class="contact-information__together" href="#"><p class="contact-information__communication-block-details">ул. Большая<br>Конюшенная, 19/8</p></a>
           </div>
 
           <svg class="contact-information__communication-block-triangle" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320" height="38" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve">
