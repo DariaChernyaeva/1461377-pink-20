@@ -113,15 +113,21 @@
 }
 
 .page-header__toggle {
-  fill: @white;
-  background-color: transparent;
-  border: 0;
-  order: 1;
-  width: 50px;
-  height: 24px;
-  cursor: pointer;
-  margin-left: auto;
-  margin-right: 7px;
+  @media (min-width: @mobile-width-only) {
+    fill: @white;
+    background-color: transparent;
+    border: 0;
+    order: 1;
+    width: 50px;
+    height: 24px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 7px;
+    position: absolute;
+    left: 253px;
+    bottom: 278px;
+    top: 21.2px;
+  }
 
   @media (min-width: @tablet-width) {
     margin-left: auto;
