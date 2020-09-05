@@ -1,5 +1,4 @@
 var button = document.querySelector(".form-block-buttons__send");
-var popup = document.querySelector(".pop-up-fail");
 var surname = document.querySelector(".form-block__input");
 var namename = document.querySelector(".form-block__inputsecond");
 var patronymic = document.querySelector(".form-block__inputthird");
@@ -7,13 +6,20 @@ var number = document.querySelector(".form-block-contacts__form-block-input");
 var mail = document.querySelector(".form-block-contacts__form-block-input--modif");
 var generalform = document.querySelector(".qwerty");
 
-var button = document.querySelector(".form-block-buttons__send");
-var popupSuccess = document.querySelector(".pop-up-success");
-var close = document.querySelector(".pop-up-success__button-close");
 
-close.addEventListener("click", function (evt) {
+var popupSuccess = document.querySelector(".pop-up--success");
+var popupError = document.querySelector(".pop-up--fail");
+var closeSuccess = document.querySelector(".pop-up__button-close--success");
+var closeError = document.querySelector(".pop-up__button-close--error");
+
+closeSuccess.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popup.classList.remove("pop-up-success--show");
+    popupSuccess.classList.remove("pop-up--show");
+});
+
+closeError.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popupError.classList.remove("pop-up--show");
 });
 
 
@@ -47,9 +53,9 @@ generalform.addEventListener("submit", function(evt) {
 
   if(surname.value && namename.value && patronymic.value && mail.value){
     evt.preventDefault()
-  popupSuccess.classList.add("pop-up-success--show");
+  popupSuccess.classList.add("pop-up--show");
   } else {
     evt.preventDefault()
-    popup.classList.add("pop-up-success--show");
+    popupError.classList.add("pop-up--show");
   }
 });

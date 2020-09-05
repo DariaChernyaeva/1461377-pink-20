@@ -1,6 +1,7 @@
 .main-navigation {
   display: flex;
   margin-top: -16px;
+  position: relative;
 
   @media (min-width: @desktop-width) {
     display: flex;
@@ -140,4 +141,9 @@
  @media (min-width: @desktop-width) {
    display: flex;
  }
+}
+
+.main-navigation--closed .main-navigation__cross,
+.main-navigation--opened .main-navigation__burger {
+  display: none;
 }

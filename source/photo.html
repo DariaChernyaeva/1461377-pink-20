@@ -56,13 +56,16 @@
             </g>
           </svg>
         </a>
-        <button class="page-header__toggle page-header__toggle--nojs" type="button">
-          <svg aria-label="знак меню" width="23" height="23">
-          <use xlink:href="img/sprite.svg#icon-menu-cross" /></svg>
-          <span class="visually-hidden">Закрыть меню</span>
-        </button>
+
       </div>
       <nav class="main-navigation main-navigation--opened main-navigation--nojs">
+        <button class="page-header__toggle page-header__toggle--burger page-header__toggle--nojs" type="button">
+          <svg class="main-navigation__cross" aria-label="знак закрыть меню" width="23" height="23">
+          <use xlink:href="img/sprite.svg#icon-menu-cross" /></svg>
+          <span class="visually-hidden">Закрыть меню</span>
+          <svg class="main-navigation__burger"aria-label="знак открыть меню" width="50" height="24" >
+         <use xlink:href="img/sprite.svg#icon-menu-burger" /></svg>
+        </button>
         <div class="main-navigation__wrapper">
           <ul class="main-navigation__list">
             <li class="main-navigation__list-item main-navigation__list-item--border"><a class="main-navigation__list-links" href="index.html">Главная</a></li>
@@ -103,11 +106,11 @@
         <h3 class="photo-block__title-panorama">Анна <span class="photo-block__title-time">(5 минут назад)</span></h3>
         <p class="photo-block__text-panorama">Прыгать или нет? Напишите в <br>комментарии свой совет и<br> смотрите прямую трансляцию в <br>перископе, задавайте свои вопросы!</p>
         <div class="photo-block__flex">
-          <a class="photo-block__heart-panorama">
+          <a class="photo-block__heart-panorama" href="#">
             <svg aria-label="знак like" width="13" height="12">
             <use xlink:href="img/sprite.svg#icon-heart" /></svg>
           </a>
-          <a class="photo-block__likes-panorama">Нравится: 215</a>
+          <a class="photo-block__likes-panorama" href="#">Нравится: 215</a>
         </div>
       </div>
 
@@ -129,11 +132,11 @@
             <h3 class="photo-block__title">Левон <span class="photo-block__title-time">(5 часов назад)</span></h3>
             <p class="photo-block__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <div class="photo-block__likeheart">
-              <a class="photo-block__heart">
+              <a class="photo-block__heart" href="#">
                 <svg aria-label="знак like" width="13" height="12">
                 <use xlink:href="img/sprite.svg#icon-heart" /></svg>
               </a>
-              <a class="photo-block__likes">Нравится: 356</a>
+              <a class="photo-block__likes" href="#">Нравится: 356</a>
             </div>
           </div>
         </div>
@@ -155,11 +158,11 @@
             <h3 class="photo-block__title">Антон <span class="photo-block__title-time">(12 часов назад)</span></h3>
             <p class="photo-block__text">Соседи будут рады!</p>
             <div class="photo-block__likeheart photo-block__likeheart--paddingtop">
-              <a class="photo-block__heart">
+              <a class="photo-block__heart" href="#">
                 <svg aria-label="знак like" width="13" height="12">
                 <use xlink:href="img/sprite.svg#icon-heart" /></svg>
               </a>
-              <a class="photo-block__likes">Нравится: 666</a>
+              <a class="photo-block__likes" href="#">Нравится: 666</a>
             </div>
           </div>
         </div>
@@ -181,11 +184,11 @@
             <h3 class="photo-block__title">Борис <span class="photo-block__title-time">(20 часов назад)</span></h3>
             <p class="photo-block__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <div class="photo-block__likeheart">
-              <a class="photo-block__heart">
+              <a class="photo-block__heart" href="#">
                 <svg aria-label="знак like" width="13" height="12">
                 <use xlink:href="img/sprite.svg#icon-heart" /></svg>
               </a>
-              <a class="photo-block__likes">Нравится: 215</a>
+              <a class="photo-block__likes" href="#">Нравится: 215</a>
             </div>
           </div>
         </div>
@@ -207,11 +210,11 @@
             <h3 class="photo-block__title">Сергей <span class="photo-block__title-time">(25 часов назад)</span></h3>
             <p class="photo-block__text">Самая кубанская в мире!</p>
             <div class="photo-block__likeheart photo-block__likeheart--padding-top2">
-              <a class="photo-block__heart">
+              <a class="photo-block__heart" href="#">
                 <svg aria-label="знак like" width="13" height="12">
                 <use xlink:href="img/sprite.svg#icon-heart" /></svg>
               </a>
-              <a class="photo-block__likes">Нравится: 4</a>
+              <a class="photo-block__likes" href="#">Нравится: 4</a>
             </div>
           </div>
         </div>
@@ -233,11 +236,11 @@
             <h3 class="photo-block__title">Максим <span class="photo-block__title-time">(40 часов назад)</span></h3>
             <p class="photo-block__text">Где снег-то?</p>
             <div class="photo-block__likeheart photo-block__likeheart--padding-top3">
-              <a class="photo-block__heart">
+              <a class="photo-block__heart" href="#">
                 <svg aria-label="знак like" width="13" height="12">
                 <use xlink:href="img/sprite.svg#icon-heart" /></svg>
               </a>
-              <a class="photo-block__likes">Нравится: 150</a>
+              <a class="photo-block__likes" href="#">Нравится: 150</a>
             </div>
           </div>
         </div>
@@ -259,11 +262,11 @@
             <h3 class="photo-block__title">Надежда<span class="photo-block__title-time">(45 часов назад)</span></h3>
             <p class="photo-block__text">Всем GN и взаимные лайки!</p>
             <div class="photo-block__likeheart photo-block__likeheart--padding-top4">
-              <a class="photo-block__heart photo-block__heart--heart">
+              <a class="photo-block__heart photo-block__heart--heart" href="#">
                 <svg class="photo-block__heart" aria-label="знак like" width="13" height="12">
                 <use xlink:href="img/sprite.svg#icon-heart" /></svg>
               </a>
-              <a class="photo-block__likes">Нравится: 2560</a>
+              <a class="photo-block__likes" href="#">Нравится: 2560</a>
             </div>
           </div>
         </div>
