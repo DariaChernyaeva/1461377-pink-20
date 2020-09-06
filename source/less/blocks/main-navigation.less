@@ -1,13 +1,19 @@
 .main-navigation {
-  min-height: 64px;
   display: flex;
   margin-top: -16px;
+  position: relative;
 
   @media (min-width: @desktop-width) {
     display: flex;
     align-items: center;
     margin-left: 138px;
     margin-top: 7px;
+  }
+
+  &--formrhird {
+    @media (min-width: @desktop-width) {
+      margin-left: 135px;
+    }
   }
 }
 
@@ -68,7 +74,7 @@
 
     &--padding3 {
       width: 170px;
-      padding-left: 25px;
+      padding-left: 21px;
       padding-top: 17px;
     }
   }
@@ -125,4 +131,19 @@
     border-bottom: 2px solid @white;
     padding-bottom: 10px;
   }
+}
+
+.main-navigation--closed .main-navigation__wrapper {
+  @media (min-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.main-navigation--closed .main-navigation__cross,
+.main-navigation--opened .main-navigation__burger {
+  display: none;
 }

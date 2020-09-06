@@ -55,7 +55,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 157px;
+    margin-left: -2px;
     margin-top: 5px;
 
     &--guest {
@@ -63,7 +63,7 @@
     }
 
     &--margin {
-      margin-right: 158px;
+      margin-right: 0;
       margin-left: 0;
     }
   }
@@ -105,12 +105,12 @@
     margin-top: 21px;
 
     &--margin-left {
-      margin-left: 159px;
+      margin-left: -1px;
       margin-top: 21px;
     }
 
     &--margin {
-      margin-left: -159px;
+      margin-left: 0;
     }
   }
 }
@@ -120,8 +120,9 @@
   flex-direction: column;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 41px;
+  margin-top: 45px;
   margin-bottom: 10px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -134,7 +135,7 @@
   @media (min-width: @desktop-width) {
     margin: 0;
     margin-top: 53px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 }
 
@@ -176,47 +177,28 @@
 }
 
 .contact-information__communication-block-triangle {
-  margin-top: 5px;
-  position: absolute;
-  top: 3217.75px;
+  @media (min-width: @mobile-width-only) {
+    position: absolute;
+    top: 367px;
+    bottom: 0;
+  }
 
   @media (min-width: @tablet-width) {
-    display: none;
+    width: 760px;
+    height: 71px;
+    position: absolute;
+    top: 378px;
+    bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
-    display: none;
+    width: 1200px;
+    position: absolute;
+    height: 140px;
+    top: 302px;
   }
 }
 
-.contact-information__communication-block-trianglesecond {
-  @media (min-width: @mobile-width-only) {
-    display: none;
-  }
-
-  @media (min-width: @tablet-width) {
-    display: block;
-    position: absolute;
-    top: 3178.75px;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.contact-information__communication-block-trianglethird {
-  @media (min-width: @mobile-width-only) {
-    display: none;
-  }
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: block;
-    position: absolute;
-    top: 3537.75px;
-  }
+.contact-information__together {
+  text-decoration-line: none;
 }

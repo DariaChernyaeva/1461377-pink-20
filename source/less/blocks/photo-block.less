@@ -22,7 +22,7 @@
   @media (min-width: @desktop-width) {
     position: absolute;
     top: 54px;
-    right: 130px;
+    right: 10px;
   }
 }
 
@@ -49,14 +49,6 @@
     width: 280px;
     height: 180px;
     margin: 0 auto;
-
-    &--antonm {
-      margin-top: -2px;
-    }
-
-    &--sergeym {
-      margin-top: -2px;
-    }
   }
 
   @media (min-width: @tablet-width) {
@@ -70,6 +62,22 @@
   @media (min-width: @desktop-width) {
     width: 300px;
     height: 400px;
+  }
+
+  &--antonm {
+    @media (min-width: @mobile-width-only) {
+      margin-top: 0;
+    }
+  }
+
+  &--sergeym {
+    @media (min-width: @mobile-width-only) {
+      margin-top: -2px;
+    }
+
+    @media (min-width: @tablet-width) {
+      margin-top: 0;
+    }
   }
 }
 
@@ -101,8 +109,8 @@
     padding-bottom: 0;
     margin: 0;
     margin-bottom: 23px;
-    margin-left: 130px;
-    margin-right: 130px;
+    margin-left: 11px;
+    margin-right: 9px;
   }
 }
 
@@ -167,6 +175,7 @@
 
 .photo-block__heart-panorama {
   fill: @fuchsia;
+  text-decoration: none;
 
   @media (min-width: @tablet-width) {
     margin-right: 19px;
@@ -187,6 +196,7 @@
   color: @fuchsia;
   text-transform: uppercase;
   padding-left: 15px;
+  text-decoration: none;
 
   @media (min-width: @tablet-width) {
     grid-row-start: 1;
@@ -222,7 +232,7 @@
     column-gap: 21px;
     row-gap: 54px;
     padding-left: 0;
-    margin-left: 129px;
+    margin-left: 9px;
     margin-top: 28px;
   }
 }
@@ -255,7 +265,6 @@
   margin-left: 20px;
   margin-bottom: 20px;
   margin-top: 0;
-
 
   @media (min-width: @tablet-width) {
     width: 255px;
@@ -334,6 +343,7 @@
 
 .photo-block__heart {
   fill: @fuchsia;
+  text-decoration: none;
 
   @media (min-width: @tablet-width) {
     margin-right: 15px;
@@ -353,6 +363,7 @@
   color: @fuchsia;
   text-transform: uppercase;
   padding-left: 16px;
+  text-decoration: none;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -415,6 +426,10 @@
   &--nadezhda {
     @media (min-width: @mobile-width-only) {
       padding-top: 2px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 0;
     }
   }
 }

@@ -18,7 +18,7 @@ img {
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
+    width: 100%;
   }
 }
 
@@ -38,15 +38,23 @@ img {
   width: 320px;
 }
 
+.container {
+  width: 100%;
+}
+
 .size {
-  width: 320px;
+  @media (min-width: @mobile-width-only) {
+    width: 320px;
+  }
 
   @media (min-width: @tablet-width) {
     width: 660px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

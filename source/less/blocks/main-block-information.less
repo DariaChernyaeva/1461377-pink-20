@@ -36,14 +36,14 @@
     margin-top: 0;
     margin-bottom: 32px;
     margin-left: 17px;
-    padding-top: 13px;
-    padding-bottom: 16px;
+    padding-top: 14px;
+    padding-bottom: 17px;
     background-color: transparent;
   }
 
   @media (min-width: @desktop-width) {
     font-size: @standard-font;
-    margin-left: 126px;
+    margin-left: 7px;
     margin-bottom: 29px;
     margin-top: 37px;
     padding-top: 14px;
@@ -88,7 +88,7 @@
 
   @media (min-width: @desktop-width) {
     width: 300px;
-    margin-left: 140px;
+    margin-left: 20px;
     margin-top: 35px;
 
     &--apple {
@@ -134,8 +134,13 @@
 }
 
 .main-block-information__examples2 {
+  @media (min-width: @mobile-width-only) {
+    margin-left: 8px;
+  }
+
   @media (min-width: @tablet-width) {
     padding-left: 11px;
+    margin-left: 0;
   }
 }
 
@@ -158,7 +163,6 @@
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: cover;
     background-position: 90% 50%;
-    zoom: 1.5;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -177,8 +181,8 @@
     position: relative;
     overflow: hidden;
     margin-top: -80px;
-    padding-bottom: 122px;
-    padding-top: 90px;
+    padding-bottom: 124px;
+    padding-top: 86px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -188,7 +192,7 @@
 
 .main-block-information__photo {
   @media (min-width: @mobile-width-only) {
-    padding-top: 8px;
+    padding-top: 10px;
   }
 
   @media (min-width: @tablet-width) {
@@ -225,6 +229,7 @@
     height: 645px;
     object-fit: cover;
     right: 4px;
+    left: 25px;
     bottom: -1px;
   }
 }
@@ -250,15 +255,16 @@
     padding-left: 56px;
     padding-top: 51px;
     margin-bottom: 0;
-    padding-bottom: 32px;
+    padding-bottom: 29px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: @extra-big;
     line-height: 68px;
     padding: 0;
-    margin-top: 121px;
-    margin-left: 160px;
+    margin-top: 116px;
+    margin-left: 41px;
+    padding-bottom: 0;
   }
 }
 
