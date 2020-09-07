@@ -121,6 +121,20 @@
     height: 59px;
     margin-bottom: 54px;
   }
+
+  &--letterspacing {
+    @media (min-width: @desktop-width) {
+      letter-spacing: 0.3px;
+    }
+  }
+
+  &:hover {
+    border: 2px solid @dark-blue;
+  }
+
+  &:active {
+    border: 2px solid @fuchsia;
+  }
 }
 
 .form-block__input::placeholder {
@@ -151,10 +165,6 @@
   margin-left: -3px;
   letter-spacing: 0.6px;
 
-  &--letterspacing {
-    letter-spacing: 0.3px;
-  }
-
   @media (min-width: @tablet-width) {
     width: 500px;
     height: 45px;
@@ -168,9 +178,9 @@
   @media (min-width: @desktop-width) {
     width: 313px;
     height: 45px;
-    margin-top: 2px;
+    margin-top: 5px;
     margin-bottom: 45px;
-    padding-top: 17px;
+    padding-top: 14px;
     padding-left: 20px;
     margin-right: 0;
     letter-spacing: 0.3px;
@@ -180,7 +190,7 @@
     border: 2px solid @dark-blue;
   }
 
-  &:focus {
+  &:active {
     border: 2px solid @fuchsia;
   }
 }
@@ -225,7 +235,7 @@
     border: 2px solid @dark-blue;
   }
 
-  &:focus {
+  &:active {
     border: 2px solid @fuchsia;
   }
 }

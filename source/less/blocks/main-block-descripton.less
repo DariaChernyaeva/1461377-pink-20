@@ -2,6 +2,8 @@
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 33px;
+  position: relative;
+  overflow: hidden;
 
   @media (min-width: @tablet-width) {
     font-size: @super-super-big;
@@ -14,6 +16,18 @@
     line-height: 68px;
     position: relative;
   }
+}
+
+.main-block-descripton:after {
+  background-image: url(../img/bg-triangle-white.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 30px;
+  bottom: -1;
+  content: "";
+  position: absolute;
+  transform: rotate(180deg);
 }
 
 .main-block-descripton__div {

@@ -5,6 +5,8 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: -1px;
+  position: relative;
+  overflow: hidden;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -331,9 +333,11 @@
     margin-left: 0;
     margin-right: 0;
     position: relative;
+    width: 960px;
   }
 }
 
+/*
 .block-advantages__figura {
   @media (min-width: @mobile-width-only) {
     position: absolute;
@@ -363,3 +367,17 @@
     fill: @white;
   }
 }
+*/
+
+/*
+.block-advantages:before {
+  background-image: url(../img/bg-triangle-white.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 30px;
+  content: "";
+  position: absolute;
+  transform: rotate(180deg);
+}
+*/

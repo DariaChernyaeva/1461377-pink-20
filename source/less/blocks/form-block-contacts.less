@@ -80,6 +80,54 @@
   }
 }
 
+.form-block-contacts-flex2__form-block-label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: @small-font;
+  line-height: 30px;
+  color: @fuchsia;
+  padding-left: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 78px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 15px;
+    padding-top: 11px;
+
+    &--left {
+      padding-left: 32px;
+    }
+  }
+}
+
+.form-block-contacts-hidden__form-block-label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: @small-font;
+  line-height: 30px;
+  color: @fuchsia;
+  padding-left: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 78px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 15px;
+    padding-top: 11px;
+
+    &--left {
+      padding-left: 32px;
+    }
+  }
+}
+
 .form-block-contacts__form-block-input {
   font-style: normal;
   font-weight: normal;
@@ -126,7 +174,100 @@
   }
 }
 
-.form-block-contacts__description {
+.form-block-contacts-flex2__form-block-input {
+  font-style: normal;
+  font-weight: normal;
+  font-size: @base-font;
+  line-height: 30px;
+  color: @dark-blue;
+  border: 2px solid @light-gray;
+  outline: none;
+  width: 253px;
+  height: 56px;
+  padding-left: 18px;
+  margin-bottom: 18px;
+  margin-top: 6px;
+  letter-spacing: 0.5px;
+
+  @media (min-width: @tablet-width) {
+    width: 475px;
+    margin-left: 57px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    padding: 0;
+    padding-left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 345px;
+    margin: 0;
+    padding-left: 20px;
+    letter-spacing: 0.2px;
+    margin-top: 9px;
+
+    &--modif {
+      padding-left: 23px;
+      margin-left: 10px;
+    }
+  }
+
+  &:hover {
+    border: 2px solid @dark-blue;
+  }
+
+  &:active {
+    border: 2px solid @fuchsia;
+  }
+
+}
+
+.form-block-contacts-hidden__form-block-input {
+  font-style: normal;
+  font-weight: normal;
+  font-size: @base-font;
+  line-height: 30px;
+  color: @dark-blue;
+  border: 2px solid @light-gray;
+  outline: none;
+  width: 253px;
+  height: 56px;
+  padding-left: 18px;
+  margin-bottom: 18px;
+  margin-top: 6px;
+  letter-spacing: 0.5px;
+
+  @media (min-width: @tablet-width) {
+    width: 475px;
+    margin-left: 57px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    padding: 0;
+    padding-left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 345px;
+    margin: 0;
+    padding-left: 20px;
+    letter-spacing: 0.2px;
+    margin-top: 9px;
+
+    &--modif {
+      padding-left: 23px;
+      margin-left: 10px;
+    }
+  }
+
+  &:hover {
+    border: 2px solid @dark-blue;
+  }
+
+  &:active {
+    border: 2px solid @fuchsia;
+  }
+}
+
+.form-block-contacts-hidden__description {
   font-style: normal;
   font-weight: normal;
   font-size: @small-font;
@@ -152,49 +293,53 @@
   }
 }
 
-.form-block-contacts__tel-square {
+.form-block-contacts-hidden__tel-square {
   width: 59px;
-  height: 59px;
+  height: 56px;
   background-color: @light-gray;
   position: absolute;
   right: 58px;
-  top: 31px;
+  left: 495px;
+  top: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
 
   @media (min-width: @desktop-width) {
-    top: 10px;
+    top: 11px;
     right: 0;
+    left: 310px;
+    width: 57px;
+    height: 56px;
   }
 }
 
-.form-block-contacts__tel {
+.form-block-contacts-hidden__tel {
   fill: @fuchsia;
 }
 
-.form-block-contacts__mail-square {
+.form-block-contacts-flex2__mail-square {
   width: 59px;
-  height: 59px;
+  height: 56px;
   background-color: @light-gray;
   position: absolute;
-  right: 58px;
-  top: 33px;
+  right: 61px;
+  top: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
 
   @media (min-width: @desktop-width) {
-    top: 9px;
-    right: -4px;
+    top: 11px;
+    right: 2px;
   }
 }
 
-.form-block-contacts__mail {
+.form-block-contacts-flex2__mail {
   fill: @fuchsia;
 }
 
-.form-block-contacts__flex {
+.form-block-contacts-hidden__flex {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -205,7 +350,7 @@
   }
 }
 
-.form-block-contacts__flex2 {
+.form-block-contacts-flex2 {
   display: flex;
   flex-direction: column;
   position: relative;

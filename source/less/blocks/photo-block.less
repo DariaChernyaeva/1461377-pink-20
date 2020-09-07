@@ -1,4 +1,4 @@
-.photo-block__panorama {
+.photo-block-big__panorama {
   font-style: normal;
   font-weight: bold;
   font-size: @super-small-font;
@@ -26,7 +26,7 @@
   }
 }
 
-.photo-block__picture-panorama {
+.photo-block-big__picture-panorama {
   width: 320px;
   height: 137px;
 
@@ -41,6 +41,7 @@
   @media (min-width: @desktop-width) {
     width: 1200px;
     height: 506px;
+    margin-left: -120px;
   }
 }
 
@@ -81,7 +82,7 @@
   }
 }
 
-.photo-block__description-panorama {
+.photo-block-big__description-panorama {
   color: @dark-blue;
   background-color: @extra-light-gray;
   padding-left: 17px;
@@ -114,7 +115,7 @@
   }
 }
 
-.photo-block__title-panorama {
+.photo-block-big__title-panorama {
   font-style: normal;
   font-weight: bold;
   font-size: @small-font;
@@ -139,7 +140,7 @@
   }
 }
 
-.photo-block__text-panorama {
+.photo-block-big__text-panorama {
   font-style: normal;
   font-weight: normal;
   font-size: @small-font;
@@ -173,7 +174,7 @@
   }
 }
 
-.photo-block__heart-panorama {
+.photo-block-big__heart-panorama {
   fill: @fuchsia;
   text-decoration: none;
 
@@ -188,7 +189,7 @@
   }
 }
 
-.photo-block__likes-panorama {
+.photo-block-big__likes-panorama {
   font-style: normal;
   font-weight: normal;
   font-size: @super-small-font;
@@ -212,7 +213,7 @@
   }
 }
 
-.photo-block__grid {
+.photo {
   margin-left: auto;
   margin-right: auto;
 
@@ -252,6 +253,11 @@
     &--mod {
       margin-top: 0;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -370,7 +376,7 @@
   }
 }
 
-.photo-block__title-time {
+.photo-block-big__title-time {
   font-style: normal;
   font-weight: 300;
   font-size: @super-small-font;
@@ -378,7 +384,7 @@
   text-transform: uppercase;
 }
 
-.photo-block__flex {
+.photo-block-big__flex {
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row-reverse;
