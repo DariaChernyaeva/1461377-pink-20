@@ -4,14 +4,15 @@
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -1px;
+  margin-top: 1px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
+    margin-top: 42px;
   }
 
   @media (min-width: @desktop-width) {
@@ -318,6 +319,7 @@
 .block-advantages__wrap {
   @media (min-width: @mobile-width-only) {
     position: relative;
+    margin-top: -95px;
   }
 
   @media (min-width: @tablet-width) {
@@ -325,6 +327,7 @@
     flex-direction: row-reverse;
     margin-right: 0;
     position: relative;
+
   }
 
   @media (min-width: @desktop-width) {
@@ -369,15 +372,13 @@
 }
 */
 
-/*
+
 .block-advantages:before {
-  background-image: url(../img/bg-triangle-white.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 30px;
   content: "";
   position: absolute;
-  transform: rotate(180deg);
+  left: 0;
+  bottom: 100%;
+  border-right: 100vw solid #f2f2f2;
+  border-top: 8vw solid transparent;
+  z-index: -1;
 }
-*/
