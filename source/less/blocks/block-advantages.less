@@ -35,7 +35,7 @@
     padding: 0;
     padding-right: 20px;
     margin-left: 42px;
-    padding-top: 0px;
+    padding-top: 0;
     margin-top: -9px;
   }
 
@@ -325,7 +325,6 @@
 .block-advantages__wrap {
   @media (min-width: @mobile-width-only) {
     position: relative;
-
   }
 
   @media (min-width: @tablet-width) {
@@ -333,7 +332,6 @@
     flex-direction: row-reverse;
     margin-right: 0;
     position: relative;
-
   }
 
   @media (min-width: @desktop-width) {
@@ -385,8 +383,7 @@
 }
 */
 
-
-.block-advantages:before {
+.block-advantages::before {
   content: "";
   position: absolute;
   left: 0;
