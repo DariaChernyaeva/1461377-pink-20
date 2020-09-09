@@ -90,12 +90,12 @@
   line-height: 30px;
   color: @dark-blue;
   width: 253px;
-  height: 45px;
+  height: 52px;
   border: 2px solid @light-gray;
   outline: none;
-  padding-left: 21px;
+  padding-left: 19px;
   padding-right: 2px;
-  padding-top: 10px;
+  padding-top: 6px;
   padding-bottom: 1px;
   margin-top: 4px;
   margin-bottom: 20px;
@@ -121,13 +121,26 @@
     height: 59px;
     margin-bottom: 54px;
   }
+
+  &--letterspacing {
+    @media (min-width: @desktop-width) {
+      letter-spacing: 0.3px;
+    }
+  }
+
+  &:hover {
+    border: 2px solid @dark-blue;
+  }
+
+  &:focus {
+    border: 2px solid @fuchsia;
+  }
 }
 
 .form-block__input::placeholder {
   font-style: normal;
   font-weight: normal;
   font-size: @base-font;
-  line-height: 30px;
   color: @dark-blue;
   outline: none;
 }
@@ -136,24 +149,19 @@
   font-style: normal;
   font-weight: normal;
   font-size: @base-font;
-  line-height: 30px;
   color: @dark-blue;
   width: 253px;
-  height: 45px;
+  height: 51px;
   border: 2px solid @light-gray;
   outline: none;
   padding-left: 21px;
   padding-right: 2px;
-  padding-top: 15px;
+  padding-top: 8px;
   padding-bottom: 1px;
   margin-top: 4px;
   margin-bottom: 17px;
   margin-left: -3px;
   letter-spacing: 0.6px;
-
-  &--letterspacing {
-    letter-spacing: 0.3px;
-  }
 
   @media (min-width: @tablet-width) {
     width: 500px;
@@ -161,16 +169,18 @@
     padding: 0;
     margin: 0;
     padding-left: 18px;
-    padding-top: 18px;
+    padding-top: 9px;
+    padding-bottom: 10px;
     margin-bottom: 36px;
   }
 
   @media (min-width: @desktop-width) {
     width: 313px;
     height: 45px;
-    margin-top: 2px;
+    margin-top: 5px;
     margin-bottom: 45px;
-    padding-top: 17px;
+    padding-top: 8px;
+    padding-bottom: 6px;
     padding-left: 20px;
     margin-right: 0;
     letter-spacing: 0.3px;

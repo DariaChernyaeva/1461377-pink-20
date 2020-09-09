@@ -1,13 +1,15 @@
 .form-block-checkbox__items + label::before {
-  content: " ";
-  display: inline-block;
-  margin-right: 25px;
-  text-align: center;
-  width: 30px;
-  height: 30px;
-  background: @white;
-  border: 1px solid @light-gray;
-  vertical-align: middle;
+  @media (min-width: @mobile-width-only) {
+    content: " ";
+    display: inline-block;
+    margin-right: 25px;
+    text-align: center;
+    background: @white;
+    border: 1px solid @light-gray;
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 35px;
@@ -74,10 +76,10 @@
     color: @fuchsia;
     margin: 0;
     text-align: center;
-    padding-left: 16px;
+    padding-left: 10px;
     padding-right: 25px;
     padding-bottom: 0;
-    margin-bottom: 44px;
+    margin-bottom: 41px;
     letter-spacing: 0.2px;
   }
 
@@ -102,11 +104,11 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    margin-top: -10px;
     background-color: @white;
     width: 480px;
     margin-left: 69px;
-    padding-bottom: 35px;
+    padding-bottom: 32px;
+    margin-top: -13px;
   }
 
   @media (min-width: @desktop-width) {
@@ -143,6 +145,14 @@
   }
 
   &--akula {
+    @media (min-width: @mobile-width-only) {
+      margin-bottom: 44px;
+    }
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 35px;
+    }
+
     @media (min-width: @desktop-width) {
       order: -1;
       margin-bottom: 14px;
@@ -152,8 +162,13 @@
   }
 
   &--obgorel {
+    @media (min-width: @mobile-width-only) {
+      margin-bottom: 45px;
+    }
+
     @media (min-width: @tablet-width) {
-      margin-top: 51px;
+      margin-bottom: 0;
+      margin-top: 47px;
     }
 
     @media (min-width: @desktop-width) {
@@ -163,8 +178,13 @@
   }
 
   &--chack {
+    @media (min-width: @mobile-width-only) {
+      margin-bottom: 45px;
+    }
+
     @media (min-width: @tablet-width) {
-      margin-bottom: 46px;
+      margin-top: 44px;
+      margin-bottom: 40px;
     }
 
     @media (min-width: @desktop-width) {
@@ -176,8 +196,12 @@
   }
 
   &--paddingtop {
+    @media (min-width: @mobile-width-only) {
+      margin-bottom: 45px;
+    }
+
     @media (min-width: @tablet-width) {
-      margin-bottom: 49px;
+      margin-bottom: 44px;
     }
 
     @media (min-width: @desktop-width) {
@@ -190,8 +214,12 @@
   }
 
   &--bashnya {
+    @media (min-width: @mobile-width-only) {
+      margin-bottom: 46px;
+    }
+
     @media (min-width: @tablet-width) {
-      margin-bottom: 50px;
+      margin-bottom: 46px;
     }
 
     @media (min-width: @desktop-width) {
@@ -203,6 +231,14 @@
   }
 
   &--margin {
+    @media (min-width: @mobile-width-only) {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 47px;
+    }
+
     @media (min-width: @desktop-width) {
       margin-bottom: 30px;
       margin-top: -9px;
@@ -241,6 +277,6 @@
 .form-block-checkbox__answer {
   padding-left: 0;
   font-size: 18px;
-  margin-left: 12px;
+  margin-left: 9px;
   letter-spacing: 0.3px;
 }

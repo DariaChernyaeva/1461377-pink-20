@@ -2,9 +2,10 @@
   background: url("../img/bg-back-mobile@1x.jpg");
   display: flex;
   flex-direction: column;
-  padding-bottom: 45px;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 44px;
+  padding-top: 87px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -17,6 +18,7 @@
     padding: 0;
     background-position: 50% 30%;
     padding-bottom: 59px;
+    padding-top: 112px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -29,7 +31,9 @@
     padding-bottom: 89px;
     background-size: cover;
     background-position: 50% 50%;
-    padding-top: 107px;
+    padding-top: 106px;
+    width: 100%;
+    max-width: 100%;
   }
 
   @media (min-resolution: 2dppx) {
@@ -37,13 +41,13 @@
   }
 }
 
-.main-block-photo2 {
+div.main-block-photo2 {
   @media (min-width: @mobile-width-only) {
     background: url("../img/bg-back-mobile@1x.jpg");
     display: flex;
     flex-direction: column;
-    padding-top: 0;
-    padding-bottom: 60px;
+    padding-top: 75px;
+    padding-bottom: 61px;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -58,7 +62,7 @@
     background: url("../img/bg-back-tablet@1x.jpg");
     background-position: 50% 30%;
     padding-bottom: 94px;
-    padding-top: 37px;
+    padding-top: 148px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -71,7 +75,9 @@
     padding-bottom: 55px;
     background-size: cover;
     background-position: 50% 50%;
-    padding-top: 143px;
+    padding-top: 144px;
+    width: 100%;
+    max-width: 100%;
   }
 
   @media (min-resolution: 2dppx) {
@@ -79,7 +85,7 @@
   }
 }
 
-.main-block-photo__heading {
+.main-block-photo2__heading {
   font-style: normal;
   font-weight: 300;
   font-size: @big-font;
@@ -87,6 +93,10 @@
   color: @white;
   text-align: center;
   margin-top: 28px;
+
+  @media (max-width: @tablet-width - 1px) {
+    margin-top: 40px;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: @extra-big;
@@ -100,10 +110,14 @@
   font-size: @big-font;
   line-height: 33px;
   color: @white;
-  padding-top: 26px;
+  padding-top: 15px;
   text-align: center;
   width: 230px;
   margin: 0 auto;
+
+  @media (max-width: @tablet-width - 1px) {
+    margin-top: 12px;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: @extra-big;

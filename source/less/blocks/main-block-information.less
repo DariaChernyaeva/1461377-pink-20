@@ -152,8 +152,9 @@
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -2px;
   overflow: hidden;
+  margin-top: 21px;
+  padding-top: 46px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -168,6 +169,8 @@
     position: relative;
     min-height: 620px;
     overflow: hidden;
+    padding-top: 109px;
+    margin-top: 0;
 
 
     @media (min-resolution: 2dppx) {
@@ -181,8 +184,10 @@
     position: relative;
     overflow: hidden;
     margin-top: -80px;
-    padding-bottom: 124px;
-    padding-top: 86px;
+    padding-top: 166px;
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 121px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -199,6 +204,11 @@
     align-self: flex-end;
     order: -1;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 10px;
+    margin-top: 1px;
+  }
 }
 
 .main-block-information__image {
@@ -214,7 +224,7 @@
     order: -1;
     position: absolute;
     right: -20px;
-    bottom: 1px;
+    top: 184px;
     width: 700px;
     max-width: 700px;
     height: 545px;
@@ -228,9 +238,9 @@
     max-width: 1050px;
     height: 645px;
     object-fit: cover;
-    right: 4px;
-    left: 25px;
-    bottom: -1px;
+    left: initial;
+    right: -115px;
+    top: 130px;
   }
 }
 
@@ -243,8 +253,14 @@
     color: @white;
     text-align: center;
     padding-left: 20px;
-    padding-top: 2px;
     width: 280px;
+    margin-top: 24px;
+    padding-top: 18px;
+  }
+
+  @media (max-width: @tablet-width - 1px) {
+    margin-top: 24px;
+    margin-bottom: 28px;
   }
 
   @media (min-width: @tablet-width) {
@@ -256,13 +272,14 @@
     padding-top: 51px;
     margin-bottom: 0;
     padding-bottom: 29px;
+    margin-top: 45px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: @extra-big;
     line-height: 68px;
     padding: 0;
-    margin-top: 116px;
+    margin-top: 126px;
     margin-left: 41px;
     padding-bottom: 0;
   }
@@ -277,5 +294,15 @@
 
   @media (min-width: @tablet-width) {
     background: transparent;
+  }
+}
+
+.main-block-information__wrapper {
+  @media (min-width: @desktop-width) {
+    position: relative;
+    max-width: 960px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
