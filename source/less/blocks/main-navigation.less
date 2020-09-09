@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     margin-left: 138px;
-    margin-top: 13px;
+    margin-top: 30px;
   }
 
   &--formrhird {
@@ -25,17 +25,31 @@
   padding: 0;
   margin-bottom: 0;
   background-color: @dark-blue;
+  margin-top: 20px;
 
   @media (min-width: @tablet-width) {
     padding-top: 20px;
+    margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 0;
     background: transparent;
+    padding-top: 0;
+    padding-bottom: 6px;
+  }
+
+  &--main {
+    @media (min-width: @tablet-width) {
+      padding-top: 0;
+      padding-bottom: 94px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-bottom: 8px;
+    }
   }
 }
 
@@ -65,7 +79,7 @@
     padding-right: 0;
 
     &--padding {
-      padding-left: 25px;
+      padding-left: 23px;
     }
 
     &--padding2 {
@@ -75,6 +89,12 @@
     &--padding3 {
       width: auto;
       padding-left: 39px;
+      padding-top: 17px;
+    }
+
+    &--padding3-form {
+      width: auto;
+      padding-left: 43px;
       padding-top: 17px;
     }
   }
@@ -104,6 +124,7 @@
     font-size: 18px;
     text-transform: none;
     line-height: 18px;
+    letter-spacing: 0.5px;
 
     &:active {
       color: @white;

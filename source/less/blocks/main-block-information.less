@@ -154,7 +154,7 @@
   margin-right: auto;
   overflow: hidden;
   margin-top: 21px;
-  padding-top: 62px;
+  padding-top: 46px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -184,10 +184,10 @@
     position: relative;
     overflow: hidden;
     margin-top: -80px;
-    padding-bottom: 124px;
     padding-top: 166px;
     width: 100%;
     max-width: 100%;
+    padding-bottom: 121px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -203,6 +203,11 @@
   @media (min-width: @tablet-width) {
     align-self: flex-end;
     order: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 10px;
+    margin-top: 1px;
   }
 }
 
@@ -248,8 +253,9 @@
     color: @white;
     text-align: center;
     padding-left: 20px;
-    padding-top: 2px;
     width: 280px;
+    margin-top: 24px;
+    padding-top: 18px;
   }
 
   @media (max-width: @tablet-width - 1px) {
@@ -273,7 +279,7 @@
     font-size: @extra-big;
     line-height: 68px;
     padding: 0;
-    margin-top: 131px;
+    margin-top: 126px;
     margin-left: 41px;
     padding-bottom: 0;
   }

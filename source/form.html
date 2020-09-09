@@ -7,14 +7,17 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="/css/style.min.css" as="style">
+  <link rel="preload" href="/fonts/open-sans-v17-latin_cyrillic-300.woff2" as="font">
+  <link rel="preload" href="/fonts/open-sans-v17-latin_cyrillic-700.woff2" as="font">
 </head>
 
 <body class="page__body">
   <header class="page-header page-header--form">
     <div class="page-header__div size">
       <div class="page-header__logotoggle page-header__logotoggle--formthird">
-        <a class="page-header__logo" href="index.html">
-          <svg class="page-header__logo-desktop" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="147" height="40" viewBox="0 0 146.3 40.375" role="img" aria-label="Логотип сайта Pink"
+        <a class="page-header__logo" href="index.html" aria-label="Логотип сайта Pink">
+          <svg class="page-header__logo-desktop" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="147" height="40" viewBox="0 0 146.3 40.375" role="img"
             enable-background="new 0 0 146.3 40.375" xml:space="preserve">
             <g>
               <path fill="#FFFFFF"
@@ -49,7 +52,7 @@
             </g>
           </svg>
 
-          <svg class="page-header__logo-tablet" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="145" height="40" viewBox="0 0 146.3 40.375" role="img" aria-label="Логотип сайта Pink"
+          <svg class="page-header__logo-tablet" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="145" height="40" viewBox="0 0 146.3 40.375" role="img"
             enable-background="new 0 0 146.3 40.375" xml:space="preserve">
             <g class="page-header__logo-pink">
               <path
@@ -82,7 +85,7 @@
             <li class="main-navigation__list-item main-navigation__list-item--border"><a class="main-navigation__list-links" href="index.html">Главная</a></li>
             <li class="main-navigation__list-item main-navigation__list-item--padding"><a class="main-navigation__list-links" href="photo.html">Фотографии</a></li>
             <li class="main-navigation__list-item main-navigation__list-item--padding2"><a class="main-navigation__list-links" href="form.html"><span class="main-navigation__list-item-current">Конкурс</span></a></li>
-            <li class="main-navigation__list-item main-navigation__list-item--padding3"><a class="main-navigation__list-links" href="#">HTML Academy</a></li>
+            <li class="main-navigation__list-item main-navigation__list-item--padding3-form"><a class="main-navigation__list-links" href="#">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
@@ -216,9 +219,8 @@
     <section class="footer-items footer-items--formmob footer-items--formtab footer-items--formdesk">
       <div class="footer-items__div footer-items__div--formsecondpage footer-items__div--formthirdpage size">
         <div class="footer-items__footer-logo">
-          <a class="footer-items__footer-logo">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="147" height="40" aria-label="основной логотип сайта pink" viewBox="0 0 146.3 40.375"
-              enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+          <a class="footer-items__footer-logo" aria-label="основной логотип сайта pink">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="147" height="40" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
               <g class="footer-items__footer-logo-pink">
                 <path
                   d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z" />
