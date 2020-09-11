@@ -140,6 +140,12 @@
   }
 }
 
+.upload-block__share-button1:disabled {
+  background-color: @light-gray;
+  color: @white;
+  border: 3px solid @light-gray;
+}
+
 .upload-block__share-button2 {
   font-style: normal;
   font-weight: bold;
@@ -185,6 +191,12 @@
     color: rgba(255, 255, 255, 0.3);
     background-color: @dark-blue;
   }
+}
+
+.upload-block__share-button2:disabled {
+  background-color: @light-gray;
+  color: @white;
+  border: 3px solid @light-gray;
 }
 
 .upload-block {
@@ -507,20 +519,20 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
-.upload-block__scaleall input:active::-webkit-slider-thumb {
+.upload-block__scale-all input:active::-webkit-slider-thumb {
   background-color: @fuchsia;
 }
 
-.upload-block__scaleall input:active::-moz-range-thumb {
+.upload-block__scale-all input:active::-moz-range-thumb {
   background-color: @fuchsia;
 }
 
-.upload-block__scaleall input:focus {
+.upload-block__scale-all input:focus {
   outline: 1px dashed @fuchsia;
   outline-offset: 0;
 }
 
-.upload-block__scaleall input::-webkit-slider-runnable-track {
+.upload-block__scale-all input::-webkit-slider-runnable-track {
   box-sizing: border-box;
   border: 0;
   width: 100%;
@@ -528,7 +540,7 @@ input[type="range"]::-moz-range-thumb {
   background-color: @dark-blue;
 }
 
-.upload-block__scaleall input::-moz-range-track {
+.upload-block__scale-all input::-moz-range-track {
   box-sizing: border-box;
   border: 0;
   width: 100%;
@@ -536,7 +548,7 @@ input[type="range"]::-moz-range-thumb {
   background-color: @dark-blue;
 }
 
-.upload-block__scaleall input::-webkit-slider-thumb {
+.upload-block__scale-all input::-webkit-slider-thumb {
   box-sizing: border-box;
   border: 2px solid @fuchsia;
   width: 14px;
@@ -546,7 +558,7 @@ input[type="range"]::-moz-range-thumb {
   cursor: pointer;
 }
 
-.upload-block__scaleall input::-moz-range-thumb {
+.upload-block__scale-all input::-moz-range-thumb {
   box-sizing: border-box;
   border: 2px solid @fuchsia;
   width: 14px;
@@ -556,6 +568,6 @@ input[type="range"]::-moz-range-thumb {
   cursor: pointer;
 }
 
-.upload-block__scaleall input::-moz-focus-outer {
+.upload-block__scale-all input::-moz-focus-outer {
   border: 0;
 }

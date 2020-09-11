@@ -168,3 +168,23 @@
 .main-navigation--opened .main-navigation__burger {
   display: none;
 }
+
+.main-navigation--nojs .page-header__toggle {
+  display: none;
+}
+
+.main-navigation--nojs .main-navigation__wrapper{
+  margin-top: -4px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+  }
+}
+
+.main-navigation--nojs .page-header__logo-toggle {
+  background: #283645;
+}

@@ -8,13 +8,13 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
 
-  &--firstdesk {
+  &--first-desk {
     position: relative;
 
     @media (min-width: @mobile-width-only) and (max-width: @desktop-width - 1px) {
       background-color: transparent;
 
-      .page-header__logotoggle {
+      .page-header__logo-toggle {
         position: relative;
         z-index: 1;
         padding-bottom: 18px;
@@ -29,6 +29,15 @@
 
       .page-header__toggle {
         z-index: 1;
+      }
+    }
+  }
+
+  &--nojs {
+    .page-header__logo-toggle {
+      background: rgba(40, 54, 69, 1);
+      @media (min-width: @desktop-width) {
+        background: transparent;
       }
     }
   }
@@ -74,14 +83,14 @@
     margin-left: -10px;
   }
 
-  &--thirdphoto {
+  &--third-photo {
     @media (min-width: @desktop-width) {
       margin-left: 10px;
       margin-top: 26px;
     }
   }
 
-  &--thirdindex {
+  &--third-index {
     @media (min-width: @desktop-width) {
       margin-top: 26px;
       margin-left: 10px;
@@ -138,7 +147,7 @@
   }
 }
 
-.page-header__logotoggle {
+.page-header__logo-toggle {
   @media (min-width: @mobile-width-only) {
     display: flex;
     padding-top: 22px;
@@ -162,7 +171,11 @@
     box-shadow: none;
   }
 
-  &--formthird {
+  &--nojs {
+    background: @dark-blue;
+  }
+
+  &--form-third {
     @media (min-width: @desktop-width) {
       padding-left: 21px;
       padding-top: 26px;
@@ -214,7 +227,7 @@
   @media (min-width: @mobile-width-only) and (max-width: @desktop-width - 1px) {
     background-color: transparent;
 
-    .page-header__logotoggle {
+    .page-header__logo-toggle {
       position: relative;
       z-index: 1;
       padding-bottom: 18px;
@@ -237,7 +250,7 @@
   @media (min-width: @mobile-width-only) and (max-width: @desktop-width - 1px) {
     background-color: transparent;
 
-    .page-header__logotoggle {
+    .page-header__logo-toggle {
       position: relative;
       z-index: 1;
       padding-bottom: 18px;
@@ -256,11 +269,20 @@
   }
 }
 
+.page-header--nojs {
+  .page-header__logo-toggle {
+    background: rgba(40, 54, 69, 1);
+    @media (min-width: @desktop-width) {
+      background: transparent;
+    }
+  }
+}
+
 .page-header--opened {
   @media (min-width: @mobile-width-only) and (max-width: @desktop-width - 1px) {
     background: #283645;
 
-    .page-header__logotoggle {
+    .page-header__logo-toggle {
       background: none;
     }
   }

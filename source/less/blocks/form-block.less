@@ -39,7 +39,7 @@
   }
 }
 
-.form-block__labelsecond {
+.form-block__label-second {
   font-style: normal;
   font-weight: normal;
   font-size: @small-font;
@@ -61,7 +61,7 @@
   }
 }
 
-.form-block__labelthird {
+.form-block__label-third {
   font-style: normal;
   font-weight: normal;
   font-size: @small-font;
@@ -83,7 +83,7 @@
   }
 }
 
-.form-block__inputthird {
+.form-block__input-third {
   font-style: normal;
   font-weight: normal;
   font-size: @base-font;
@@ -122,7 +122,7 @@
     margin-bottom: 54px;
   }
 
-  &--letterspacing {
+  &--letter-spacing {
     @media (min-width: @desktop-width) {
       letter-spacing: 0.3px;
     }
@@ -135,6 +135,10 @@
   &:focus {
     border: 2px solid @fuchsia;
   }
+}
+
+.form-block__input-third:disabled {
+  background-color: @light-gray;
 }
 
 .form-block__input::placeholder {
@@ -195,7 +199,11 @@
   }
 }
 
-.form-block__inputsecond {
+.form-block__input:disabled {
+  background-color: @light-gray;
+}
+
+.form-block__input-second {
   font-style: normal;
   font-weight: normal;
   font-size: @base-font;
@@ -238,6 +246,10 @@
   &:focus {
     border: 2px solid @fuchsia;
   }
+}
+
+.form-block__input-second:disabled {
+  background-color: @light-gray;
 }
 
 .form-block__description {
