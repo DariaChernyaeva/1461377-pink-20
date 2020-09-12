@@ -106,7 +106,7 @@ const images = () => {
   //Sprite
 
  const sprite = () => {
-    return gulp.src("source/img/**/icon-*.svg")
+    return gulp.src("source/img/**/*.svg")
     .pipe(cheerio({
       run: function ($) {
         $('[fill]').removeAttr('fill');

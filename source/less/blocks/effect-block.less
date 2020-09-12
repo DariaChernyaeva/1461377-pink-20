@@ -10,16 +10,35 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 0;
+
+    br {
+      display: block;
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 300px;
     padding-top: 0;
     margin-top: 88px;
-
     br {
-      display: none;
+        display: none;
+      }
     }
+}
+
+.effect-block__br {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.effect-block__desktop {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }
 
@@ -41,9 +60,10 @@
     line-height: 30px;
     margin-bottom: 0;
     padding-bottom: 30px;
-    margin-top: 23px;
+    margin-top: 25px;
     width: 555px;
     padding-left: 0;
+    letter-spacing: 0.4px;
 
    .br {
       display: none;
