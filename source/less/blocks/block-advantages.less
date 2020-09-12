@@ -150,7 +150,7 @@
     margin-top: 14px;
     padding-top: 30px;
     margin-left: 70px;
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -191,7 +191,7 @@
     text-align: center;
     padding-right: 0;
     letter-spacing: 0.4px;
-    margin-right: 0px;
+    margin-right: 0;
     margin-left: 41px;
     margin-top: 12px;
   }
@@ -199,21 +199,21 @@
 
 .advantages-new__description2 {
   @media (min-width: @mobile-width-only) {
-  font-style: normal;
-  font-weight: normal;
-  font-size: @small-font;
-  line-height: 24px;
-  color: @dark-blue;
-  width: 250px;
-  margin: 0 auto;
-  letter-spacing: 0.4px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: @small-font;
+    line-height: 24px;
+    color: @dark-blue;
+    width: 250px;
+    margin: 0 auto;
+    letter-spacing: 0.4px;
 
-  br {
-    display: none;
+    br {
+      display: none;
+    }
   }
-}
 
- @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     text-align: left;
     margin-left: 112px;
     letter-spacing: 0.3px;
@@ -224,7 +224,7 @@
     }
   }
 
- @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     font-size: @base-font;
     line-height: 30px;
     width: 240px;
@@ -241,18 +241,18 @@
 
 .advantages-new__description3 {
   @media (min-width: @mobile-width-only) {
-  font-style: normal;
-  font-weight: normal;
-  font-size: @small-font;
-  line-height: 24px;
-  color: @dark-blue;
-  margin: 0 auto;
-  letter-spacing: 0.5px;
-  margin-left: 12px;
-  width: 267px;
-}
+    font-style: normal;
+    font-weight: normal;
+    font-size: @small-font;
+    line-height: 24px;
+    color: @dark-blue;
+    margin: 0 auto;
+    letter-spacing: 0.5px;
+    margin-left: 12px;
+    width: 267px;
+  }
 
- @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     text-align: left;
     width: 314px;
     padding-left: 0;
@@ -260,7 +260,7 @@
     letter-spacing: 0.4px;
   }
 
- @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     font-size: @base-font;
     line-height: 30px;
     width: 240px;
@@ -273,25 +273,25 @@
 
 .advantages-new {
   @media (min-width: @mobile-width-only) {
-  background-color: @extra-light-gray;
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1px;
-  position: relative;
-  overflow: visible;
-}
+    background-color: @extra-light-gray;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    position: relative;
+    overflow: visible;
+  }
 
- @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
     margin-top: 42px;
     padding-bottom: 42px;
-}
+  }
 
- @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
     padding-top: 6px;
@@ -302,7 +302,7 @@
   }
 }
 
-.advantages-new__container  {
+.advantages-new__container {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
@@ -314,10 +314,9 @@
 
   @media (min-width: @tablet-width) {
     position: relative;
-    padding-left: 218px;
     flex-shrink: 0;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -328,7 +327,7 @@
   }
 }
 
-.advantages-new__item  {
+.advantages-new__item {
   @media (min-width: @mobile-width-only) {
     text-align: center;
     padding-top: 20px;
@@ -350,11 +349,13 @@
   &--mobile {
     position: relative;
     padding-bottom: 365px;
+
     @media (min-width: @tablet-width) {
       position: static;
       padding-bottom: 0;
       margin-left: 261px;
     }
+
     @media (min-width: @desktop-width) {
       margin-left: 0;
     }
@@ -384,12 +385,13 @@
   &--mobile {
     position: relative;
     padding-bottom: 391px;
+
     @media (min-width: @tablet-width) {
       position: static;
       padding-bottom: 0;
       margin-left: 50px;
-      padding-right: 0px;
-      margin-right: 0px;
+      padding-right: 0;
+      margin-right: 0;
     }
   }
 }
@@ -407,6 +409,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 0px;
+    margin-left: 0;
   }
 }

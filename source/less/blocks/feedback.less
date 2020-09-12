@@ -159,13 +159,14 @@
   @media (min-width: @mobile-width-only) {
     fill: @dark-blue;
     opacity: 0.3;
-    margin-top: -15px;
+    margin-top: -14px;
     margin-left: 10px;
     padding-left: 0;
+    padding-top: 17px;
   }
 
   @media (min-width: @tablet-width) {
-    margin-top: -30px;
+    margin-top: -12px;
   }
 
   &:hover {
@@ -277,28 +278,23 @@
   }
 }
 
-.feedback__figura {
-  @media (min-width: @mobile-width-only) {
-    position: absolute;
-    width: 448px;
-    top: 311px;
-    left: -127px;
-    transform: rotate(180deg);
-  }
+.feedback ::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 348px;
+  bottom: 100%;
+  border-right: 100vw solid #f2f2f2;
+  border-top: 8vw solid transparent;
+  z-index: -1;
 
   @media (min-width: @tablet-width) {
-    position: absolute;
-    width: 763px;
-    top: 212px;
-    left: -127px;
-    transform: rotate(180deg);
+    top: 231px;
+    height: 40px;
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    left: 0;
-    transform: rotate(180deg) scale(3);
-    height: 229px;
-    top: 282px;
+    top: 344px;
+    height: 71px;
   }
 }
