@@ -51,7 +51,9 @@
 }
 
 .required-block__hidden {
-  @media (max-width: @desktop-width) {
-    display: none;
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline;
   }
 }
