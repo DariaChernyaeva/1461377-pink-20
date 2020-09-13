@@ -5,9 +5,9 @@
 .card__pictures-general {
   position: relative;
   width: 100%;
-  max-width: 960px;
   margin: 0 auto;
   padding: 0 15px;
+  box-sizing: border-box;
 }
 
 .card__pictures {
@@ -40,16 +40,10 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 660px;
     height: 374px;
-    right: 0;
-    left: 0;
   }
 
   @media (min-width: @desktop-width) {
-    width: 960px;
     height: 499px;
-    right: 0;
-    left: 16px;
   }
 }

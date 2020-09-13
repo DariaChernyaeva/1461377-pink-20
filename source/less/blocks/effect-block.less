@@ -125,6 +125,11 @@
 
   @media (min-width: @tablet-width) {
     padding-left: 0;
+    max-width: 610px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 950px;
   }
 }
 
@@ -208,19 +213,5 @@
     height: 345px;
     margin-left: -1px;
     margin-top: -3px;
-  }
-}
-
-.effect-block::after {
-  @media (min-width: @desktop-width) {
-    content: "";
-    background-image: url("../img/icon-quotes.svg");
-    background-repeat: no-repeat;
-    width: 79px;
-    height: 63px;
-    position: absolute;
-    left: 450px;
-    top: 0;
-    bottom: 100%;
   }
 }

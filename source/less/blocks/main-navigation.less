@@ -10,14 +10,20 @@
     margin-top: 30px;
   }
 
+  @media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
+    z-index: 1;
+  }
+
   &--formrhird {
     @media (min-width: @desktop-width) {
-      margin-left: 135px;
+      margin-left: auto;
+      padding-right: 10px;
     }
   }
 }
 
 .main-navigation__wrapper {
+  width: 100%;
   text-align: center;
 }
 
@@ -28,7 +34,7 @@
   margin-top: 20px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 20px;
+    padding-top: 14px;
     margin-top: 0;
   }
 
@@ -55,10 +61,11 @@
 }
 
 .main-navigation__list-item {
+  box-sizing: border-box;
   color: @white;
   padding-left: 87px;
   padding-right: 87px;
-  width: 145px;
+  width: 100%;
   list-style: none;
   padding-top: 15px;
   padding-bottom: 16px;
@@ -78,6 +85,8 @@
     border-top: none;
     padding-left: 0;
     padding-right: 0;
+    width: auto;
+    margin-left: 79px;
 
     &--padding {
       padding-left: 23px;

@@ -112,6 +112,10 @@
   border: 2px solid @dark-blue;
 }
 
+.form-block-radio__items:active + label::before {
+  border: 2px solid @fuchsia;
+}
+
 [type="radio"]:checked + label::after,
 [type="radio"]:not(:checked) + label::after {
   content: " ";

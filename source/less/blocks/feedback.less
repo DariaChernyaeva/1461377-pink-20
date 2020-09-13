@@ -21,7 +21,7 @@
     font-size: @almost-standard-font;
     margin-bottom: 0;
     margin-top: 34px;
-    margin-right: 38px;
+    margin-right: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -47,10 +47,10 @@
   @media (min-width: @tablet-width) {
     font-size: @base-font;
     width: 628px;
-    padding-left: 0;
     margin-bottom: 0;
     margin-top: -11px;
     margin-left: -4px;
+    padding: 0 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -63,27 +63,25 @@
   display: flex;
   flex-direction: column;
   margin-top: -47px;
-  margin-bottom: 60px;
-  margin-left: 0;
-  margin-right: 20px;
   position: relative;
 
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+
   @media (min-width: @tablet-width) {
-    margin: 0;
-    margin-bottom: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-top: -3px;
     display: flex;
     flex-direction: column;
     position: relative;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0;
-    margin-bottom: 41px;
-    margin-left: 0;
-    margin-right: 130px;
-    margin-top: 72px;
+    margin-top: 182px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -102,7 +100,6 @@
     justify-content: center;
     margin: 0;
     padding-bottom: 0;
-    margin-right: 41px;
     letter-spacing: 0.2px;
   }
 
@@ -113,9 +110,14 @@
 }
 
 .feedback {
+  background: #ffffff;
+  position: relative;
+  padding-bottom: 60px;
+
   @media (min-width: @mobile-width-only) {
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 40px;
   }
 
   @media (min-width: @tablet-width) {
@@ -278,23 +280,37 @@
   }
 }
 
-.feedback ::after {
+.feedback::after {
   content: "";
   position: absolute;
   left: 0;
-  top: 348px;
-  bottom: 100%;
+  bottom: 0;
   border-right: 100vw solid #f2f2f2;
   border-top: 8vw solid transparent;
-  z-index: -1;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
-    top: 231px;
     height: 40px;
+    bottom: -47px;
   }
 
   @media (min-width: @desktop-width) {
-    top: 344px;
     height: 71px;
+    z-index: 0;
+    bottom: -177px;
+  }
+}
+
+.feedback::before {
+  @media (min-width: @desktop-width) {
+    content: "";
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    width: 79px;
+    height: 63px;
+    position: absolute;
+    left: 50%;
+    top: -110px;
+    transform: translateX(-50%);
   }
 }

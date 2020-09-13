@@ -46,7 +46,7 @@
 
   &--first-tab {
     @media (min-width: @desktop-width) {
-      margin-top: 29px;
+      margin-top: -24px;
     }
   }
 }
@@ -68,6 +68,7 @@
     padding-right: 20px;
     padding-top: 33px;
     padding-bottom: 51px;
+    box-sizing: border-box;
 
     &--second-tab {
       padding-top: 40px;
@@ -301,11 +302,15 @@
 
     @media (min-width: @tablet-width) {
       padding: 0;
-      padding-left: 28px;
+      padding-left: 68px;
       display: flex;
       margin: 12px auto 0;
       margin-top: -36px;
       align-items: center;
+
+      .footer-items__developed-by-logo {
+        margin-top: -10px;
+      }
     }
 
     @media (min-width: @desktop-width) {
@@ -368,6 +373,8 @@
   @media (min-width: @mobile-width-only) {
     position: initial;
     margin-left: 0;
+    margin-bottom: -10px;
+    margin-top: 9px;
   }
 
   @media (min-width: @tablet-width) {
@@ -499,5 +506,67 @@
   @media (min-width: @desktop-width) {
     position: initial;
     margin-left: 0;
+  }
+}
+
+.footer-items__div--form {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
+    padding: 58px 0 51px 30px;
+
+    .footer-items__developed-by--first-tab {
+      padding-left: 38px;
+    }
+
+    .footer-items__developed-by-logo {
+      margin-top: -10px;
+    }
+  }
+}
+
+.footer-items__div--photo {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
+    padding: 48px 20px 0;
+    box-sizing: border-box;
+
+    .footer-items__developed-by--first-tab {
+      padding-left: 68px;
+    }
+
+    .footer-items__developed-by-logo {
+      margin-top: -10px;
+    }
+  }
+}
+
+.footer-page--photo {
+  @media (min-width: @desktop-width) {
+    .footer-items__div--mod-first-desktop {
+      margin-top: 82px;
+    }
+  }
+}
+
+.footer-page--front {
+  @media (min-width: @desktop-width) {
+    margin-top: 53px;
+  }
+}
+
+.footer-page--form {
+  @media (min-width: @tablet-width - 1px) {
+    margin-top: 10px;
+  }
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
+    margin-top: 0;
+    margin-left: -20px;
+
+    .footer-items__developed-by--first-tab {
+      padding-left: 58px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
   }
 }

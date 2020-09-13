@@ -169,13 +169,17 @@
     position: relative;
     min-height: 620px;
     overflow: hidden;
-    padding-top: 109px;
+    padding-top: 0;
     margin-top: 0;
 
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
     }
+  }
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
+    padding-top: 91px;
   }
 
   @media (min-width: @desktop-width) {
@@ -224,7 +228,8 @@
     order: -1;
     position: absolute;
     right: -20px;
-    top: 184px;
+    top: initial;
+    bottom: -82px;
     width: 700px;
     max-width: 700px;
     height: 545px;
@@ -240,7 +245,7 @@
     object-fit: cover;
     left: initial;
     right: -115px;
-    top: 130px;
+    bottom: -122px;
   }
 }
 
@@ -259,7 +264,7 @@
   }
 
   @media (max-width: @tablet-width - 1px) {
-    margin-top: 24px;
+    margin-top: 6px;
     margin-bottom: 28px;
   }
 
@@ -292,12 +297,27 @@
     background-color: @blue;
   }
 
+  @media (max-width: @tablet-width - 1px) {
+    width: 100vw;
+    margin-left: calc((100vw - 100%) / -2);
+    padding-left: calc((100vw - 100%) / 2);
+  }
+
   @media (min-width: @tablet-width) {
     background: transparent;
   }
 }
 
 .main-block-information__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    position: relative;
+  }
+
   @media (min-width: @desktop-width) {
     position: relative;
     max-width: 960px;

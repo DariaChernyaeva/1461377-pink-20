@@ -3,6 +3,7 @@
   @media (min-width: @mobile-width-only) {
     background-color: @extra-light-gray;
     display: flex;
+    justify-content: center;
     margin-top: 47px;
     margin-bottom: 21px;
   }
@@ -22,7 +23,6 @@
       fill: @fuchsia;
       padding-right: 0;
       padding-left: 0;
-      margin-left: 56px;
     }
 
     &--fill {
@@ -55,7 +55,8 @@
   width: 280px;
   height: 374px;
   background-color: @extra-light-gray;
-  margin-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 5px;
 
   @media (min-width: @tablet-width) {
@@ -71,6 +72,7 @@
     height: 400px;
     margin-right: 81px;
     margin-left: 0;
+    flex-shrink: 0;
   }
 }
 
@@ -210,12 +212,16 @@
     padding: 0;
     padding-top: 58px;
     padding-bottom: 53px;
+    width: 100%;
+    padding-left: calc((100% - 660px) / 2);
+    padding-right: calc((100% - 660px) / 2);
   }
 
   @media (min-width: @desktop-width) {
     padding-bottom: 38px;
-    width: 865px;
+    width: 944px;
     padding-left: 84px;
+    box-sizing: border-box;
   }
 }
 
@@ -254,6 +260,7 @@
     position: absolute;
     margin-left: 10px;
     margin-top: 7px;
+    fill: @fuchsia;
   }
 
   @media (min-width: @desktop-width) {
