@@ -314,3 +314,91 @@ header.page-header {
     right: 7px;
   }
 }
+
+.page-header--nojs .page-header__logo-toggle {
+  @media (max-width: @desktop-width - 1px) {
+    background: #283645;
+  }
+}
+
+.page-header--nojs {
+  @media (max-width: @tablet-width - 1px) {
+    margin-bottom: -84px;
+  }
+}
+
+.page-header--front-page.page-header--opened {
+  @media (max-width: @tablet-width - 1px) {
+    margin-bottom: -90px;
+  }
+}
+
+.page-header--front-page.page-header--opened .page-header__toggle {
+  @media (max-width: @tablet-width - 1px) {
+    right: 0;
+  }
+}
+
+.page-header--photo-page.page-header--opened {
+  @media (max-width: @tablet-width - 1px) {
+    margin-bottom: -89px;
+  }
+}
+
+.page-header--form-page.page-header--opened {
+  @media (max-width: @tablet-width - 1px) {
+    margin-bottom: -89px;
+  }
+}
+
+.page-header--front-page.page-header--nojs {
+  margin-bottom: -113px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
+    .page-header__logo-toggle {
+      padding-bottom: 25px;
+    }
+  }
+}
+
+.page-header--photo-page.page-header--nojs {
+  margin-bottom: -111px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
+    .page-header__logo-toggle {
+      padding-bottom: 25px;
+    }
+  }
+}
+
+.page-header--form-page.page-header--nojs {
+  margin-bottom: -111px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
+    .page-header__logo-toggle {
+      padding-bottom: 25px;
+    }
+  }
+}
+
+.page-header--form-page.page-header--opened {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
+    margin-bottom: -110px;
+  }
+}
+
+.page-header--photo-page.page-header--opened {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
+    margin-bottom: -110px;
+  }
+}
+
+.page-header--front-page.page-header--opened {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
+    margin-bottom: -110px;
+
+    .main-navigation--opened svg {
+      margin-left: -15px;
+    }
+  }
+}
