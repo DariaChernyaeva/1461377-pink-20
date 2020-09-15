@@ -334,6 +334,7 @@
   @media (min-width: @desktop-width) {
     display: flex;
     width: 960px;
+    flex-wrap: wrap;
   }
 }
 
@@ -422,5 +423,27 @@
 
   @media (max-width: @tablet-width - 1px) {
     margin-top: 51px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages-new__container {
+    flex-wrap: wrap;
+  }
+
+  .advantages-new__item:nth-child(n+4) {
+    margin-top: 130px;
+    width: 33%;
+    text-align: center;
+
+    img {
+      margin-right: 0;
+    }
+
+    h3,
+    p {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
